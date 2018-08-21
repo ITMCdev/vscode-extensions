@@ -1,0 +1,36 @@
+{
+    "name": "php-laravel-extension-pack",
+    "displayName": "ITMCDev Laravel Framework Extension Pack",
+    "description": "A collection of extensions for developming with Laravel Framework inside ITMC",
+    "version": "0.0.1",
+    "publisher": "itmcdev",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/itmcdev/vscode-extensions"
+    },
+    "engines": {
+        "vscode": "^1.26.0"
+    },
+    "icon": "icon.png",
+    "galleryBanner": {
+        "color": "#f66f62",
+        "theme": "dark"
+    },
+    "categories": [
+        "Extension Packs"
+    ],
+    "keywords": [
+        "code",
+        "node",
+        "itmcdev"
+    ],
+    "extensionPack": [
+        "itmcdev.generic-extension-pack",
+        "itmcdev.php-extension-pack",
+        "bajdzis.vscode-twig-pack",
+        "mblode.twig-language-2",
+        "onecentlin.laravel-blade",
+        "onecentlin.laravel5-snippets",
+        "ryannaddy.laravel-artisan"
+    ]
+}
