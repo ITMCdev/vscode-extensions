@@ -4,14 +4,19 @@ Includes the basic extensions to get started with [NodeJS](http://nodejs.com/) d
 
 ## Dependencies
 
-Make sure you install [generic](../generic) extensions first.
+Extension | Objective
+--------- | ---------
+[ITMCDev Generic Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.generic-extension-pack) | A collection of extensions for development inside ITMC.
 
 ## Extensions
 
 Extension | Objective
 --------- | ---------
-[Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense) | Visual Studio Code plugin that autocompletes filenames.
 [Auto Import](https://marketplace.visualstudio.com/items?itemName=steoates.autoimport) | Automatically finds, parses and provides code actions and code completion for all available imports. Works with Typescript and TSX.
+[Jest](https://marketplace.visualstudio.com/items?itemName=orta.vscode-jest) | Use Facebook's Jest With Pleasure.
+[Node.js Modules Intellisense](https://marketplace.visualstudio.com/items?itemName=leizongmin.node-module-intellisense) | Autocompletes Node.js modules in import statements.
+[Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense) | Visual Studio Code plugin that autocompletes filenames.
+[Version Lens](https://marketplace.visualstudio.com/items?itemName=pflannery.vscode-versionlens) | Shows the latest version for each package using code lens.
 
 ## Contact
 

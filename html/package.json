@@ -1,0 +1,40 @@
+{
+    "name": "html-extension-pack",
+    "displayName": "ITMCDev HTML/CSS Extension Pack",
+    "description": "A collection of extensions for developming with HTML/CSS(Less/Sass) inside ITMC",
+    "version": "0.0.1",
+    "publisher": "itmcdev",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/itmcdev/vscode-extensions"
+    },
+    "engines": {
+        "vscode": "^1.26.0"
+    },
+    "icon": "icon.png",
+    "galleryBanner": {
+        "color": "#f66f62",
+        "theme": "dark"
+    },
+    "categories": [
+        "Extension Packs"
+    ],
+    "keywords": [
+        "code",
+        "node",
+        "itmcdev"
+    ],
+    "extensionPack": [
+        "itmcdev.generic-extension-pack",
+        "akamud.vscode-caniuse",
+        "formulahendry.auto-close-tag",
+        "formulahendry.auto-rename-tag",
+        "glen-84.sass-lint",
+        "michelemelluso.code-beautifier",
+        "mrmlnc.vscode-csscomb",
+        "mrmlnc.vscode-less",
+        "mrmlnc.vscode-scss",
+        "robinbentley.sass-indented",
+        "Zignd.html-css-class-completion"
+    ]
+}

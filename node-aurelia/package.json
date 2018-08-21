@@ -1,7 +1,7 @@
 {
-    "name": "node-extension-pack",
-    "displayName": "ITMCDev NodeJS Extension Pack",
-    "description": "A collection of extensions for developming with NodeJS inside ITMC",
+    "name": "node-aurelia-extension-pack",
+    "displayName": "ITMCDev Aurelia Framework Extension Pack",
+    "description": "A collection of extensions for developming with Aurelia Framework inside ITMC",
     "version": "0.0.1",
     "publisher": "itmcdev",
     "repository": {
@@ -22,14 +22,15 @@
     "keywords": [
         "code",
         "node",
+        "babel",
         "itmcdev"
     ],
     "extensionPack": [
         "itmcdev.generic-extension-pack",
-        "christian-kohler.path-intellisense",
-        "leizongmin.node-module-intellisense",
-        "orta.vscode-jest",
-        "steoates.autoimport",
-        "pflannery.vscode-versionlens"
+        "itmcdev.html-extension-pack",
+        "itmcdev.node-extension-pack",
+        "itmcdev.node-babel-extension-pack",
+        "aureliaeffect.aurelia",
+        "behzad88.aurelia"
     ]
 }
