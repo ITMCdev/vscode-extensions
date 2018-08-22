@@ -12,6 +12,7 @@ Extension | Objective
 
 Extension | Objective
 --------- | ---------
+[Composer](https://marketplace.visualstudio.com/items?itemName=ikappas.composer) | PHP Composer for Visual Studio Code.
 [PHP Debug](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug) | Debug support for PHP with XDebug.
 [PHP DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker) | A simple, dependency free PHP specific DocBlocking package.
 <!-- [PHP IntelliSense](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-intellisense) | Advanced Autocompletion and Refactoring support for PHP. -->

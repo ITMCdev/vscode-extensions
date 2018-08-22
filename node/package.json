@@ -2,7 +2,7 @@
     "name": "node-extension-pack",
     "displayName": "ITMCDev NodeJS Extension Pack",
     "description": "A collection of extensions for developming with NodeJS inside ITMC",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "itmcdev",
     "repository": {
         "type": "git",
@@ -25,8 +25,9 @@
         "itmcdev"
     ],
     "extensionPack": [
-        "itmcdev.generic-extension-pack",
         "christian-kohler.path-intellisense",
+        "eg2.vscode-npm-script",
+        "kohler.npm-intellisense",
         "leizongmin.node-module-intellisense",
         "orta.vscode-jest",
         "steoates.autoimport",

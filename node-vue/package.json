@@ -2,7 +2,7 @@
     "name": "node-vue-extension-pack",
     "displayName": "ITMCDev VueJs Extension Pack",
     "description": "A collection of extensions for developming with VueJs inside ITMC",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "itmcdev",
     "repository": {
         "type": "git",
@@ -26,10 +26,6 @@
         "itmcdev"
     ],
     "extensionPack": [
-        "itmcdev.generic-extension-pack",
-        "itmcdev.html-extension-pack",
-        "itmcdev.node-extension-pack",
-        "itmcdev.node-babel-extension-pack",
         "dariofuzinato.vue-peek",
         "ducksoupdev.vue2",
         "hollowtree.vue-snippets",
