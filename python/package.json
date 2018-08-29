@@ -1,8 +1,8 @@
 {
-    "name": "node-vue-extension-pack",
-    "displayName": "ITMCDev VueJs Extension Pack",
-    "description": "A collection of extensions for developming with VueJs inside ITMC",
-    "version": 0.0.3",
+    "name": "python-extension-pack",
+    "displayName": "ITMCDev Python Extension Pack",
+    "description": "A collection of extensions for developming with Python inside ITMC",
+    "version": 0.0.3,
     "publisher": "itmcdev",
     "repository": {
         "type": "git",
@@ -21,15 +21,16 @@
     ],
     "keywords": [
         "code",
-        "node",
-        "babel",
+        "python",
         "itmcdev"
     ],
     "extensionPack": [
-        "dariofuzinato.vue-peek",
-        "ducksoupdev.vue2",
-        "hollowtree.vue-snippets",
-        "octref.vetur",
-        "liuji-jim.vue"
+        "ms-python.python",
+        "magicstack.MagicPython",
+
+        "wholroyd.jinja",
+
+        "donjayamanne.jupyter",
+        "batisteo.vscode-django"
     ]
 }

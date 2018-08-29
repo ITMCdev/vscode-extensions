@@ -2,7 +2,7 @@
     "name": "php-laravel-extension-pack",
     "displayName": "ITMCDev Laravel Framework Extension Pack",
     "description": "A collection of extensions for developming with Laravel Framework inside ITMC",
-    "version": "0.0.2",
+    "version": 0.0.3",
     "publisher": "itmcdev",
     "repository": {
         "type": "git",
