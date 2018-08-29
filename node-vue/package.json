@@ -2,7 +2,7 @@
     "name": "node-vue-extension-pack",
     "displayName": "ITMCDev VueJs Extension Pack",
     "description": "A collection of extensions for developming with VueJs inside ITMC",
-    "version": 0.0.3",
+    "version": "0.0.3",
     "publisher": "itmcdev",
     "repository": {
         "type": "git",

@@ -2,7 +2,7 @@
     "name": "php-extension-pack",
     "displayName": "ITMCDev PHP Extension Pack",
     "description": "A collection of extensions for developming with PHP inside ITMC",
-    "version": 0.0.3",
+    "version": "0.0.3",
     "publisher": "itmcdev",
     "repository": {
         "type": "git",
