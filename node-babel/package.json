@@ -2,7 +2,7 @@
     "name": "node-babel-extension-pack",
     "displayName": "ITMCDev Babel Extension Pack",
     "description": "A collection of extensions for developming with NodeJS & Babel inside ITMC",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "publisher": "itmcdev",
     "repository": {
         "type": "git",

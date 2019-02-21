@@ -1,7 +1,7 @@
 {
-    "name": "python-extension-pack",
-    "displayName": "ITMCDev Python Extension Pack",
-    "description": "A collection of extensions for developming with Python inside ITMC",
+    "name": "ruby-extension-pack",
+    "displayName": "ITMCDev Ruby Extension Pack",
+    "description": "A collection of extensions for developming with Ruby inside ITMC",
     "version": "0.0.4",
     "publisher": "itmcdev",
     "repository": {
@@ -21,16 +21,14 @@
     ],
     "keywords": [
         "code",
-        "python",
+        "node",
         "itmcdev"
     ],
     "extensionPack": [
-        "ms-python.python",
-        "magicstack.MagicPython",
-
-        "wholroyd.jinja",
-
-        "donjayamanne.jupyter",
-        "batisteo.vscode-django"
+        "jpogran.puppet-vscode",
+        "marcostazi.vs-code-vagrantfile",
+        "castwide.solargraph",
+        "rebornix.ruby",
+        "bung87.rails"
     ]
 }

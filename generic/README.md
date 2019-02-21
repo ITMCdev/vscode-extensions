@@ -6,6 +6,7 @@ Includes the basic extensions to get started with development in Visual Studio C
 
 Extension | Objective
 --------- | ---------
+[Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments) | Improve your code commenting by annotating with alert, informational, TODOs, and more!
 [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) | GitLens supercharges the Git capabilities built into Visual Studio Code.
 [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) | EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs.
 [Run On Save for VS Code](https://marketplace.visualstudio.com/items?itemName=emeraldwalk.runonsave) |  Allows configuring commands that get run whenever a file is saved in vscode.
