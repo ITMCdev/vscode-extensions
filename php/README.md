@@ -10,13 +10,13 @@ Extension | Objective
 [Composer](https://marketplace.visualstudio.com/items?itemName=ikappas.composer) | PHP Composer for Visual Studio Code.
 [PHP Debug](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug) | Debug support for PHP with XDebug.
 [PHP DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker) | A simple, dependency free PHP specific DocBlocking package.
-[PHP Intellisense - Crane](https://marketplace.visualstudio.com/items?itemName=HvyIndustries.crane) | PHP Intellisense/code-completion.
+[PHP IntelliSense](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-intellisense) | Advanced Autocompletion and Refactoring support for PHP.
 [PHPUnit Snippets](https://marketplace.visualstudio.com/items?itemName=onecentlin.phpunit-snippets) | PHPUnit snippets support for Visual Studio Code.
 
 
 Extension | Objective
 --------- | ---------
-~~[PHP IntelliSense](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-intellisense)~~ | Advanced Autocompletion and Refactoring support for PHP.
+~~[PHP Intellisense - Crane](https://marketplace.visualstudio.com/items?itemName=HvyIndustries.crane)~~ | PHP Intellisense/code-completion.
 
 ## Contact
 

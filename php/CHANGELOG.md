@@ -1,6 +1,11 @@
 # Change Log
 All notable changes to the "php-extension-pack" extension pack will be documented in this file.
 
+## 0.0.6 - 2019-04-16
+
+- Add `felixfbecker.php-intellisense`.
+- Remove `HvyIndustries.crane`.
+
 ## 0.0.5 - 2019-04-16
 
 - Add `itmcdev.generic-extension-pack` as part of the extension.

@@ -2,7 +2,7 @@
     "name": "php-extension-pack",
     "displayName": "ITMCDev PHP Extension Pack",
     "description": "A collection of extensions for developming with PHP inside ITMC",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "publisher": "itmcdev",
     "repository": {
         "type": "git",
@@ -26,7 +26,7 @@
     ],
     "extensionPack": [
         "felixfbecker.php-debug",
-        "HvyIndustries.crane",
+        "felixfbecker.php-intellisense",
         "ikappas.composer",
         "neilbrayfield.php-docblocker",
         "onecentlin.phpunit-snippets",
