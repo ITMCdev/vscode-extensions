@@ -2,7 +2,7 @@
     "name": "html-extension-pack",
     "displayName": "ITMCDev HTML/CSS Extension Pack",
     "description": "A collection of extensions for developming with HTML/CSS(Less/Sass) inside ITMC",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "publisher": "itmcdev",
     "repository": {
         "type": "git",
@@ -34,6 +34,7 @@
         "mrmlnc.vscode-less",
         "mrmlnc.vscode-scss",
         "robinbentley.sass-indented",
-        "Zignd.html-css-class-completion"
+        "Zignd.html-css-class-completion",
+        "itmcdev.generic-extension-pack"
     ]
 }

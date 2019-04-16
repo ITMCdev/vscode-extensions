@@ -2,16 +2,12 @@
 
 Includes the basic extensions to get started with [NodeJS](http://nodejs.com/) development in Visual Studio Code.
 
-## Dependencies
-
-Extension | Objective
---------- | ---------
-[ITMCDev Generic Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.generic-extension-pack) | A collection of extensions for development inside ITMC.
-
 ## Extensions
 
 Extension | Objective
 --------- | ---------
+*[Generic Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.generic-extension-pack)* | A collection of generic extensions for development inside ITMC.
+*[HTML Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.html-extension-pack)* |A collection of extensions for developming with HTML/CSS(Less/Sass) inside ITMC.
 [Auto Import](https://marketplace.visualstudio.com/items?itemName=steoates.autoimport) | Automatically finds, parses and provides code actions and code completion for all available imports. Works with Typescript and TSX.
 [Jest](https://marketplace.visualstudio.com/items?itemName=orta.vscode-jest) | Use Facebook's Jest With Pleasure.
 [Node.js Modules Intellisense](https://marketplace.visualstudio.com/items?itemName=leizongmin.node-module-intellisense) | Autocompletes Node.js modules in import statements.

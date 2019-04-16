@@ -2,16 +2,12 @@
 
 Includes the basic extensions to get started with [Ruby]([h](https://www.ruby-lang.org)) development in Visual Studio Code.
 
-## Dependencies
-
-Extension | Objective
---------- | ---------
-[ITMCDev Generic Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.generic-extension-pack) | A collection of extensions for development inside ITMC.
-
 ## Extensions
 
+
 Extension | Objective
 --------- | ---------
+*[ITMCDev Generic Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.generic-extension-pack)* | A collection of generic extensions for development inside ITMC.
 [Rails](https://marketplace.visualstudio.com/items?itemName=bung87.rails) | Ruby on Rails support for Visual Studio Code.
 [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.ruby) | Provides Ruby language and debugging support for Visual Studio Code.
 [Ruby Solargraph](https://marketplace.visualstudio.com/items?itemName=castwide.solargraph) | Code completion and inline documentation for Ruby.

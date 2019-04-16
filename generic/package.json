@@ -1,8 +1,8 @@
 {
     "name": "generic-extension-pack",
     "displayName": "ITMCDev Generic Extension Pack",
-    "description": "A collection of extensions for development inside ITMC",
-    "version": "0.0.4",
+    "description": "A collection of generic extensions for development inside ITMC",
+    "version": "0.0.5",
     "publisher": "itmcdev",
     "repository": {
         "type": "git",
@@ -24,6 +24,7 @@
         "itmcdev"
     ],
     "extensionPack": [
+        "AlanWalk.markdown-toc",
         "eamodio.gitlens",
         "EditorConfig.EditorConfig",
         "emeraldwalk.runonsave",
@@ -32,6 +33,7 @@
         "secanis.jenkinsfile-support",
         "shan.code-settings-sync",
         "yzhang.markdown-all-in-one",
-        "aaron-bond.better-comments"
+        "aaron-bond.better-comments",
+        "WakaTime.vscode-wakatime"
     ]
 }

@@ -2,7 +2,7 @@
     "name": "node-babel-extension-pack",
     "displayName": "ITMCDev Babel Extension Pack",
     "description": "A collection of extensions for developming with NodeJS & Babel inside ITMC",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "publisher": "itmcdev",
     "repository": {
         "type": "git",
@@ -28,6 +28,9 @@
     "extensionPack": [
         "dbaeumer.vscode-eslint",
         "dzannotti.vscode-babel-coloring",
-        "tunnckocore.modern-javascript-snippets"
+        "tunnckocore.modern-javascript-snippets",
+        "itmcdev.generic-extension-pack",
+        "itmcdev.html-extension-pack",
+        "itmcdev.node-extension-pack"
     ]
 }
