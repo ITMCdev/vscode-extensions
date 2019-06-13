@@ -4,11 +4,21 @@ node_js:
   - "lts/*"
 
 before_script:
+  - npm install npm@latest -g
+  - npm install node-pre-gyp
+  - npm i --no-optional
+  - npm dedupe
+  - npm up
   - npm install -g vsce
 
 scripts:
-  - vsce login $PUBLISHER
-  - find . -mindepth 1 -maxdepth 1 -type d -not -iname "*.*" | while read d; do cd $d; vsce publish; cd ..; done
+  - echo "[{\"name\":\"itmcdev\",\"pat\":\"$VSCE_TOKEN\"}]" > ~/.
+  
+deploy:
+  provider: script
+  script: bash publish.sh
+  on:
+    branch: master
 
 notifications:
   # slack:
