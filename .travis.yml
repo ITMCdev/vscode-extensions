@@ -3,10 +3,8 @@ language: node_js
 node_js:
   - "lts/*"
 
-before_script:
-  - npm install -g vsce
-
 scripts:
+  - npm install -g vsce
   - vsce login $PUBLISHER
   - bash publish.sh
 
