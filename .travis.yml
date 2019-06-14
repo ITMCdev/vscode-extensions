@@ -1,14 +1,9 @@
 language: node_js
 
 node_js:
-  - "lts/*"
+  - node
 
 before_script:
-  - npm install npm@latest -g
-  - npm install node-pre-gyp
-  - npm i --no-optional
-  - npm dedupe
-  - npm up
   - npm install -g vsce
 
 scripts:
