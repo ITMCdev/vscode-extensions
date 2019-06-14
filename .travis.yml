@@ -9,7 +9,6 @@ install:
 
 script:
   - echo "[{\"name\":\"$VSCE_ACCOUNT\",\"pat\":\"$VSCE_TOKEN\"}]" > ~/.vsce
-  - cat ~/.vsce
   
 deploy:
   provider: script
