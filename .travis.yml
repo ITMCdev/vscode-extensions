@@ -8,7 +8,8 @@ install:
   - npm install -g vsce
 
 script:
-  - echo "[{\"name\":\"itmcdev\",\"pat\":\"$VSCE_TOKEN\"}]" > ~/.vsce
+  - echo "[{\"name\":\"$VSCE_ACCOUNT\",\"pat\":\"$VSCE_TOKEN\"}]" > ~/.vsce
+  - cat ~/.vsce
   
 deploy:
   provider: script
