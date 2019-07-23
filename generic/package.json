@@ -25,6 +25,7 @@
     ],
     "extensionPack": [
         "AlanWalk.markdown-toc",
+        "aaron-bond.better-comments",
         "eamodio.gitlens",
         "EditorConfig.EditorConfig",
         "emeraldwalk.runonsave",
@@ -33,7 +34,6 @@
         "secanis.jenkinsfile-support",
         "shan.code-settings-sync",
         "yzhang.markdown-all-in-one",
-        "aaron-bond.better-comments",
         "WakaTime.vscode-wakatime"
     ]
 }
