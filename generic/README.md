@@ -14,6 +14,7 @@ Extension | Objective
 [Markdown Support for VS Code](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) | All you need for Markdown (keyboard shortcuts, table of contents, auto preview and more). Using GitHub Gist.
 [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) | Markdown linting and style checking for Visual Studio Code.
 [Markdown TOC](https://marketplace.visualstudio.com/items?itemName=AlanWalk.markdown-toc) | Markdown TOC(Table Of Contents) Plugin for Visual Studio Code.
+[Mustache](https://marketplace.visualstudio.com/items?itemName=dawhite.mustache) | Syntax highlighting for mustache
 [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) | Prettier formatter for Visual Studio Code.
 [Run On Save for VS Code](https://marketplace.visualstudio.com/items?itemName=emeraldwalk.runonsave) |  Allows configuring commands that get run whenever a file is saved in vscode.
 [Settings Sync](https://marketplace.visualstudio.com/items?itemName=shan.code-settings-sync) | Synchronize Settings, Snippets, Themes, File Icons, Launch, Keybindings, Workspaces and Extensions Across Multiple Machines Using GitHub Gist.
