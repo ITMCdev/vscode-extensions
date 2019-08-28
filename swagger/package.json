@@ -1,0 +1,33 @@
+{
+    "name": "swagger-extension-pack",
+    "displayName": "ITMCDev Swagger & OpenAPI Extension Pack",
+    "description": "A collection of extensions for developming with Swagger or OpenAPI inside ITMC",
+    "version": "0.0.1",
+    "publisher": "itmcdev",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/itmcdev/vscode-extensions"
+    },
+    "engines": {
+        "vscode": "^1.26.0"
+    },
+    "icon": "icon.png",
+    "galleryBanner": {
+        "color": "#f66f62",
+        "theme": "dark"
+    },
+    "categories": [
+        "Extension Packs"
+    ],
+    "keywords": [
+        "code",
+        "node",
+        "itmcdev"
+    ],
+    "extensionPack": [
+        "Arjun.swagger-viewer",
+        "42Crunch.vscode-openapi",
+        "mermade.openapi-lint",
+        "itmcdev.generic-extension-pack"
+    ]
+}
