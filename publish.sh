@@ -1,8 +1,8 @@
 #! /bin/bash
 
-find . -mindepth 1 -maxdepth 1 -type d -not -iname "*.*" | while read d; do 
-    cd $d; 
+find . -mindepth 1 -maxdepth 1 -type d -not -iname "*.*" | while read d; do
+    cd $d;
     echo "publishing itmcdev-$d..."
-    vsce publish; 
-    cd ..; 
+    vsce publish;
+    cd ..;
 done

@@ -1,0 +1,33 @@
+{
+    "name": "node-babel-extension-pack",
+    "displayName": "ITMCDev TypeScript Extension Pack",
+    "description": "A collection of extensions for developming with NodeJS & TypeScript inside ITMC",
+    "version": "0.0.1",
+    "publisher": "itmcdev",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/itmcdev/vscode-extensions"
+    },
+    "engines": {
+        "vscode": "^1.26.0"
+    },
+    "icon": "icon.png",
+    "galleryBanner": {
+        "color": "#f66f62",
+        "theme": "dark"
+    },
+    "categories": [
+        "Extension Packs"
+    ],
+    "keywords": [
+        "code",
+        "node",
+        "typescript",
+        "itmcdev"
+    ],
+    "extensionPack": [
+        "aljazsim.tsco",
+        "semagarcia.vscode-ts-decorators",
+        "itmcdev.node-babel-extension-pack"
+    ]
+}
