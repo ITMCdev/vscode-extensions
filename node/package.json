@@ -2,7 +2,7 @@
     "name": "node-extension-pack",
     "displayName": "ITMCDev NodeJS Extension Pack",
     "description": "A collection of extensions for developming with NodeJS inside ITMC",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "publisher": "itmcdev",
     "repository": {
         "type": "git",
