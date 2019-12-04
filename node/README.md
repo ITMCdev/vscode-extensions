@@ -15,6 +15,7 @@ Extension | Objective
 [npm Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense) | Visual Studio Code plugin that autocompletes npm modules in import statements.
 [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense) | Visual Studio Code plugin that autocompletes filenames.
 [Version Lens](https://marketplace.visualstudio.com/items?itemName=pflannery.vscode-versionlens) | Shows the latest version for each package using code lens.
+[vscode-proto3](https://marketplace.visualstudio.com/items?itemName=zxh404.vscode-proto3) | Protobuf 3 support for Visual Studio Code
 
 ## Contact
 
