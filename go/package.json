@@ -1,0 +1,35 @@
+{
+    "name": "go-extension-pack",
+    "displayName": "ITMCDev Go Extension Pack",
+    "description": "A collection of Go extensions for development inside ITMC",
+    "version": "0.0.1",
+    "publisher": "itmcdev",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/itmcdev/vscode-extensions"
+    },
+    "engines": {
+        "vscode": "^1.26.0"
+    },
+    "icon": "icon.png",
+    "galleryBanner": {
+        "color": "#f66f62",
+        "theme": "dark"
+    },
+    "categories": [
+        "Extension Packs"
+    ],
+    "keywords": [
+        "code",
+        "itmcdev"
+    ],
+    "extensionPack": [
+        "ms-vscode.go",
+        "766b.go-outliner",
+        "msyrus.go-doc",
+        "windmilleng.vscode-go-autotest",
+        "neverik.go-critic",
+        "premparihar.gotestexplorer",
+        "itmcdev.html-extension-pack"
+    ]
+}
