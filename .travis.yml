@@ -7,8 +7,8 @@ node_js:
 install:
   - npm install -g vsce
 
-script:
-  - echo "{\"publishers\":[{\"name\":\"$VSCE_ACCOUNT\",\"pat\":\"$VSCE_TOKEN\"}]}" > ~/.vsce
+# script:
+#   - echo "{\"publishers\":[{\"name\":\"$VSCE_ACCOUNT\",\"pat\":\"$VSCE_TOKEN\"}]}" > ~/.vsce
   
 deploy:
   provider: script
