@@ -3,11 +3,11 @@ set -xe
 
 find . -mindepth 1 -maxdepth 1 -type d -not -iname "*.*" | while read d; do
     cd $d;
-    echo "publishing itmcdev-$d...i"
+    echo "publishing itmcdev-$d..."
     if [[ "$VSCE_TOKEN" != "" ]]; then
-        vsce publish -p $VSCE_TOKEN;
+        vsce publish -p $VSCE_TOKEN || true;
     else
-	    vsce publish;
+	    vsce publish || true;
     fi
     cd ..;
 done
