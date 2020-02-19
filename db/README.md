@@ -8,6 +8,9 @@ Includes the basic extensions to get started with DB development in Visual Studi
 | -------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
 | _[Generic Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.generic-extension-pack)_ | A collection of generic extensions for development inside ITMC. |
 | [Cypher QL](https://marketplace.visualstudio.com/items?itemName=ionut-botizan.vscode-cypher-ql)                | Syntax highlighting for the Cypher query language               |
+| [SQLite](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite)                           | Explore and query SQLite databases.                   |
+
+
 
 <!-- Mongo -->
 <!-- ? https://marketplace.visualstudio.com/items?itemName=mongoose-os.mongoose-os-ide -->

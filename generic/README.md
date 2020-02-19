@@ -17,8 +17,14 @@ Extension | Objective
 [Mustache](https://marketplace.visualstudio.com/items?itemName=dawhite.mustache) | Syntax highlighting for mustache
 [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) | Prettier formatter for Visual Studio Code.
 [Run On Save for VS Code](https://marketplace.visualstudio.com/items?itemName=emeraldwalk.runonsave) |  Allows configuring commands that get run whenever a file is saved in vscode.
-[Settings Sync](https://marketplace.visualstudio.com/items?itemName=shan.code-settings-sync) | Synchronize Settings, Snippets, Themes, File Icons, Launch, Keybindings, Workspaces and Extensions Across Multiple Machines Using GitHub Gist.
+<!-- [Settings Sync](https://marketplace.visualstudio.com/items?itemName=shan.code-settings-sync) | Synchronize Settings, Snippets, Themes, File Icons, Launch, Keybindings, Workspaces and Extensions Across Multiple Machines Using GitHub Gist. -->
 [Wakatime](https://marketplace.visualstudio.com/items?itemName=WakaTime.vscode-wakatime) | Metrics, insights, and time tracking automatically generated from your programming activity.
+
+## Persistance
+
+To persist your settings acros your environments, you should use: [Settings Sync](https://marketplace.visualstudio.com/items?itemName=shan.code-settings-sync).
+
+> Removed this one form the extension pack, because of the inter-dependency of the packages which can cause auto-disable for this extension.
 
 ## Contact
 
