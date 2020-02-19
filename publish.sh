@@ -1,4 +1,5 @@
 #! /bin/bash
+set -xe
 
 find . -mindepth 1 -maxdepth 1 -type d -not -iname "*.*" | while read d; do
     cd $d;
@@ -6,7 +7,7 @@ find . -mindepth 1 -maxdepth 1 -type d -not -iname "*.*" | while read d; do
     if [[ "$VSCE_TOKEN" != "" ]]; then
         vsce publish -p $VSCE_TOKEN;
     else
-	vsce publish;
+	    vsce publish;
     fi
     cd ..;
 done
