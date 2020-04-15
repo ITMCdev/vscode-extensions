@@ -2,7 +2,7 @@
     "name": "generic-extension-pack",
     "displayName": "ITMCDev Generic Extension Pack",
     "description": "A collection of generic extensions for development inside ITMC",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "publisher": "itmcdev",
     "repository": {
         "type": "git",
@@ -31,7 +31,6 @@
         "EditorConfig.EditorConfig",
         "emeraldwalk.runonsave",
         "esbenp.prettier-vscode",
-        "peterjausovec.vscode-docker",
         "secanis.jenkinsfile-support",
         "yzhang.markdown-all-in-one",
         "WakaTime.vscode-wakatime"
