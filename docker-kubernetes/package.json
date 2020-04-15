@@ -1,0 +1,30 @@
+{
+    "name": "docker-kubernetes-extension-pack",
+    "displayName": "ITMCDev Kubernetes Extension Pack",
+    "description": "A collection of Kubernetes extensions for development inside ITMC",
+    "version": "0.0.1",
+    "publisher": "itmcdev",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/itmcdev/vscode-extensions"
+    },
+    "engines": {
+        "vscode": "^1.26.0"
+    },
+    "icon": "icon.png",
+    "galleryBanner": {
+        "color": "#f66f62",
+        "theme": "dark"
+    },
+    "categories": [
+        "Extension Packs"
+    ],
+    "keywords": [
+        "code",
+        "itmcdev"
+    ],
+    "extensionPack": [
+        "ms-kubernetes-tools.vscode-kubernetes-tools",
+        "itmcdev.docker-extension-pack"
+    ]
+}
