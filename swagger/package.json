@@ -2,7 +2,7 @@
     "name": "swagger-extension-pack",
     "displayName": "ITMCDev Swagger & OpenAPI Extension Pack",
     "description": "A collection of extensions for developming with Swagger or OpenAPI inside ITMC",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "itmcdev",
     "repository": {
         "type": "git",
@@ -27,7 +27,6 @@
     "extensionPack": [
         "Arjun.swagger-viewer",
         "42Crunch.vscode-openapi",
-        "mermade.openapi-lint",
-        "itmcdev.generic-extension-pack"
+        "mermade.openapi-lint"
     ]
 }

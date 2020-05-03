@@ -1,5 +1,5 @@
 # Change Log
-All notable changes to the "php-extension-pack" extension pack will be documented in this file.
+All notable changes to the `itmcdev.ruby-extension-pack` extension pack will be documented in this file.
 
 ## 0.0.6 - 2020-05-03
 
