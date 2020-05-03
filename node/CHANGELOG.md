@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to the `node-extension-pack` extension pack will be documented in this file.
 
+## 0.0.8 - 2020-05-03
+
+- Removed `itmcdev.generic-extension-pack` from the extension.
+
 ## 0.0.5 - 2018-04-16
 
 - Add `itmcdev.generic-extension-pack`, `itmcdev.html-extension-pack` as part of the extension dependencies.

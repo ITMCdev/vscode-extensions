@@ -6,7 +6,6 @@ Includes the basic extensions to get started with [NodeJS](http://nodejs.com/) d
 
 Extension | Objective
 --------- | ---------
-*[Generic Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.generic-extension-pack)* | A collection of generic extensions for development inside ITMC.
 *[HTML Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.html-extension-pack)* |A collection of extensions for developming with HTML/CSS(Less/Sass) inside ITMC.
 [Auto Import](https://marketplace.visualstudio.com/items?itemName=steoates.autoimport) | Automatically finds, parses and provides code actions and code completion for all available imports. Works with Typescript and TSX.
 [Jest](https://marketplace.visualstudio.com/items?itemName=orta.vscode-jest) | Use Facebook's Jest With Pleasure.
@@ -16,6 +15,12 @@ Extension | Objective
 [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense) | Visual Studio Code plugin that autocompletes filenames.
 [Version Lens](https://marketplace.visualstudio.com/items?itemName=pflannery.vscode-versionlens) | Shows the latest version for each package using code lens.
 [vscode-proto3](https://marketplace.visualstudio.com/items?itemName=zxh404.vscode-proto3) | Protobuf 3 support for Visual Studio Code
+
+## Recommended Extensions
+
+Extension | Objective
+--------- | ---------
+_[Generic Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.generic-extension-pack)_ | A collection of generic extensions for development inside ITMC.
 
 ## Contact
 
