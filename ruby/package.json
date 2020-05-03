@@ -2,7 +2,7 @@
     "name": "ruby-extension-pack",
     "displayName": "ITMCDev Ruby Extension Pack",
     "description": "A collection of extensions for developming with Ruby inside ITMC",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "publisher": "itmcdev",
     "repository": {
         "type": "git",
@@ -29,7 +29,6 @@
         "marcostazi.vs-code-vagrantfile",
         "castwide.solargraph",
         "rebornix.ruby",
-        "bung87.rails",
-        "itmcdev.generic-extension-pack"
+        "bung87.rails"
     ]
 }
