@@ -6,7 +6,7 @@ Includes the basic extensions to get started with [Go](https://golang.org/) deve
 
 Extension | Objective
 --------- | ---------
-*[Generic Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.generic-extension-pack)* | A collection of generic extensions for development inside ITMC.
+*[Generic HTML Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.html-extension-pack)* | A collection of extensions for developming with HTML/CSS(Less/Sass) inside ITMC.
 [Go](https://marketplace.visualstudio.com/items?itemName=ms-vscode.go) | Rich Go language support for Visual Studio Code
 [Go Autotest](https://marketplace.visualstudio.com/items?itemName=windmilleng.vscode-go-autotest) | Adds autotest functionality to vscode's Go mode
 [Go Critic](https://marketplace.visualstudio.com/items?itemName=neverik.go-critic) | Integration for the go-critic golang linter
