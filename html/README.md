@@ -7,7 +7,6 @@ Includes the basic extensions to get started with HTML and CSS development in Vi
 
 Extension | Objective
 --------- | ---------
-*[Generic Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.generic-extension-pack)* | A collection of generic extensions for development inside ITMC.
 [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag) | Automatically rename paired HTML/XML tag, same as Visual Studio IDE does.
 [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag) | Automatically add HTML/XML close tag, same as Visual Studio IDE or Sublime Text.
 [Beautify css/sass/scss/less](https://marketplace.visualstudio.com/items?itemName=michelemelluso.code-beautifier) | Beautify css, sass and less code (extension for Visual Studio Code).
@@ -18,6 +17,12 @@ Extension | Objective
 [Sass](https://marketplace.visualstudio.com/items?itemName=robinbentley.sass-indented) | Indented Sass syntax highlighting, autocomplete & snippets.
 [Sass Lint](https://marketplace.visualstudio.com/items?itemName=glen-84.sass-lint) | Sass Lint for Visual Studio Code.
 [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion) | Advanced autocompletion and refactoring support for SCSS.
+
+## Recommended Extensions
+
+Extension | Objective
+--------- | ---------
+*[Generic Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.generic-extension-pack)* | A collection of generic extensions for development inside ITMC.
 
 
 ## Contact
