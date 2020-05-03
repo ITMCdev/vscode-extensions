@@ -2,7 +2,7 @@
     "name": "db-extension-pack",
     "displayName": "ITMCDev DB Extension Pack",
     "description": "A collection of extensions for developming with DB languages inside ITMC",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "itmcdev",
     "repository": {
         "type": "git",
