@@ -4,10 +4,14 @@ Includes the basic extensions to get started with [NodeJS](http://nodejs.com/) &
 
 ## Extensions
 
-| Extension                                                                                                                      | Objective                                                           |
-| ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------- |
-| _[ITMCDev NodeJs Babel Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.node-babel-extension-pack)_ | A collection of extensions for developming with NodeJS inside ITMC. |
-| [Flow Language Support](https://marketplace.visualstudio.com/items?itemName=aljazsim.tsco)                                     | Flow support for VS Code                                            |
+Extension | Objective
+--------- | ---------
+_[ITMCDev NodeJs Babel Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.node-babel-extension-pack)_ | A collection of extensions for developming with NodeJS inside ITMC.
+[Flow Language Support](https://marketplace.visualstudio.com/items?itemName=aljazsim.tsco) | Flow support for VS Code
+
+Extension | Objective
+--------- | ---------
+_[Generic Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.generic-extension-pack)_ | A collection of generic extensions for development inside ITMC.
 
 ## Contact
 
