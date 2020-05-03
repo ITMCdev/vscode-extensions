@@ -6,7 +6,6 @@ Includes the basic extensions to get started with [PHP](http://php.net/) develop
 
 Extension | Objective
 --------- | ---------
-*[ITMCDev Generic Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.generic-extension-pack)* | A collection of generic extensions for development inside ITMC.
 *[ITMCDev PHP Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.php-extension-pack)* | A collection of extensions for developming with PHP inside ITMC.
 [Symfony for VSCode](https://marketplace.visualstudio.com/items?itemName=TheNouillet.symfony-vscode) | Debug and autocomplete of Symfony container.
 [Symfony debug and autocomplete](https://marketplace.visualstudio.com/items?itemName=n4zim.vscode-symfony) | Debug and autocomplete for Symfony (original code from TheNouillet)
