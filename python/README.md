@@ -14,6 +14,12 @@ Extension | Objective
 * [Jinja](https://marketplace.visualstudio.com/items?itemName=wholroyd.jinja) | Jinja template language support for Visual Studio Code.
 * [Django](https://marketplace.visualstudio.com/items?itemName=batisteo.vscode-django) | Beautiful syntax and scoped snippets for perfectionists with deadlines.
 
+## Recommended Extensions
+
+Extension | Objective
+--------- | ---------
+_[Generic Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.generic-extension-pack)_ | A collection of generic extensions for development inside ITMC.
+
 ## Proposal
 
 We're checking compatibility for this ones:

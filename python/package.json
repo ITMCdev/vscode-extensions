@@ -2,7 +2,7 @@
     "name": "python-extension-pack",
     "displayName": "ITMCDev Python Extension Pack",
     "description": "A collection of extensions for developming with Python inside ITMC",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "publisher": "itmcdev",
     "repository": {
         "type": "git",
@@ -28,7 +28,6 @@
         "ms-python.python",
         "magicstack.MagicPython",
         "wholroyd.jinja",
-        "batisteo.vscode-django",
-        "itmcdev.generic-extension-pack"
+        "batisteo.vscode-django"
     ]
 }
