@@ -10,6 +10,12 @@ Includes the basic extensions to get started with [NodeJS](http://nodejs.com/) &
 [TypeScript Class Organizer](https://marketplace.visualstudio.com/items?itemName=aljazsim.tsco) | Groups and orders class members
 [TypeScript Decorators](https://marketplace.visualstudio.com/items?itemName=semagarcia.vscode-ts-decorators) | Snippets for TypeScript decorators for Visual Studio Code
 
+## Recommended Extensions
+
+Extension | Objective
+--------- | ---------
+_[Generic Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.generic-extension-pack)_ | A collection of generic extensions for development inside ITMC.
+
 ### Proposal
 
 | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------- |
