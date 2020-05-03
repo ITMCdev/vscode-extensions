@@ -2,7 +2,7 @@
     "name": "node-react-extension-pack",
     "displayName": "ITMCDev React Extension Pack",
     "description": "A collection of extensions for developming with React inside ITMC",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "publisher": "itmcdev",
     "repository": {
         "type": "git",
@@ -29,7 +29,6 @@
         "planbcoding.vscode-react-refactor",
         "vsmobile.vscode-react-native",
         "walter-ribeiro.full-react-snippets",
-        "itmcdev.generic-extension-pack",
         "itmcdev.html-extension-pack",
         "itmcdev.node-extension-pack",
         "itmcdev.node-babel-extension-pack"

@@ -14,6 +14,8 @@ Modern (ES6+) Javascript Snippets](https://marketplace.visualstudio.com/items?it
 ES6 and TypeScript import sorter](https://marketplace.visualstudio.com/items?itemName=nikolazaric.es6-typescript-import-sorter) | An opinionated ES6 and TypeScript import sorter.
 [webpack](https://marketplace.visualstudio.com/items?itemName=jeremyrajan.webpack) | Create Webpack Config with ES6 transpiling using babel
 
+## Recommended Extensions
+
 Extension | Objective
 --------- | ---------
 _[Generic Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.generic-extension-pack)_ | A collection of generic extensions for development inside ITMC.
