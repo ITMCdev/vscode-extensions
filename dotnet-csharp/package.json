@@ -1,8 +1,8 @@
 {
-    "name": "db-extension-pack",
-    "displayName": "ITMCDev DB Extension Pack",
-    "description": "A collection of extensions for developming with DB languages inside ITMC",
-    "version": "0.0.2",
+    "name": "dotnet-csharp-extension-pack",
+    "displayName": "ITMCDev .NET C# Extension Pack",
+    "description": "A collection of generic extensions for .NET C# development inside ITMC",
+    "version": "0.0.1",
     "publisher": "itmcdev",
     "repository": {
         "type": "git",
@@ -21,11 +21,13 @@
     ],
     "keywords": [
         "code",
-        "db",
         "itmcdev"
     ],
     "extensionPack": [
-        "alexcvzz.vscode-sqlite",
-        "ionut-botizan.vscode-cypher-ql"
+        "ms-dotnettools.csharp",
+        "Leopotam.csharpfixformat",
+        "k--kato.docomment",
+        "jorgeserrano.vscode-csharp-snippets",
+        "craigthomas.supersharp"
     ]
 }

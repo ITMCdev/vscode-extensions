@@ -1,7 +1,7 @@
 {
-    "name": "db-extension-pack",
-    "displayName": "ITMCDev DB Extension Pack",
-    "description": "A collection of extensions for developming with DB languages inside ITMC",
+    "name": "docker-kubernetes-extension-pack",
+    "displayName": "ITMCDev Kubernetes Extension Pack",
+    "description": "A collection of Kubernetes extensions for development inside ITMC",
     "version": "0.0.2",
     "publisher": "itmcdev",
     "repository": {
@@ -21,11 +21,9 @@
     ],
     "keywords": [
         "code",
-        "db",
         "itmcdev"
     ],
     "extensionPack": [
-        "alexcvzz.vscode-sqlite",
-        "ionut-botizan.vscode-cypher-ql"
+        "ms-kubernetes-tools.vscode-kubernetes-tools"
     ]
 }

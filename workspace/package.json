@@ -1,8 +1,8 @@
 {
-    "name": "db-extension-pack",
-    "displayName": "ITMCDev DB Extension Pack",
-    "description": "A collection of extensions for developming with DB languages inside ITMC",
-    "version": "0.0.2",
+    "name": "workspace-extension-pack",
+    "displayName": "ITMCDev Workspace Visual/Feeiling Extension Pack",
+    "description": "A collection of extensions for development inside ITMC",
+    "version": "1.0.0",
     "publisher": "itmcdev",
     "repository": {
         "type": "git",
@@ -21,11 +21,13 @@
     ],
     "keywords": [
         "code",
-        "db",
         "itmcdev"
     ],
     "extensionPack": [
-        "alexcvzz.vscode-sqlite",
-        "ionut-botizan.vscode-cypher-ql"
+        "ms-vscode.atom-keybindings",
+        "k--kato.intellij-idea-keybindings",
+        "PKief.material-icon-theme",
+        "Equinusocio.vsc-material-theme",
+        "file-icons.file-icons"
     ]
 }

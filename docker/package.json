@@ -1,8 +1,8 @@
 {
-    "name": "generic-extension-pack",
-    "displayName": "ITMCDev Generic Extension Pack",
+    "name": "docker-extension-pack",
+    "displayName": "ITMCDev Docker Extension Pack",
     "description": "A collection of generic extensions for development inside ITMC",
-    "version": "0.0.8",
+    "version": "0.0.2",
     "publisher": "itmcdev",
     "repository": {
         "type": "git",
@@ -24,15 +24,6 @@
         "itmcdev"
     ],
     "extensionPack": [
-        "AlanWalk.markdown-toc",
-        "dawhite.mustache",
-        "aaron-bond.better-comments",
-        "eamodio.gitlens",
-        "EditorConfig.EditorConfig",
-        "emeraldwalk.runonsave",
-        "esbenp.prettier-vscode",
-        "secanis.jenkinsfile-support",
-        "yzhang.markdown-all-in-one",
-        "WakaTime.vscode-wakatime"
+        "ms-azuretools.vscode-docker"
     ]
 }

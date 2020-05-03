@@ -7,6 +7,7 @@ Includes the basic extensions to get started with DB development in Visual Studi
 Extension | Objective
 --------- | ---------
 [Cypher QL](https://marketplace.visualstudio.com/items?itemName=ionut-botizan.vscode-cypher-ql)| Syntax highlighting for the Cypher query language
+SQLite](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite) | Explore and query SQLite databases.
 
 ## Recommended Extensions
 
