@@ -6,7 +6,6 @@ Includes the basic extensions to get started with [PHP](http://php.net/) develop
 
 Extension | Objective
 --------- | ---------
-*[ITMCDev Generic Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.generic-extension-pack)* | A collection of generic extensions for development inside ITMC.
 *[ITMCDev PHP Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.php-extension-pack)* | A collection of extensions for developming with PHP inside ITMC.
 [Laravel Artisan](https://marketplace.visualstudio.com/items?itemName=ryannaddy.laravel-artisan) | Laravel Artisan commands within Visual Studio Code.
 [Laravel Blade Snippets](https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel-blade) | Laravel blade snippets and syntax highlight support.

@@ -2,7 +2,7 @@
     "name": "php-laravel-extension-pack",
     "displayName": "ITMCDev Laravel Framework Extension Pack",
     "description": "A collection of extensions for developming with Laravel Framework inside ITMC",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "publisher": "itmcdev",
     "repository": {
         "type": "git",
@@ -30,7 +30,6 @@
         "onecentlin.laravel-blade",
         "onecentlin.laravel5-snippets",
         "ryannaddy.laravel-artisan",
-        "itmcdev.generic-extension-pack",
         "itmcdev.php-extension-pack"
     ]
 }
