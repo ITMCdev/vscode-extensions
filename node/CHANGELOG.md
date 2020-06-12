@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to the `node-extension-pack` extension pack will be documented in this file.
 
+## 0.0.9 - 2020-06-12
+
+- Removed `orta.vscode-jest`, to be added to `node-test-extension-pack`.
+
 ## 0.0.8 - 2020-05-03
 
 - Removed `itmcdev.generic-extension-pack` from the extension.

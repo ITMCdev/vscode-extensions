@@ -2,7 +2,7 @@
     "name": "java-extension-pack",
     "displayName": "ITMCDev Java Extension Pack",
     "description": "A collection of extensions for developming with Java inside ITMC",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "itmcdev",
     "repository": {
         "type": "git",
@@ -29,6 +29,8 @@
         "vscjava.vscode-maven",
         "vscjava.vscode-java-debug",
         "vscjava.vscode-java-dependency",
+        "vscjava.vscode-java-pack",
+        "vscjava.vscode-java-test",
         "VisualStudioExptTeam.vscodeintellicode",
         "naco-siren.gradle-language",
         "marlon407.code-groovy"

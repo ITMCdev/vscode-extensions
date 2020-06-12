@@ -9,6 +9,7 @@ Extension | Objective
 [Rails](https://marketplace.visualstudio.com/items?itemName=bung87.rails) | Ruby on Rails support for Visual Studio Code.
 [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.ruby) | Provides Ruby language and debugging support for Visual Studio Code.
 [Ruby Solargraph](https://marketplace.visualstudio.com/items?itemName=castwide.solargraph) | Code completion and inline documentation for Ruby.
+[Ruby Test Explorer](https://marketplace.visualstudio.com/items?itemName=connorshea.vscode-ruby-test-adapter) | Run your Ruby tests in the Sidebar of Visual Studio Code
 [Puppet](https://marketplace.visualstudio.com/items?itemName=jpogran.puppet-vscode) | Official Puppet VSCode extension. Provides full Puppet DSL intellisense, syntax highlighting, Puppet command support, Puppet node graphs, and much more.
 [Vagrantfile](https://marketplace.visualstudio.com/items?itemName=marcostazi.vs-code-vagrantfile) | Provides syntax highlighting support for Vagrantfile, useful if you use Vagrant.
 

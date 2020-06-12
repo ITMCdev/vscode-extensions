@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to the "node-extension-pack" extension pack will be documented in this file.
 
+## 0.0.7 - 2020-06-12
+
+- Removed `kiteco.kite`, `LittleFoxTeam.vscode-python-test-adapter` from the extension.
+
 ## 0.0.6 - 2020-05-03
 
 - Removed `itmcdev.generic-extension-pack` from the extension.

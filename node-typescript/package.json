@@ -2,7 +2,7 @@
     "name": "node-typescript-extension-pack",
     "displayName": "ITMCDev TypeScript Extension Pack",
     "description": "A collection of extensions for developming with NodeJS & TypeScript inside ITMC",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "itmcdev",
     "repository": {
         "type": "git",
@@ -27,6 +27,7 @@
     ],
     "extensionPack": [
         "aljazsim.tsco",
+        "ms-vscode.typescript-javascript-grammar",
         "semagarcia.vscode-ts-decorators",
         "itmcdev.node-babel-extension-pack"
     ]

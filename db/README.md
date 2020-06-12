@@ -7,7 +7,12 @@ Includes the basic extensions to get started with DB development in Visual Studi
 Extension | Objective
 --------- | ---------
 [Cypher QL](https://marketplace.visualstudio.com/items?itemName=ionut-botizan.vscode-cypher-ql)| Syntax highlighting for the Cypher query language
-SQLite](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite) | Explore and query SQLite databases.
+[MySQL](https://marketplace.visualstudio.com/items?itemName=formulahendry.vscode-mysql) | MySQL management tool
+[PostgreSQL](https://marketplace.visualstudio.com/items?itemName=ckolkman.vscode-postgres) | PostgreSQL Management Tool
+[SQLite](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite) | Explore and query SQLite databases.
+[SQLTools MySQL/MariaDB](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools-driver-mysql) | SQLTools SQLite
+[SQLTools PostgreSQL/Redshift Driver](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools-driver-pg) | SQLTools PostgreSQL/Redshift Driver
+[SQLTools SQLite](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools-driver-sqlite) | SQLTools SQLite
 
 ## Recommended Extensions
 
@@ -28,13 +33,6 @@ Extension | Objective
 
 <!-- ORACLE -->
 <!-- https://marketplace.visualstudio.com/items?itemName=xyz.plsql-language -->
-
-<!-- PostGre SQL -->
-<!-- https://marketplace.visualstudio.com/items?itemName=ckolkman.vscode-postgres -->
-
-<!-- MySQL -->
-<!-- https://marketplace.visualstudio.com/items?itemName=formulahendry.vscode-mysql -->
-<!-- https://marketplace.visualstudio.com/items?itemName=jakebathman.mysql-syntax -->
 
 ## Contact
 

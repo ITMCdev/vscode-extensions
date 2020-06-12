@@ -2,7 +2,7 @@
     "name": "db-extension-pack",
     "displayName": "ITMCDev DB Extension Pack",
     "description": "A collection of extensions for developming with DB languages inside ITMC",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "publisher": "itmcdev",
     "repository": {
         "type": "git",
@@ -26,6 +26,11 @@
     ],
     "extensionPack": [
         "alexcvzz.vscode-sqlite",
-        "ionut-botizan.vscode-cypher-ql"
+        "ckolkman.vscode-postgres",
+        "formulahendry.vscode-mysql",
+        "ionut-botizan.vscode-cypher-ql",
+        "mtxr.sqltools-driver-mysql",
+        "mtxr.sqltools-driver-pg",
+        "mtxr.sqltools-driver-sqlite"
     ]
 }

@@ -1,8 +1,8 @@
 {
-    "name": "python-extension-pack",
-    "displayName": "ITMCDev Python Extension Pack",
-    "description": "A collection of extensions for developming with Python inside ITMC",
-    "version": "0.0.7",
+    "name": "rust-extension-pack",
+    "displayName": "ITMCDev Rust Extension Pack",
+    "description": "A collection of extensions for developming with Rust inside ITMC",
+    "version": "0.0.1",
     "publisher": "itmcdev",
     "repository": {
         "type": "git",
@@ -21,15 +21,11 @@
     ],
     "keywords": [
         "code",
-        "python",
+        "node",
         "itmcdev"
     ],
     "extensionPack": [
-        "kiteco.kite",
-        "LittleFoxTeam.vscode-python-test-adapter",
-        "ms-python.python",
-        "magicstack.MagicPython",
-        "wholroyd.jinja",
-        "batisteo.vscode-django"
+        "rust-lang.rust",
+        "swellaby.vscode-rust-test-adapter"
     ]
 }

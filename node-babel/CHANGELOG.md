@@ -1,6 +1,12 @@
 # Change Log
 All notable changes to the "node-babel-extension-pack" extension pack will be documented in this file.
 
+## 0.0.8 - 2020-06-12
+
+- Experiment. Replacing `dzannotti.vscode-babel-coloring` with `mgmcdermott.vscode-language-babel`.
+- Replacing `nikolazaric.es6-typescript-import-sorter` with `mike-co.import-sorter`
+- Adding `kiteco.kite`, `cmstead.jsrefactor`
+
 ## 0.0.7 - 2020-05-03
 
 - Removed `itmcdev.generic-extension-pack` from the extension.

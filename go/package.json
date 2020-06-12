@@ -2,7 +2,7 @@
     "name": "go-extension-pack",
     "displayName": "ITMCDev Go Extension Pack",
     "description": "A collection of Go extensions for development inside ITMC",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "itmcdev",
     "repository": {
         "type": "git",
@@ -24,7 +24,7 @@
         "itmcdev"
     ],
     "extensionPack": [
-        "ms-vscode.go",
+        "golang.Go",
         "766b.go-outliner",
         "msyrus.go-doc",
         "windmilleng.vscode-go-autotest",

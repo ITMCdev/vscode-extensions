@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to the `itmcdev.ruby-extension-pack` extension pack will be documented in this file.
 
+## 0.0.7 - 2020-06-12
+
+- Added `connorshea.vscode-ruby-test-adapter`
+
 ## 0.0.6 - 2020-05-03
 
 - Removed `itmcdev.generic-extension-pack` from the extension.

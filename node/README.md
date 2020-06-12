@@ -8,7 +8,6 @@ Extension | Objective
 --------- | ---------
 *[HTML Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.html-extension-pack)* |A collection of extensions for developming with HTML/CSS(Less/Sass) inside ITMC.
 [Auto Import](https://marketplace.visualstudio.com/items?itemName=steoates.autoimport) | Automatically finds, parses and provides code actions and code completion for all available imports. Works with Typescript and TSX.
-[Jest](https://marketplace.visualstudio.com/items?itemName=orta.vscode-jest) | Use Facebook's Jest With Pleasure.
 [Node.js Modules Intellisense](https://marketplace.visualstudio.com/items?itemName=leizongmin.node-module-intellisense) | Autocompletes Node.js modules in import statements.
 [npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script) | npm support for VS Code.
 [npm Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense) | Visual Studio Code plugin that autocompletes npm modules in import statements.

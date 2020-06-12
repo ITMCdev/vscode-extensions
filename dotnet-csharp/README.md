@@ -11,6 +11,7 @@ Extension | Objective
 [C# XML Documentation Comments](https://marketplace.visualstudio.com/items?itemName=k--kato.docomment) | Generate C# XML documentation comments for ///
 [C# Snippets](https://marketplace.visualstudio.com/items?itemName=jorgeserrano.vscode-csharp-snippets) | C# Snippets for Visual Studio Code
 [Super Sharp (C# extensions)](https://marketplace.visualstudio.com/items?itemName=craigthomas.supersharp) | Some handy refactoring extensions for C#
+[.Net Core Test Explorer](https://marketplace.visualstudio.com/items?itemName=derivitec-ltd.vscode-dotnet-adapter) | Run your dotnet core cs tests in the Sidebar of Visual Studio Code
 
 ## Contact
 

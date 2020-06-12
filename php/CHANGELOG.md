@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to the "php-extension-pack" extension pack will be documented in this file.
 
+## 0.0.8 - 2020-06-12
+
+- Added `recca0120.vscode-phpunit`, `MehediDracula.php-namespace-resolver`.
+  
 ## 0.0.7 - 2020-05-03
 
 - Removed `itmcdev.generic-extension-pack` from the extension.

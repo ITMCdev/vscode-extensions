@@ -8,11 +8,13 @@ Includes the basic extensions to get started with [Python](https://www.python.or
 Extension | Objective
 --------- | ---------
 *[ITMCDev Generic Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.generic-extension-pack)* | A collection of generic extensions for development inside ITMC.
-* [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) | Linting, Debugging (multi-threaded, remote), Intellisense, code formatting, refactoring, unit tests, snippets, Data Science (with Jupyter), PySpark and more.  
-* [MagicPython](https://marketplace.visualstudio.com/items?itemName=magicstack.MagicPython) | Syntax highlighter for cutting edge Python.   
-* [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) | Provides AI-assisted productivity features for Python developers in Visual Studio Code with insights based on understanding your code combined with machine learning..
-* [Jinja](https://marketplace.visualstudio.com/items?itemName=wholroyd.jinja) | Jinja template language support for Visual Studio Code.
-* [Django](https://marketplace.visualstudio.com/items?itemName=batisteo.vscode-django) | Beautiful syntax and scoped snippets for perfectionists with deadlines.
+[Django](https://marketplace.visualstudio.com/items?itemName=batisteo.vscode-django) | Beautiful syntax and scoped snippets for perfectionists with deadlines.
+[Jinja](https://marketplace.visualstudio.com/items?itemName=wholroyd.jinja) | Jinja template language support for Visual Studio Code.
+[Kite Autocomplete for Python and JavaScript](https://marketplace.visualstudio.com/items?itemName=kiteco.kite) | Code faster, stay in flow. AI-powered coding assistant featuring line-of-code Python and JavaScript autocompletions, advanced function signatures, and instant documentation.   
+[MagicPython](https://marketplace.visualstudio.com/items?itemName=magicstack.MagicPython) | Syntax highlighter for cutting edge Python.   
+[Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) | Linting, Debugging (multi-threaded, remote), Intellisense, code formatting, refactoring, unit tests, snippets, Data Science (with Jupyter), PySpark and more.  
+[Python Test Explorer for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=LittleFoxTeam.vscode-python-test-adapter) | Run your Python tests in the Sidebar of Visual Studio Code
+[Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) | Provides AI-assisted productivity features for Python developers in Visual Studio Code with insights based on understanding your code combined with machine learning..
 
 ## Recommended Extensions
 

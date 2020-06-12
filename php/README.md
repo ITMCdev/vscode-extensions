@@ -10,7 +10,9 @@ Extension | Objective
 [PHP Debug](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug) | Debug support for PHP with XDebug.
 [PHP DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker) | A simple, dependency free PHP specific DocBlocking package.
 [PHP IntelliSense](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-intellisense) | Advanced Autocompletion and Refactoring support for PHP.
+[PHP Namespace Resolver](https://marketplace.visualstudio.com/items?itemName=MehediDracula.php-namespace-resolver) | Import and expand php namespaces
 [PHPUnit Snippets](https://marketplace.visualstudio.com/items?itemName=onecentlin.phpunit-snippets) | PHPUnit snippets support for Visual Studio Code.
+[PHPUnit Test Explorer](https://marketplace.visualstudio.com/items?itemName=recca0120.vscode-phpunit) | PHPUnit Test Explorer
 
 
 ## Recommended Extensions

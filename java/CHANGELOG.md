@@ -1,5 +1,9 @@
 # Change Log
-All notable changes to the "php-extension-pack" extension pack will be documented in this file.
+All notable changes to the `java-extension-pack` extension pack will be documented in this file.
+
+## 0.0.3 - 2020-06-12
+
+- Added `vscjava.vscode-java-test`, `vscjava.vscode-java-pack`
 
 ## 0.0.2 - 2020-05-03
 
