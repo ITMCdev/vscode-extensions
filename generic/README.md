@@ -16,8 +16,14 @@ Extension | Objective
 [Mustache](https://marketplace.visualstudio.com/items?itemName=dawhite.mustache) | Syntax highlighting for mustache
 [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) | Prettier formatter for Visual Studio Code.
 [Run On Save for VS Code](https://marketplace.visualstudio.com/items?itemName=emeraldwalk.runonsave) |  Allows configuring commands that get run whenever a file is saved in vscode.
-<!-- [Settings Sync](https://marketplace.visualstudio.com/items?itemName=shan.code-settings-sync) | Synchronize Settings, Snippets, Themes, File Icons, Launch, Keybindings, Workspaces and Extensions Across Multiple Machines Using GitHub Gist. -->
 [Wakatime](https://marketplace.visualstudio.com/items?itemName=WakaTime.vscode-wakatime) | Metrics, insights, and time tracking automatically generated from your programming activity.
+
+## Proposals
+
+Extension | Objective
+--------- | ---------
+[TabNine](https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode) | All-language autocompleter — TabNine uses machine learning to help you write code faster.
+
 
 ## Persistance
 
