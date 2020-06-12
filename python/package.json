@@ -2,7 +2,7 @@
     "name": "python-extension-pack",
     "displayName": "ITMCDev Python Extension Pack",
     "description": "A collection of extensions for developming with Python inside ITMC",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "publisher": "itmcdev",
     "repository": {
         "type": "git",
@@ -25,6 +25,7 @@
         "itmcdev"
     ],
     "extensionPack": [
+        "hbenl.vscode-test-explorer",
         "kiteco.kite",
         "LittleFoxTeam.vscode-python-test-adapter",
         "ms-python.python",
