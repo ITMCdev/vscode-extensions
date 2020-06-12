@@ -7,6 +7,8 @@ Includes the basic extensions to get started with development in Visual Studio C
 Extension | Objective
 --------- | ---------
 [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments) | Improve your code commenting by annotating with alert, informational, TODOs, and more!
+[Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer) | A customizable extension for colorizing matching bracketsactivity.
+[Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | Spelling checker for source code
 [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) | EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs.
 [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) | GitLens supercharges the Git capabilities built into Visual Studio Code.
 [Jenkinsfile Support](https://marketplace.visualstudio.com/items?itemName=secanis.jenkinsfile-support) | Adds syntax highlighting support for Jenkinsfile's.

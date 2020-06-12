@@ -2,7 +2,7 @@
     "name": "generic-extension-pack",
     "displayName": "ITMCDev Generic Extension Pack",
     "description": "A collection of generic extensions for development inside ITMC",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "publisher": "itmcdev",
     "repository": {
         "type": "git",
@@ -25,6 +25,7 @@
     ],
     "extensionPack": [
         "AlanWalk.markdown-toc",
+        "CoenraadS.bracket-pair-colorizer",
         "dawhite.mustache",
         "aaron-bond.better-comments",
         "eamodio.gitlens",
@@ -32,6 +33,7 @@
         "emeraldwalk.runonsave",
         "esbenp.prettier-vscode",
         "secanis.jenkinsfile-support",
+        "streetsidesoftware.code-spell-checker",
         "yzhang.markdown-all-in-one",
         "WakaTime.vscode-wakatime"
     ]
