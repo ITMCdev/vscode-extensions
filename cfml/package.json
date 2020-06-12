@@ -1,5 +1,5 @@
 {
-    "name": "node-extension-pack",
+    "name": "cfml-extension-pack",
     "displayName": "ITMCDev ColdFusion Extension Pack",
     "description": "A collection of extensions for developming with ColdFusion inside ITMC",
     "version": "0.0.1",
@@ -21,7 +21,7 @@
     ],
     "keywords": [
         "code",
-        "node",
+        "cfml",
         "itmcdev"
     ],
     "extensionPack": [
