@@ -10,7 +10,8 @@ Extension | Objective
 [MySQL](https://marketplace.visualstudio.com/items?itemName=formulahendry.vscode-mysql) | MySQL management tool
 [PostgreSQL](https://marketplace.visualstudio.com/items?itemName=ckolkman.vscode-postgres) | PostgreSQL Management Tool
 [SQLite](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite) | Explore and query SQLite databases.
-[SQLTools MySQL/MariaDB](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools-driver-mysql) | SQLTools SQLite
+[SQLTools](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools) | Database management done right. Connection explorer, query runner, intellisense, bookmarks, query history. Feel like a database hero!
+[SQLTools MySQL/MariaDB](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools-driver-mysql) | SQLTools MySQL/MariaDB
 [SQLTools PostgreSQL/Redshift Driver](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools-driver-pg) | SQLTools PostgreSQL/Redshift Driver
 [SQLTools SQLite](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools-driver-sqlite) | SQLTools SQLite
 
