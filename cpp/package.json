@@ -2,7 +2,7 @@
     "name": "generic-cpp-pack",
     "displayName": "ITMCDev C/C++ Extension Pack",
     "description": "A collection of C/C++ extensions for development inside ITMC",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "itmcdev",
     "repository": {
         "type": "git",
@@ -26,7 +26,6 @@
     "extensionPack": [
         "llvm-vs-code-extensions.vscode-clangd",
         "hars.CppSnippets",
-        "ms-vscode.cpptools",
-        "RichardHe.you-complete-me"
+        "ms-vscode.cpptools"
     ]
 }
