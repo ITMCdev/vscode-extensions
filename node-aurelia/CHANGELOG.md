@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to the `node-aurelia-extension-pack` extension pack will be documented in this file.
 
+## 0.0.7 - 2020-08-26
+
+- Switched `itmcdev.node-babel-extension-pack` with `itmcdev.node-typescript-extension-pack`.
+
 ## 0.0.6 - 2020-05-03
 
 - Removed `itmcdev.generic-extension-pack` from the extension.
