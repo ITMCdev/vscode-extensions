@@ -9,7 +9,8 @@ Extension | Objective
 [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) | C/C++ IntelliSense, debugging, and code browsing.
 [C/C++ Snippets](https://marketplace.visualstudio.com/items?itemName=hars.CppSnippets) | Code snippets for C/C++
 [clangd](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.vscode-clangd) | C and C++ completion, navigation, and insights browsing.
-<!-- [you-complete-me](https://marketplace.visualstudio.com/items?itemName=RichardHe.you-complete-me) | YouCompleteMe for vscode -->
+[Native Debug](https://marketplace.visualstudio.com/items?itemName=webfreak.debug) | GDB, LLDB & Mago-MI Debugger support for VSCode
+[CodeLLDB](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb) | Native debugger based on LLDB.
 
 ## Configuration
 
