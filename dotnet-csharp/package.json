@@ -26,10 +26,12 @@
     "extensionPack": [
         "craigthomas.supersharp",
         "derivitec-ltd.vscode-dotnet-adapter",
-        "hbenl.vscode-test-explorer",
         "jorgeserrano.vscode-csharp-snippets",
         "k--kato.docomment",
         "Leopotam.csharpfixformat",
         "ms-dotnettools.csharp"
+    ],
+    "extensionDependencies": [
+        "hbenl.vscode-test-explorer"
     ]
 }

@@ -1,5 +1,8 @@
 # Change Log
 All notable changes to the `node-extension-pack` extension pack will be documented in this file.
+## 0.0.3 - 2020-30-02
+
+- Set `hbenl.vscode-test-explorer` as a dependency not as a requirement.
 
 ## 0.0.2 - 2020-06-12
 
