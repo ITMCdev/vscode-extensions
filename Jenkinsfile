@@ -79,7 +79,7 @@ pipeline {
           string(credentialsId: 'jk_pipeline_report_to_telegram_token', variable: 'TL_TOKEN'),
           string(credentialsId: 'jk_pipeline_report_to_telegram_chatId', variable: 'TL_CHAT_ID')
         ]) {
-          telegram.sendStatusOK(TL_TOKEN, TL_CHAT_ID)
+          telegram.sendStatusOk(TL_TOKEN, TL_CHAT_ID)
         }
       }
     }
