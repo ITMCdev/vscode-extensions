@@ -12,6 +12,7 @@ Extension | Objective
 [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) | EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs.
 [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) | GitLens supercharges the Git capabilities built into Visual Studio Code.
 [Jenkinsfile Support](https://marketplace.visualstudio.com/items?itemName=secanis.jenkinsfile-support) | Adds syntax highlighting support for Jenkinsfile's.
+[JSON5 syntax](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5) | Adds syntax highlighting of JSON5 files.
 [Markdown Support for VS Code](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) | All you need for Markdown (keyboard shortcuts, table of contents, auto preview and more). Using GitHub Gist.
 [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) | Markdown linting and style checking for Visual Studio Code.
 [Markdown TOC](https://marketplace.visualstudio.com/items?itemName=AlanWalk.markdown-toc) | Markdown TOC(Table Of Contents) Plugin for Visual Studio Code.
