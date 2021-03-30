@@ -62,7 +62,7 @@ pipeline {
         string(credentialsId: 'jk_pipeline_report_to_telegram_token', variable: 'TL_TOKEN'),
         string(credentialsId: 'jk_pipeline_report_to_telegram_chatId', variable: 'TL_CHAT_ID')
       ]) {
-        TelegramSendStatusFail(TL_TOKEN, TL_CHAT_ID)
+        telegram.sendStatusFail(TL_TOKEN, TL_CHAT_ID)
       }
     }
     success {
@@ -79,7 +79,7 @@ pipeline {
           string(credentialsId: 'jk_pipeline_report_to_telegram_token', variable: 'TL_TOKEN'),
           string(credentialsId: 'jk_pipeline_report_to_telegram_chatId', variable: 'TL_CHAT_ID')
         ]) {
-          TelegramSendStatusOK(TL_TOKEN, TL_CHAT_ID)
+          telegram.sendStatusOK(TL_TOKEN, TL_CHAT_ID)
         }
       }
     }
