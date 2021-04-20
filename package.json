@@ -1,0 +1,22 @@
+{
+  "name": "vscode-extensions",
+  "version": "1.0.0",
+  "description": "VsCode Extension packs as used by ITMC Teams",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ITMCdev/vscode-extensions.git"
+  },
+  "author": "Dragos Cirjan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ITMCdev/vscode-extensions/issues"
+  },
+  "homepage": "https://github.com/ITMCdev/vscode-extensions#readme",
+  "devDependencies": {
+    "axios": "0.21.1"
+  }
+}

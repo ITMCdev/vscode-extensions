@@ -1,33 +1,33 @@
 {
-    "name": "cli-extension-pack",
-    "displayName": "ITMCDev CLI Scripting Extension Pack",
-    "description": "A collection of CLI scripting extensions for development inside ITMC",
-    "version": "1.0.1",
-    "publisher": "itmcdev",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/itmcdev/vscode-extensions"
-    },
-    "engines": {
-        "vscode": "^1.26.0"
-    },
-    "icon": "icon.png",
-    "galleryBanner": {
-        "color": "#f66f62",
-        "theme": "dark"
-    },
-    "categories": [
-        "Extension Packs"
-    ],
-    "keywords": [
-        "code",
-        "itmcdev"
-    ],
-    "extensionPack": [
-        "mads-hartmann.bash-ide-vscode",
-        "ms-vscode.PowerShell",
-        "rogalmic.bash-debug",
-        "rogalmic.zsh-debug",
-        "shakram02.bash-beautify"
-    ]
+  "name": "cli-extension-pack",
+  "displayName": "ITMCDev CLI Scripting Extension Pack",
+  "description": "A collection of CLI scripting extensions for development inside ITMC",
+  "version": "1.0.1",
+  "publisher": "itmcdev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itmcdev/vscode-extensions"
+  },
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#f66f62",
+    "theme": "dark"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "keywords": [
+    "code",
+    "itmcdev"
+  ],
+  "extensionPack": [
+    "mads-hartmann.bash-ide-vscode",
+    "ms-vscode.PowerShell",
+    "rogalmic.bash-debug",
+    "rogalmic.zsh-debug",
+    "shakram02.bash-beautify"
+  ]
 }

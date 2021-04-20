@@ -1,31 +1,31 @@
 {
-    "name": "rust-extension-pack",
-    "displayName": "ITMCDev Rust Extension Pack",
-    "description": "A collection of extensions for developming with Rust inside ITMC",
-    "version": "0.0.1",
-    "publisher": "itmcdev",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/itmcdev/vscode-extensions"
-    },
-    "engines": {
-        "vscode": "^1.26.0"
-    },
-    "icon": "icon.png",
-    "galleryBanner": {
-        "color": "#f66f62",
-        "theme": "dark"
-    },
-    "categories": [
-        "Extension Packs"
-    ],
-    "keywords": [
-        "code",
-        "rust",
-        "itmcdev"
-    ],
-    "extensionPack": [
-        "rust-lang.rust",
-        "swellaby.vscode-rust-test-adapter"
-    ]
+  "name": "rust-extension-pack",
+  "displayName": "ITMCDev Rust Extension Pack",
+  "description": "A collection of extensions for developming with Rust inside ITMC",
+  "version": "0.0.1",
+  "publisher": "itmcdev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itmcdev/vscode-extensions"
+  },
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#f66f62",
+    "theme": "dark"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "keywords": [
+    "code",
+    "rust",
+    "itmcdev"
+  ],
+  "extensionPack": [
+    "rust-lang.rust",
+    "swellaby.vscode-rust-test-adapter"
+  ]
 }

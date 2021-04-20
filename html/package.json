@@ -1,39 +1,43 @@
 {
-    "name": "html-extension-pack",
-    "displayName": "ITMCDev HTML/CSS Extension Pack",
-    "description": "A collection of extensions for developming with HTML/CSS(Less/Sass) inside ITMC",
-    "version": "0.0.7",
-    "publisher": "itmcdev",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/itmcdev/vscode-extensions"
-    },
-    "engines": {
-        "vscode": "^1.26.0"
-    },
-    "icon": "icon.png",
-    "galleryBanner": {
-        "color": "#f66f62",
-        "theme": "dark"
-    },
-    "categories": [
-        "Extension Packs"
-    ],
-    "keywords": [
-        "code",
-        "node",
-        "itmcdev"
-    ],
-    "extensionPack": [
-        "akamud.vscode-caniuse",
-        "formulahendry.auto-close-tag",
-        "formulahendry.auto-rename-tag",
-        "glen-84.sass-lint",
-        "michelemelluso.code-beautifier",
-        "mrmlnc.vscode-csscomb",
-        "mrmlnc.vscode-less",
-        "mrmlnc.vscode-scss",
-        "robinbentley.sass-indented",
-        "Zignd.html-css-class-completion"
-    ]
+  "name": "html-extension-pack",
+  "displayName": "ITMCDev HTML/CSS Extension Pack",
+  "description": "A collection of extensions for developming with HTML/CSS(Less/Sass) inside ITMC",
+  "version": "0.0.8",
+  "publisher": "itmcdev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itmcdev/vscode-extensions"
+  },
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#f66f62",
+    "theme": "dark"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "keywords": [
+    "code",
+    "node",
+    "itmcdev"
+  ],
+  "extensionPack": [
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "michelemelluso.code-beautifier",
+    "Zignd.html-css-class-completion",
+    "robinbentley.sass-indented",
+    "akamud.vscode-caniuse",
+    "mrmlnc.vscode-csscomb",
+    "mrmlnc.vscode-less",
+    "glen-84.sass-lint",
+    "mrmlnc.vscode-scss"
+  ],
+  "extensionDependencies": [
+    "itmcdev.generic-extension-pack",
+    "SonarSource.sonarlint-vscode"
+  ]
 }

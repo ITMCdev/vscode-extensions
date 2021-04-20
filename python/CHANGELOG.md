@@ -1,5 +1,10 @@
 # Change Log
+
 All notable changes to the "node-extension-pack" extension pack will be documented in this file.
+
+## 0.0.9 - 2020-30-02
+
+- Added `njpwerner.autodocstring`, `njqdev.vscode-python-typehint`, `ms-pyright.pyright`.
 
 ## 0.0.9 - 2020-30-02
 
@@ -22,4 +27,5 @@ All notable changes to the "node-extension-pack" extension pack will be document
 - Add `itmcdev.generic-extension-pack` as part of the extension.
 
 ## 0.0.3 - 2018-08-29
+
 - Initial release

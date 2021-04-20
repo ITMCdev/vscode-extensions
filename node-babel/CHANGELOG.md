@@ -1,5 +1,11 @@
 # Change Log
+
 All notable changes to the "node-babel-extension-pack" extension pack will be documented in this file.
+
+## 0.0.9 - 2021-04-21
+
+- Moved `dbaeumer.vscode-eslint` to `node-extension-pack`, `mike-co.import-sorter` to `node-typescript-extension-pack`
+- Added `henry-li.vscode-import-formatter`, `hjb2012.vscode-es6-string-html`
 
 ## 0.0.8 - 2020-06-12
 
@@ -20,4 +26,5 @@ All notable changes to the "node-babel-extension-pack" extension pack will be do
 - Removed `itmcdev` dependencies. Those should be installed independently from now.
 
 ## 0.0.1 - 2018-08-21
+
 - Initial release

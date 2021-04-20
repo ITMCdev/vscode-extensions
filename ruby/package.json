@@ -1,35 +1,35 @@
 {
-    "name": "ruby-extension-pack",
-    "displayName": "ITMCDev Ruby Extension Pack",
-    "description": "A collection of extensions for developming with Ruby inside ITMC",
-    "version": "0.0.7",
-    "publisher": "itmcdev",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/itmcdev/vscode-extensions"
-    },
-    "engines": {
-        "vscode": "^1.26.0"
-    },
-    "icon": "icon.png",
-    "galleryBanner": {
-        "color": "#f66f62",
-        "theme": "dark"
-    },
-    "categories": [
-        "Extension Packs"
-    ],
-    "keywords": [
-        "code",
-        "node",
-        "itmcdev"
-    ],
-    "extensionPack": [
-        "bung87.rails",
-        "castwide.solargraph",
-        "connorshea.vscode-ruby-test-adapter",
-        "jpogran.puppet-vscode",
-        "marcostazi.vs-code-vagrantfile",
-        "rebornix.ruby"
-    ]
+  "name": "ruby-extension-pack",
+  "displayName": "ITMCDev Ruby Extension Pack",
+  "description": "A collection of extensions for developming with Ruby inside ITMC",
+  "version": "0.0.7",
+  "publisher": "itmcdev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itmcdev/vscode-extensions"
+  },
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#f66f62",
+    "theme": "dark"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "keywords": [
+    "code",
+    "node",
+    "itmcdev"
+  ],
+  "extensionPack": [
+    "bung87.rails",
+    "castwide.solargraph",
+    "connorshea.vscode-ruby-test-adapter",
+    "jpogran.puppet-vscode",
+    "marcostazi.vs-code-vagrantfile",
+    "rebornix.ruby"
+  ]
 }

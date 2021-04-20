@@ -1,39 +1,39 @@
 {
-    "name": "node-test-extension-pack",
-    "displayName": "ITMCDev NodeJS Testing Extension Pack",
-    "description": "A collection of extensions for testing with NodeJS inside ITMC",
-    "version": "0.0.3",
-    "publisher": "itmcdev",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/itmcdev/vscode-extensions"
-    },
-    "engines": {
-        "vscode": "^1.26.0"
-    },
-    "icon": "icon.png",
-    "galleryBanner": {
-        "color": "#f66f62",
-        "theme": "dark"
-    },
-    "categories": [
-        "Extension Packs"
-    ],
-    "keywords": [
-        "code",
-        "node",
-        "itmcdev"
-    ],
-    "extensionPack": [
-        "gwenio.vscode-ava-test-adapter",
-        "hbenl.vscode-jasmine-test-adapter",
-        "hbenl.vscode-mocha-test-adapter",
-        "kavod-io.vscode-jest-test-adapter",
-        "orta.vscode-jest",
-        "raagh.angular-karma-test-explorer",
-        "Testy.vscode-testyts-test-adapter"
-    ],
-    "extensionDependencies": [
-        "hbenl.vscode-test-explorer"
-    ]
+  "name": "node-test-extension-pack",
+  "displayName": "ITMCDev NodeJS Testing Extension Pack",
+  "description": "A collection of extensions for testing with NodeJS inside ITMC",
+  "version": "0.0.3",
+  "publisher": "itmcdev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itmcdev/vscode-extensions"
+  },
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#f66f62",
+    "theme": "dark"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "keywords": [
+    "code",
+    "node",
+    "itmcdev"
+  ],
+  "extensionPack": [
+    "gwenio.vscode-ava-test-adapter",
+    "hbenl.vscode-jasmine-test-adapter",
+    "hbenl.vscode-mocha-test-adapter",
+    "kavod-io.vscode-jest-test-adapter",
+    "orta.vscode-jest",
+    "raagh.angular-karma-test-explorer",
+    "Testy.vscode-testyts-test-adapter"
+  ],
+  "extensionDependencies": [
+    "hbenl.vscode-test-explorer"
+  ]
 }

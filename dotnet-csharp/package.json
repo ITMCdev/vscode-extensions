@@ -1,37 +1,37 @@
 {
-    "name": "dotnet-csharp-extension-pack",
-    "displayName": "ITMCDev .NET C# Extension Pack",
-    "description": "A collection of generic extensions for .NET C# development inside ITMC",
-    "version": "0.0.3",
-    "publisher": "itmcdev",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/itmcdev/vscode-extensions"
-    },
-    "engines": {
-        "vscode": "^1.26.0"
-    },
-    "icon": "icon.png",
-    "galleryBanner": {
-        "color": "#f66f62",
-        "theme": "dark"
-    },
-    "categories": [
-        "Extension Packs"
-    ],
-    "keywords": [
-        "code",
-        "itmcdev"
-    ],
-    "extensionPack": [
-        "craigthomas.supersharp",
-        "derivitec-ltd.vscode-dotnet-adapter",
-        "jorgeserrano.vscode-csharp-snippets",
-        "k--kato.docomment",
-        "Leopotam.csharpfixformat",
-        "ms-dotnettools.csharp"
-    ],
-    "extensionDependencies": [
-        "hbenl.vscode-test-explorer"
-    ]
+  "name": "dotnet-csharp-extension-pack",
+  "displayName": "ITMCDev .NET C# Extension Pack",
+  "description": "A collection of generic extensions for .NET C# development inside ITMC",
+  "version": "0.0.3",
+  "publisher": "itmcdev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itmcdev/vscode-extensions"
+  },
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#f66f62",
+    "theme": "dark"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "keywords": [
+    "code",
+    "itmcdev"
+  ],
+  "extensionPack": [
+    "craigthomas.supersharp",
+    "derivitec-ltd.vscode-dotnet-adapter",
+    "jorgeserrano.vscode-csharp-snippets",
+    "k--kato.docomment",
+    "Leopotam.csharpfixformat",
+    "ms-dotnettools.csharp"
+  ],
+  "extensionDependencies": [
+    "hbenl.vscode-test-explorer"
+  ]
 }

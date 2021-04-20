@@ -1,37 +1,37 @@
 {
-    "name": "node-aurelia-extension-pack",
-    "displayName": "ITMCDev Aurelia Framework Extension Pack",
-    "description": "A collection of extensions for developing with Aurelia Framework inside ITMC",
-    "version": "0.0.7",
-    "publisher": "itmcdev",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/itmcdev/vscode-extensions"
-    },
-    "engines": {
-        "vscode": "^1.26.0"
-    },
-    "icon": "icon.png",
-    "galleryBanner": {
-        "color": "#f66f62",
-        "theme": "dark"
-    },
-    "categories": [
-        "Extension Packs"
-    ],
-    "keywords": [
-        "aurelia",
-        "code",
-        "node",
-        "babel",
-        "typescript",
-        "itmcdev"
-    ],
-    "extensionPack": [
-        "aureliaeffect.aurelia",
-        "behzad88.aurelia",
-        "itmcdev.html-extension-pack",
-        "itmcdev.node-extension-pack",
-        "itmcdev.node-typescript-extension-pack"
-    ]
+  "name": "node-aurelia-extension-pack",
+  "displayName": "ITMCDev Aurelia Framework Extension Pack",
+  "description": "A collection of extensions for developing with Aurelia Framework inside ITMC",
+  "version": "0.0.7",
+  "publisher": "itmcdev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itmcdev/vscode-extensions"
+  },
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#f66f62",
+    "theme": "dark"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "keywords": [
+    "aurelia",
+    "code",
+    "node",
+    "babel",
+    "typescript",
+    "itmcdev"
+  ],
+  "extensionPack": [
+    "aureliaeffect.aurelia",
+    "behzad88.aurelia",
+    "itmcdev.html-extension-pack",
+    "itmcdev.node-extension-pack",
+    "itmcdev.node-typescript-extension-pack"
+  ]
 }

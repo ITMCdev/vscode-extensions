@@ -9,7 +9,7 @@
         "url": "https://github.com/itmcdev/vscode-extensions"
     },
     "engines": {
-        "vscode": "^1.26.0"
+        "vscode": "^1.55.0"
     },
     "icon": "icon.png",
     "galleryBanner": {

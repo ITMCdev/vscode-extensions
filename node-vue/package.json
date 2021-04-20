@@ -1,38 +1,38 @@
 {
-    "name": "node-vue-extension-pack",
-    "displayName": "ITMCDev VueJs Extension Pack",
-    "description": "A collection of extensions for developming with VueJs inside ITMC",
-    "version": "0.0.6",
-    "publisher": "itmcdev",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/itmcdev/vscode-extensions"
-    },
-    "engines": {
-        "vscode": "^1.26.0"
-    },
-    "icon": "icon.png",
-    "galleryBanner": {
-        "color": "#f66f62",
-        "theme": "dark"
-    },
-    "categories": [
-        "Extension Packs"
-    ],
-    "keywords": [
-        "code",
-        "node",
-        "babel",
-        "itmcdev"
-    ],
-    "extensionPack": [
-        "dariofuzinato.vue-peek",
-        "ducksoupdev.vue2",
-        "hollowtree.vue-snippets",
-        "octref.vetur",
-        "liuji-jim.vue",
-        "itmcdev.html-extension-pack",
-        "itmcdev.node-extension-pack",
-        "itmcdev.node-babel-extension-pack"
-    ]
+  "name": "node-vue-extension-pack",
+  "displayName": "ITMCDev VueJs Extension Pack",
+  "description": "A collection of extensions for developming with VueJs inside ITMC",
+  "version": "0.0.6",
+  "publisher": "itmcdev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itmcdev/vscode-extensions"
+  },
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#f66f62",
+    "theme": "dark"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "keywords": [
+    "code",
+    "node",
+    "babel",
+    "itmcdev"
+  ],
+  "extensionPack": [
+    "dariofuzinato.vue-peek",
+    "ducksoupdev.vue2",
+    "hollowtree.vue-snippets",
+    "octref.vetur",
+    "liuji-jim.vue",
+    "itmcdev.html-extension-pack",
+    "itmcdev.node-extension-pack",
+    "itmcdev.node-babel-extension-pack"
+  ]
 }

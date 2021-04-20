@@ -1,37 +1,45 @@
 {
-    "name": "node-extension-pack",
-    "displayName": "ITMCDev NodeJS Extension Pack",
-    "description": "A collection of extensions for developming with NodeJS inside ITMC",
-    "version": "0.0.9",
-    "publisher": "itmcdev",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/itmcdev/vscode-extensions"
-    },
-    "engines": {
-        "vscode": "^1.26.0"
-    },
-    "icon": "icon.png",
-    "galleryBanner": {
-        "color": "#f66f62",
-        "theme": "dark"
-    },
-    "categories": [
-        "Extension Packs"
-    ],
-    "keywords": [
-        "code",
-        "node",
-        "itmcdev"
-    ],
-    "extensionPack": [
-        "christian-kohler.path-intellisense",
-        "eg2.vscode-npm-script",
-        "kohler.npm-intellisense",
-        "leizongmin.node-module-intellisense",
-        "steoates.autoimport",
-        "pflannery.vscode-versionlens",
-        "zxh404.vscode-proto3",
-        "itmcdev.html-extension-pack"
-    ]
+  "name": "node-extension-pack",
+  "displayName": "ITMCDev Node Extension Pack",
+  "description": "A collection of extensions for developming with NodeJS inside ITMC",
+  "version": "0.1.0",
+  "publisher": "itmcdev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itmcdev/vscode-extensions"
+  },
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#f66f62",
+    "theme": "dark"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "keywords": [
+    "code",
+    "node",
+    "itmcdev"
+  ],
+  "extensionPack": [
+    "ms-vscode.node-debug2",
+    "leizongmin.node-module-intellisense",
+    "chris-noring.node-snippets",
+    "kohler.npm-intellisense",
+    "christian-kohler.npm-intellisense",
+    "christian-kohler.path-intellisense",
+    "bengreenier.vscode-node-readme",
+    "pflannery.vscode-versionlens"
+  ],
+  "extensionDependencies": [
+    "itmcdev.generic-extension-pack",
+    "itmcdev.html-extension-pack",
+    "esbenp.prettier-vscode",
+    "SonarSource.sonarlint-vscode",
+    "dbaeumer.vscode-eslint",
+    "VisualStudioExptTeam.vscodeintellicode"
+  ]
 }

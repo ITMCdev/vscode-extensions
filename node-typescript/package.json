@@ -1,34 +1,41 @@
 {
-    "name": "node-typescript-extension-pack",
-    "displayName": "ITMCDev TypeScript Extension Pack",
-    "description": "A collection of extensions for developming with NodeJS & TypeScript inside ITMC",
-    "version": "0.0.2",
-    "publisher": "itmcdev",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/itmcdev/vscode-extensions"
-    },
-    "engines": {
-        "vscode": "^1.26.0"
-    },
-    "icon": "icon.png",
-    "galleryBanner": {
-        "color": "#f66f62",
-        "theme": "dark"
-    },
-    "categories": [
-        "Extension Packs"
-    ],
-    "keywords": [
-        "code",
-        "node",
-        "typescript",
-        "itmcdev"
-    ],
-    "extensionPack": [
-        "aljazsim.tsco",
-        "ms-vscode.typescript-javascript-grammar",
-        "semagarcia.vscode-ts-decorators",
-        "itmcdev.node-babel-extension-pack"
-    ]
+  "name": "node-typescript-extension-pack",
+  "displayName": "ITMCDev TypeScript Extension Pack",
+  "description": "A collection of extensions for developming with NodeJS & TypeScript inside ITMC",
+  "version": "0.0.3",
+  "publisher": "itmcdev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itmcdev/vscode-extensions"
+  },
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#f66f62",
+    "theme": "dark"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "keywords": [
+    "code",
+    "node",
+    "typescript",
+    "itmcdev"
+  ],
+  "extensionPack": [
+    "aljazsim.tsco",
+    "mike-co.import-sorter",
+    "pmneo.tsimporter",
+    "ms-vscode.typescript-javascript-grammar",
+    "semagarcia.vscode-ts-decorators",
+    "ms-vscode.vscode-typescript-next"
+  ],
+  "extensionDependencies": [
+    "itmcdev.generic-extension-pack",
+    "itmcdev.html-extension-pack",
+    "itmcdev.node-extension-pack"
+  ]
 }

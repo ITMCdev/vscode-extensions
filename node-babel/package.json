@@ -1,39 +1,42 @@
 {
-    "name": "node-babel-extension-pack",
-    "displayName": "ITMCDev Babel Extension Pack",
-    "description": "A collection of extensions for developming with NodeJS & Babel inside ITMC",
-    "version": "0.0.8",
-    "publisher": "itmcdev",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/itmcdev/vscode-extensions"
-    },
-    "engines": {
-        "vscode": "^1.26.0"
-    },
-    "icon": "icon.png",
-    "galleryBanner": {
-        "color": "#f66f62",
-        "theme": "dark"
-    },
-    "categories": [
-        "Extension Packs"
-    ],
-    "keywords": [
-        "code",
-        "node",
-        "babel",
-        "itmcdev"
-    ],
-    "extensionPack": [
-        "cmstead.jsrefactor",
-        "dbaeumer.vscode-eslint",
-        "jeremyrajan.webpack",
-        "kiteco.kite",
-        "mike-co.import-sorter",
-        "mgmcdermott.vscode-language-babel",
-        "tunnckocore.modern-javascript-snippets",
-        "itmcdev.html-extension-pack",
-        "itmcdev.node-extension-pack"
-    ]
+  "name": "node-babel-extension-pack",
+  "displayName": "ITMCDev Babel Extension Pack",
+  "description": "A collection of extensions for developming with NodeJS & Babel inside ITMC",
+  "version": "0.0.9",
+  "publisher": "itmcdev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itmcdev/vscode-extensions"
+  },
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#f66f62",
+    "theme": "dark"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "keywords": [
+    "code",
+    "node",
+    "babel",
+    "itmcdev"
+  ],
+  "extensionPack": [
+    "henry-li.vscode-import-formatter",
+    "cmstead.jsrefactor",
+    "kiteco.kite",
+    "tunnckocore.modern-javascript-snippets",
+    "hjb2012.vscode-es6-string-html",
+    "mgmcdermott.vscode-language-babel",
+    "jeremyrajan.webpack"
+  ],
+  "extensionDependencies": [
+    "itmcdev.generic-extension-pack",
+    "itmcdev.html-extension-pack",
+    "itmcdev.node-extension-pack"
+  ]
 }

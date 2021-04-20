@@ -1,5 +1,10 @@
 # Change Log
+
 All notable changes to the "html-extension-pack" extension pack will be documented in this file.
+
+## 0.0.8 - 2021-04-21
+
+- Added `itmcdev.generic-extension-pack`, `SonarSource.sonarlint-vscode` from the extension.
 
 ## 0.0.7 - 2020-05-03
 
@@ -14,4 +19,5 @@ All notable changes to the "html-extension-pack" extension pack will be document
 - Removed `itmcdev` dependencies. Those should be installed independently from now.
 
 ## 0.0.1 - 2018-08-21
+
 - Initial release

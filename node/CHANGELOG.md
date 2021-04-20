@@ -1,5 +1,12 @@
 # Change Log
+
 All notable changes to the `node-extension-pack` extension pack will be documented in this file.
+
+## 0.1.0 - 2021-04-20
+
+- Removed `steoates.autoimport` (to be moved to `node-typescript-extension-pack`), `eg2.vscode-npm-script`, `vscode-proto3`.
+- Added `ms-vscode.node-debug2`, `chris-noring.node-snippets`, `bengreenier.vscode-node-readme` as extension pack
+- Added `itmcdev.generic-extension-pack`, `itmcdev.html-extension-pack`, `esbenp.prettier-vscode`, `dbaeumer.vscode-eslint`, `VisualStudioExptTeam.vscodeintellicode`, `SonarSource.sonarlint-vscode` as extension dependencies
 
 ## 0.0.9 - 2020-06-12
 
@@ -20,4 +27,5 @@ All notable changes to the `node-extension-pack` extension pack will be document
 - Removed `itmcdev` dependencies. Those should be installed independently from now.
 
 ## 0.0.1 - 2018-08-21
+
 - Initial release

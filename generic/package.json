@@ -1,40 +1,47 @@
 {
-    "name": "generic-extension-pack",
-    "displayName": "ITMCDev Generic Extension Pack",
-    "description": "A collection of generic extensions for development inside ITMC",
-    "version": "0.0.9",
-    "publisher": "itmcdev",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/itmcdev/vscode-extensions"
-    },
-    "engines": {
-        "vscode": "^1.26.0"
-    },
-    "icon": "icon.png",
-    "galleryBanner": {
-        "color": "#f66f62",
-        "theme": "dark"
-    },
-    "categories": [
-        "Extension Packs"
-    ],
-    "keywords": [
-        "code",
-        "itmcdev"
-    ],
-    "extensionPack": [
-        "AlanWalk.markdown-toc",
-        "CoenraadS.bracket-pair-colorizer",
-        "dawhite.mustache",
-        "aaron-bond.better-comments",
-        "eamodio.gitlens",
-        "EditorConfig.EditorConfig",
-        "emeraldwalk.runonsave",
-        "esbenp.prettier-vscode",
-        "secanis.jenkinsfile-support",
-        "streetsidesoftware.code-spell-checker",
-        "yzhang.markdown-all-in-one",
-        "WakaTime.vscode-wakatime"
-    ]
+  "name": "generic-extension-pack",
+  "displayName": "ITMCDev Generic Extension Pack",
+  "description": "A collection of generic extensions for development inside ITMC",
+  "version": "0.1.0",
+  "publisher": "itmcdev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itmcdev/vscode-extensions"
+  },
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#f66f62",
+    "theme": "dark"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "keywords": [
+    "code",
+    "itmcdev"
+  ],
+  "extensionPack": [
+    "aaron-bond.better-comments",
+    "CoenraadS.bracket-pair-colorizer",
+    "streetsidesoftware.code-spell-checker",
+    "EditorConfig.EditorConfig",
+    "nhoizey.gremlins",
+    "yzhang.markdown-all-in-one",
+    "AlanWalk.markdown-toc",
+    "dawhite.mustache",
+    "eamodio.gitlens",
+    "emeraldwalk.runonsave",
+    "mrmlnc.vscode-json5",
+    "redhat.vscode-yaml",
+    "redhat.vscode-xml"
+  ],
+  "extensionDependencies": [
+    "secanis.jenkinsfile-support",
+    "TabNine.tabnine-vscode",
+    "zxh404.vscode-proto3",
+    "WakaTime.vscode-wakatime"
+  ]
 }

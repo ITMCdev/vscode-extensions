@@ -1,38 +1,44 @@
 {
-    "name": "python-extension-pack",
-    "displayName": "ITMCDev Python Extension Pack",
-    "description": "A collection of extensions for developming with Python inside ITMC",
-    "version": "0.0.9",
-    "publisher": "itmcdev",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/itmcdev/vscode-extensions"
-    },
-    "engines": {
-        "vscode": "^1.26.0"
-    },
-    "icon": "icon.png",
-    "galleryBanner": {
-        "color": "#f66f62",
-        "theme": "dark"
-    },
-    "categories": [
-        "Extension Packs"
-    ],
-    "keywords": [
-        "code",
-        "python",
-        "itmcdev"
-    ],
-    "extensionPack": [
-        "kiteco.kite",
-        "LittleFoxTeam.vscode-python-test-adapter",
-        "ms-python.python",
-        "magicstack.MagicPython",
-        "wholroyd.jinja",
-        "batisteo.vscode-django"
-    ],
-    "extensionDependencies": [
-        "hbenl.vscode-test-explorer"
-    ]
+  "name": "python-extension-pack",
+  "displayName": "ITMCDev Python Extension Pack",
+  "description": "A collection of extensions for developming with Python inside ITMC",
+  "version": "0.1.0",
+  "publisher": "itmcdev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itmcdev/vscode-extensions"
+  },
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#f66f62",
+    "theme": "dark"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "keywords": [
+    "code",
+    "python",
+    "itmcdev"
+  ],
+  "extensionPack": [
+    "njpwerner.autodocstring",
+    "wholroyd.jinja",
+    "magicstack.MagicPython",
+    "ms-pyright.pyright",
+    "ms-python.python",
+    "batisteo.vscode-django",
+    "LittleFoxTeam.vscode-python-test-adapter",
+    "njqdev.vscode-python-typehint"
+  ],
+  "extensionDependencies": [
+    "itmcdev.generic-extension-pack",
+    "kiteco.kite",
+    "SonarSource.sonarlint-vscode",
+    "hbenl.vscode-test-explorer",
+    "VisualStudioExptTeam.vscodeintellicode"
+  ]
 }

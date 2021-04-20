@@ -1,36 +1,39 @@
 {
-    "name": "node-react-extension-pack",
-    "displayName": "ITMCDev React Extension Pack",
-    "description": "A collection of extensions for developming with React inside ITMC",
-    "version": "0.0.7",
-    "publisher": "itmcdev",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/itmcdev/vscode-extensions"
-    },
-    "engines": {
-        "vscode": "^1.26.0"
-    },
-    "icon": "icon.png",
-    "galleryBanner": {
-        "color": "#f66f62",
-        "theme": "dark"
-    },
-    "categories": [
-        "Extension Packs"
-    ],
-    "keywords": [
-        "code",
-        "node",
-        "babel",
-        "itmcdev"
-    ],
-    "extensionPack": [
-        "planbcoding.vscode-react-refactor",
-        "vsmobile.vscode-react-native",
-        "walter-ribeiro.full-react-snippets",
-        "itmcdev.html-extension-pack",
-        "itmcdev.node-extension-pack",
-        "itmcdev.node-babel-extension-pack"
-    ]
+  "name": "node-react-extension-pack",
+  "displayName": "ITMCDev React Extension Pack",
+  "description": "A collection of extensions for developming with React inside ITMC",
+  "version": "0.0.7",
+  "publisher": "itmcdev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itmcdev/vscode-extensions"
+  },
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#f66f62",
+    "theme": "dark"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "keywords": [
+    "code",
+    "node",
+    "babel",
+    "itmcdev"
+  ],
+  "extensionPack": [
+    "planbcoding.vscode-react-refactor",
+    "vsmobile.vscode-react-native",
+    "walter-ribeiro.full-react-snippets",
+    "msjsdiag.vscode-react-native"
+  ],
+  "extensionDependencies": [
+    "itmcdev.node-extension-pack",
+    "itmcdev.node-html-pack",
+    "itmcdev.node-node-pack"
+  ]
 }
