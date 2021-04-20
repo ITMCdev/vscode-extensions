@@ -4,7 +4,8 @@
   "description": "VsCode Extension packs as used by ITMC Teams",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/ITMCdev/vscode-extensions#readme",
   "devDependencies": {
-    "axios": "0.21.1"
+    "axios": "0.21.1",
+    "husky": "^6.0.0"
   }
 }

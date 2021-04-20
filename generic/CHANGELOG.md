@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to the "generic-extension-pack" extension pack will be documented in this file.
 
+## 0.1.0 - 2021-03-31
+
+- Add `mrmlnc.vscode-json5`.
+
 ## 0.0.9 - 2019-06-12
 
 - Add `streetsidesoftware.code-spell-checker`, `CoenraadS.bracket-pair-colorizer`.
