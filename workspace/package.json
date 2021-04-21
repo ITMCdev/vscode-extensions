@@ -2,7 +2,7 @@
   "name": "workspace-extension-pack",
   "displayName": "ITMCDev Workspace Visual/Feeiling Extension Pack",
   "description": "A collection of extensions for development inside ITMC",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
@@ -25,11 +25,10 @@
   ],
   "extensionPack": [
     "ms-vscode.atom-keybindings",
+    "file-icons.file-icons",
+    "k--kato.intellij-idea-keybindings",
     "PKief.material-icon-theme",
-    "Equinusocio.vsc-material-theme",
-    "file-icons.file-icons"
+    "Equinusocio.vsc-material-theme"
   ],
-  "extensionDependencies": [
-    "k--kato.intellij-idea-keybindings"
-  ]
+  "extensionDependencies": []
 }
