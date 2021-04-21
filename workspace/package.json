@@ -2,7 +2,7 @@
   "name": "workspace-extension-pack",
   "displayName": "ITMCDev Workspace Visual/Feeiling Extension Pack",
   "description": "A collection of extensions for development inside ITMC",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
