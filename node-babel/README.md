@@ -14,7 +14,7 @@ Includes the basic extensions to get started with [NodeJS](http://nodejs.com/) &
 * [hjb2012](https://marketplace.visualstudio.com/publishers/hjb2012) [ES6 String HTML](https://marketplace.visualstudio.com/items?itemName=hjb2012.vscode-es6-string-html) :: Highlight html in es6 multiline strings
 * [tunnckocore](https://marketplace.visualstudio.com/publishers/tunnckocore) [Modern (ES6+) Javascript Snippets](https://marketplace.visualstudio.com/items?itemName=tunnckocore.modern-javascript-snippets) :: Atom & VSCode - Modern javascript snippets for better productivity with support for JavaScript, Babel, TypeScript, JSX and semicolon-less code.
 * [itmcdev](https://marketplace.visualstudio.com/publishers/itmcdev) [ITMCDev HTML/CSS Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.html-extension-pack) :: A collection of extensions for developming with HTML/CSS(Less/Sass) inside ITMC
-* [itmcdev](https://marketplace.visualstudio.com/publishers/itmcdev) [ITMCDev NodeJS Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.node-extension-pack) :: A collection of extensions for developming with NodeJS inside ITMC
+* [itmcdev](https://marketplace.visualstudio.com/publishers/itmcdev) [ITMCDev Node Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.node-extension-pack) :: A collection of extensions for developming with NodeJS inside ITMC
 <!-- -Extensions -->
 
 ## Contact
