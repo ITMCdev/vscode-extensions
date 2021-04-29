@@ -1,0 +1,40 @@
+{
+  "name": "node-coffee-extension-pack",
+  "displayName": "ITMCDev Babel Extension Pack",
+  "description": "A collection of extensions for developing with NodeJS & CoffeeScript",
+  "version": "0.0.1",
+  "publisher": "itmcdev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itmcdev/vscode-extensions"
+  },
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#f66f62",
+    "theme": "dark"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "keywords": [
+    "code",
+    "node",
+    "babel",
+    "itmcdev"
+  ],
+  "extensionPack": [
+    "lkytal.coffeelinter",
+    "kiteco.kite",
+    "hjb2012.vscode-es6-string-html",
+    "diniremix.vscode-coffeescript-snippets",
+    "jeremyrajan.webpack"
+  ],
+  "extensionDependencies": [
+    "itmcdev.generic-extension-pack",
+    "itmcdev.html-extension-pack",
+    "itmcdev.node-extension-pack"
+  ]
+}
