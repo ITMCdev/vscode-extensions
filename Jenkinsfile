@@ -16,10 +16,8 @@ pipeline {
         echo "NVM lies in ${NVM_DIR}"
 
         script {
-          telegramSend(message: 'Hello World', chatId: 608276470)
+          nvm.runSh 'node --version; npm --version;', env.NODE_VERSION
         }
-
-        nvm.runSh 'node --version; npm --version;', env.NODE_VERSION
       }
     }
 
