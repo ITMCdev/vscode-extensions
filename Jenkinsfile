@@ -13,10 +13,11 @@ pipeline {
   stages {
     stage('Info') {
       steps {
-        echo "NVM lies in ${NVM_DIR}"
-
         script {
-          nvm.runSh 'node --version; npm --version;', env.NODE_VERSION
+          nvm.runSh '''
+            node --version;
+            npm --version;
+            ''', env.NODE_VERSION
         }
       }
     }
