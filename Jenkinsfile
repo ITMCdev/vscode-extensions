@@ -6,6 +6,10 @@ pipeline {
     label 'master' // test-1
   }
 
+  environment {
+    NODE_VERSION = '14'
+  }
+
   stages {
     stage('Info') {
       steps {
@@ -15,10 +19,7 @@ pipeline {
           telegramSend(message: 'Hello World', chatId: 608276470)
         }
 
-        nvm.runSh """
-          node --version;
-          npm --version;
-          """, '14'
+        nvm.runSh 'node --version; npm --version;', env.NODE_VERSION
       }
     }
 
@@ -28,10 +29,7 @@ pipeline {
           withCredentials([
             string(credentialsId: 'vscode_marketplace_token', variable: 'VSCE_TOKEN'),
           ]) {
-            npm.runSh '''
-            npm install -g vsce;
-            bash ./publish.sh
-            ''', '14'
+            npm.runSh 'npm install -g vsce; bash ./publish.sh;', env.NODE_VERSION
           }
         }
       }
