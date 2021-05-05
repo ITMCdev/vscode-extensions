@@ -6,10 +6,6 @@ pipeline {
     label 'master' // test-1
   }
 
-  environment {
-    NVM_DIR = "${HOME}/.nvm"
-  }
-
   stages {
     stage('Info') {
       steps {
@@ -19,13 +15,10 @@ pipeline {
           telegramSend(message: 'Hello World', chatId: 608276470)
         }
 
-        sh """
-          set -ex;
-          . ~/.bashrc;
-
+        nvm.runSh """
           node --version;
           npm --version;
-          """
+          """, '14'
       }
     }
 
@@ -35,12 +28,10 @@ pipeline {
           withCredentials([
             string(credentialsId: 'vscode_marketplace_token', variable: 'VSCE_TOKEN'),
           ]) {
-            sh """
-            . ~/.bashrc > /dev/null;
-            set -ex;
+            npm.runSh '''
             npm install -g vsce;
             bash ./publish.sh
-            """
+            ''', '14'
           }
         }
       }
@@ -51,12 +42,12 @@ pipeline {
     // https://plugins.jenkins.io/telegram-notifications/
     failure {
       script {
-        telegram.sendStatusFail('jk_pipeline_report_to_telegram_token','jk_pipeline_report_to_telegram_chatId')
+        telegram.sendStatusFail('jk_pipeline_report_to_telegram_token', 'jk_pipeline_report_to_telegram_chatId')
       }
     }
     success {
       script {
-        telegram.sendStatusOk('jk_pipeline_report_to_telegram_token','jk_pipeline_report_to_telegram_chatId')
+        telegram.sendStatusOk('jk_pipeline_report_to_telegram_token', 'jk_pipeline_report_to_telegram_chatId')
       }
     }
   }
