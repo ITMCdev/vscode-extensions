@@ -29,7 +29,7 @@ pipeline {
           withCredentials([
             string(credentialsId: 'vscode_marketplace_token', variable: 'VSCE_TOKEN'),
           ]) {
-            npm.runSh 'npm install -g vsce; bash ./publish.sh;', env.NODE_VERSION
+            nvm.runSh 'npm install -g vsce; bash ./publish.sh;', env.NODE_VERSION
           }
         }
       }
