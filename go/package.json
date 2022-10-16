@@ -25,12 +25,20 @@
   ],
   "extensionPack": [
     "golang.Go",
+    "defaltd.go-coverage-viewer",
     "neverik.go-critic",
     "msyrus.go-doc",
+    "nawath.go-lazy-mock",
     "766b.go-outliner",
+    "Ja7ad.go-power",
+    "MaxMedia.go-prof",
     "zsh.go-snippets",
     "premparihar.gotestexplorer",
-    "windmilleng.vscode-go-autotest"
+    "lixvbnet.goworkspace",
+    "windmilleng.vscode-go-autotest",
+    "dannymcgee.vscode-go-grammar",
+    "dunstontc.vscode-go-syntax",
+    "jinliming2.vscode-go-template"
   ],
   "extensionDependencies": [
     "itmcdev.generic-extension-pack",

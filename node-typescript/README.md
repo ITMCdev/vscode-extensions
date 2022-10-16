@@ -11,7 +11,7 @@ Includes the basic extensions to get started with [NodeJS](http://nodejs.com/) &
 * [itmcdev](https://marketplace.visualstudio.com/publishers/itmcdev) [ITMCDev Generic Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.generic-extension-pack) :: A collection of generic extensions for development inside ITMC
 * [itmcdev](https://marketplace.visualstudio.com/publishers/itmcdev) [ITMCDev HTML/CSS Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.html-extension-pack) :: A collection of extensions for developming with HTML/CSS(Less/Sass) inside ITMC
 * [itmcdev](https://marketplace.visualstudio.com/publishers/itmcdev) [ITMCDev Node Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.node-extension-pack) :: A collection of extensions for developming with NodeJS inside ITMC
-* [Aljaz Smonic](https://marketplace.visualstudio.com/publishers/aljazsim) [TypeScript Class Organizer](https://marketplace.visualstudio.com/items?itemName=aljazsim.tsco) :: Groups and orders class members
+* [Aljaz Simonic](https://marketplace.visualstudio.com/publishers/aljazsim) [TypeScript Class Organizer](https://marketplace.visualstudio.com/items?itemName=aljazsim.tsco) :: Groups and orders class members
 * [Sema García](https://marketplace.visualstudio.com/publishers/semagarcia) [TypeScript Decorators](https://marketplace.visualstudio.com/items?itemName=semagarcia.vscode-ts-decorators) :: Snippets for TypeScript decorators for Visual Studio Code
 <!-- -Extensions -->
 
