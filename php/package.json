@@ -2,7 +2,7 @@
   "name": "php-extension-pack",
   "displayName": "ITMCDev PHP Extension Pack",
   "description": "A collection of extensions for developming with PHP inside ITMC",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
@@ -25,12 +25,20 @@
     "itmcdev"
   ],
   "extensionPack": [
-    "felixfbecker.php-debug",
-    "felixfbecker.php-intellisense",
+    "bmewburn.vscode-intelephense-client",
+    "brapifra.phpserver",
+    "DEVSENSE.profiler-php-vscode",
     "ikappas.composer",
     "MehediDracula.php-namespace-resolver",
     "neilbrayfield.php-docblocker",
     "onecentlin.phpunit-snippets",
-    "recca0120.vscode-phpunit"
+    "recca0120.vscode-phpunit",
+    "tintrinh.php-refactor",
+    "xdebug.php-debug"
+  ],
+  "extensionDependencies": [
+    "itmcdev.generic-extension-pack",
+    "itmcdev.html-extension-pack",
+    "Sophisticode.php-formatter"
   ]
 }

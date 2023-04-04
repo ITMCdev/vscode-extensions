@@ -2,7 +2,7 @@
   "name": "node-babel-extension-pack",
   "displayName": "ITMCDev Babel Extension Pack",
   "description": "A collection of extensions for developming with NodeJS & Babel inside ITMC",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
@@ -26,17 +26,16 @@
     "itmcdev"
   ],
   "extensionPack": [
-    "henry-li.vscode-import-formatter",
     "cmstead.jsrefactor",
-    "kiteco.kite",
-    "tunnckocore.modern-javascript-snippets",
+    "henry-li.vscode-import-formatter",
     "hjb2012.vscode-es6-string-html",
+    "jeremyrajan.vscode-lebab",
+    "jeremyrajan.webpack",
+    "kiteco.kite",
     "mgmcdermott.vscode-language-babel",
-    "jeremyrajan.webpack"
+    "tunnckocore.modern-javascript-snippets"
   ],
   "extensionDependencies": [
-    "itmcdev.generic-extension-pack",
-    "itmcdev.html-extension-pack",
     "itmcdev.node-extension-pack"
   ]
 }

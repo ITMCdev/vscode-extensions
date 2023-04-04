@@ -2,7 +2,7 @@
   "name": "cli-extension-pack",
   "displayName": "ITMCDev CLI Scripting Extension Pack",
   "description": "A collection of CLI scripting extensions for development inside ITMC",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
@@ -24,6 +24,9 @@
     "itmcdev"
   ],
   "extensionPack": [
+    "ironmansoftware.powershellprotools",
+    "ironmansoftware.powershell-universal",
+    "jetmartin.bats",
     "mads-hartmann.bash-ide-vscode",
     "ms-vscode.PowerShell",
     "rogalmic.bash-debug",

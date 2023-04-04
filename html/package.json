@@ -2,7 +2,7 @@
   "name": "html-extension-pack",
   "displayName": "ITMCDev HTML/CSS Extension Pack",
   "description": "A collection of extensions for developming with HTML/CSS(Less/Sass) inside ITMC",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
@@ -25,16 +25,18 @@
     "itmcdev"
   ],
   "extensionPack": [
+    "AESSoft.aessoft-class-autocomplete",
+    "akamud.vscode-caniuse",
     "formulahendry.auto-close-tag",
     "formulahendry.auto-rename-tag",
+    "glen-84.sass-lint",
     "michelemelluso.code-beautifier",
-    "Zignd.html-css-class-completion",
-    "robinbentley.sass-indented",
-    "akamud.vscode-caniuse",
     "mrmlnc.vscode-csscomb",
     "mrmlnc.vscode-less",
-    "glen-84.sass-lint",
-    "mrmlnc.vscode-scss"
+    "mrmlnc.vscode-scss",
+    "neptunedesign.vs-html-to-css",
+    "robinbentley.sass-indented",
+    "sidthesloth.html5-boilerplate"
   ],
   "extensionDependencies": [
     "itmcdev.generic-extension-pack",

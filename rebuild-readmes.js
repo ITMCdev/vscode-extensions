@@ -74,8 +74,10 @@ const main = async () => {
         );
 
         await fs.promises.writeFile(readmeFile, readme);
+
+        console.log(`${readmeFile} written.`);
       } catch (e) {
-        console.error(`Could not access ${packageFile}: ${e.message}`);
+        console.error(`Could not access ${packageFile}: ${e.message} ...`);
       }
     }
   }

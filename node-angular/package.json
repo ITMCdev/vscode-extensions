@@ -2,7 +2,7 @@
   "name": "node-angular-extension-pack",
   "displayName": "ITMCDev Angular Framework Extension Pack",
   "description": "A collection of extensions for developing with Angular Framework inside ITMC",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
@@ -30,10 +30,11 @@
   "extensionPack": [
     "Angular.ng-template",
     "hardikpthv.NgRxSnippets",
-    "itmcdev.html-extension-pack",
-    "itmcdev.node-extension-pack",
-    "itmcdev.node-typescript-extension-pack",
     "johnpapa.Angular2",
     "Mikael.Angular-BeastCode"
+  ],
+  "extensionDependencies": [
+    "itmcdev.html-extension-pack",
+    "itmcdev.node-typescript-extension-pack"
   ]
 }

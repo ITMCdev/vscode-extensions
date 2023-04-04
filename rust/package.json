@@ -2,7 +2,7 @@
   "name": "rust-extension-pack",
   "displayName": "ITMCDev Rust Extension Pack",
   "description": "A collection of extensions for developming with Rust inside ITMC",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
@@ -26,6 +26,15 @@
   ],
   "extensionPack": [
     "rust-lang.rust",
-    "swellaby.vscode-rust-test-adapter"
+    "dustypomerleau.rust-syntax",
+    "JScearcy.rust-doc-viewer",
+    "ConradLudgate.rust-playground",
+    "serayuzgur.crates",
+    "TechTheAwesome.rust-yew"
+  ],
+  "extensionDependencies": [
+    "itmcdev.generic-extension-pack",
+    "swellaby.vscode-rust-test-adapter",
+    "vadimcn.vscode-lldb"
   ]
 }

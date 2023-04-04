@@ -2,7 +2,7 @@
   "name": "php-symfony-extension-pack",
   "displayName": "ITMCDev Symfony Framework Extension Pack",
   "description": "A collection of extensions for developming with Symfony Framework inside ITMC",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
@@ -26,7 +26,10 @@
   ],
   "extensionPack": [
     "n4zim.vscode-symfony",
-    "TheNouillet.symfony-vscode",
+    "TheNouillet.symfony-vscode"
+  ],
+  "extensionDependencies": [
+    "bajdzis.vscode-twig-pack",
     "itmcdev.php-extension-pack"
   ]
 }

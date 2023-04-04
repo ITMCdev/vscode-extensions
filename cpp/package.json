@@ -2,7 +2,7 @@
   "name": "cpp-extension-pack",
   "displayName": "ITMCDev C/C++ Extension Pack",
   "description": "A collection of C/C++ extensions for development inside ITMC",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
@@ -24,17 +24,20 @@
     "itmcdev"
   ],
   "extensionPack": [
-    "jeff-hykin.better-cpp-syntax",
     "amiralizadeh9480.cpp-helper",
-    "ms-vscode.cpptools",
+    "davidbroetje.algorithm-mnemonics-vscode",
     "hars.CppSnippets",
-    "webfreak.debug",
+    "jeff-hykin.better-cpp-syntax",
     "llvm-vs-code-extensions.vscode-clangd",
-    "vadimcn.vscode-lldb"
+    "matepek.vscode-catch2-test-adapter",
+    "ms-vscode.cpptools",
+    "vadimcn.vscode-lldb",
+    "webfreak.debug"
   ],
   "extensionDependencies": [
     "itmcdev.generic-extension-pack",
     "twxs.cmake",
-    "ms-vscode.cmake-tools"
+    "ms-vscode.cmake-tools",
+    "vadimcn.vscode-lldb"
   ]
 }

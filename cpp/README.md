@@ -11,9 +11,11 @@ Includes the basic extensions to get started with [C](<https://en.wikipedia.org/
 * [Jeff Hykin](https://marketplace.visualstudio.com/publishers/jeff-hykin) [Better C++ Syntax](https://marketplace.visualstudio.com/items?itemName=jeff-hykin.better-cpp-syntax) :: The bleeding edge of the C++ syntax
 * [Vadim Chugunov](https://marketplace.visualstudio.com/publishers/vadimcn) [CodeLLDB](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb) :: A native debugger powered by LLDB.  Debug C++, Rust and other compiled languages.
 * [Harsh](https://marketplace.visualstudio.com/publishers/hars) [C/C++ Snippets](https://marketplace.visualstudio.com/items?itemName=hars.CppSnippets) :: Code snippets for C/C++
-* [WebFreak](https://marketplace.visualstudio.com/publishers/webfreak) [Native Debug](https://marketplace.visualstudio.com/items?itemName=webfreak.debug) :: GDB, LLDB & Mago-MI Debugger support for VSCode
 * [LLVM](https://marketplace.visualstudio.com/publishers/llvm-vs-code-extensions) [clangd](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.vscode-clangd) :: C/C++ completion, navigation, and insights
+* [WebFreak](https://marketplace.visualstudio.com/publishers/webfreak) [Native Debug](https://marketplace.visualstudio.com/items?itemName=webfreak.debug) :: GDB, LLDB & Mago-MI Debugger support for VSCode
+* [Mate Pek](https://marketplace.visualstudio.com/publishers/matepek) [C++ TestMate](https://marketplace.visualstudio.com/items?itemName=matepek.vscode-catch2-test-adapter) :: Run GoogleTest, Catch2 and DOCtest tests from VSCode
 * [amir](https://marketplace.visualstudio.com/publishers/amiralizadeh9480) [C++ Helper](https://marketplace.visualstudio.com/items?itemName=amiralizadeh9480.cpp-helper) :: Create implementation for c++ function prototypes.
+* [David Brötje](https://marketplace.visualstudio.com/publishers/davidbroetje) [C++ Algorithm Mnemonics](https://marketplace.visualstudio.com/items?itemName=davidbroetje.algorithm-mnemonics-vscode) :: C++ Algorithm Mnemonics as VSCode snippets.
 * [itmcdev](https://marketplace.visualstudio.com/publishers/itmcdev) [ITMCDev Generic Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.generic-extension-pack) :: A collection of generic extensions for development inside ITMC
 <!-- -Extensions -->
 

@@ -2,7 +2,7 @@
   "name": "dotnet-csharp-extension-pack",
   "displayName": "ITMCDev .NET C# Extension Pack",
   "description": "A collection of generic extensions for .NET C# development inside ITMC",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
@@ -24,12 +24,15 @@
     "itmcdev"
   ],
   "extensionPack": [
+    "conch.csharp-convert-ts",
     "craigthomas.supersharp",
     "derivitec-ltd.vscode-dotnet-adapter",
     "jorgeserrano.vscode-csharp-snippets",
     "k--kato.docomment",
     "Leopotam.csharpfixformat",
-    "ms-dotnettools.csharp"
+    "ms-dotnettools.csharp",
+    "pierre3.csharp-to-plantuml",
+    "Box-Of-Hats.ts-to-csharp"
   ],
   "extensionDependencies": [
     "hbenl.vscode-test-explorer"

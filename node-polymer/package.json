@@ -26,8 +26,12 @@
     "itmcdev"
   ],
   "extensionPack": [
-    "itmcdev.html-extension-pack",
-    "itmcdev.node-extension-pack",
-    "itmcdev.node-babel-extension-pack"
+    "bierner.lit-html",
+    "jonwolfe.language-polymer",
+    "justinribeiro.Polymer2Snippets",
+    "polymer.polymer-ide"
+  ],
+  "extensionDependencies": [
+    "itmcdev.node-typescript-extension-pack"
   ]
 }

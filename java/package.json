@@ -2,7 +2,7 @@
   "name": "java-extension-pack",
   "displayName": "ITMCDev Java Extension Pack",
   "description": "A collection of extensions for developming with Java inside ITMC",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
@@ -25,14 +25,13 @@
     "itmcdev"
   ],
   "extensionPack": [
+    "mwpb.java-prettier-formatter",
     "redhat.java",
-    "vscjava.vscode-maven",
+    "vscjava.vscode-gradle",
     "vscjava.vscode-java-debug",
     "vscjava.vscode-java-dependency",
     "vscjava.vscode-java-pack",
     "vscjava.vscode-java-test",
-    "VisualStudioExptTeam.vscodeintellicode",
-    "naco-siren.gradle-language",
-    "marlon407.code-groovy"
+    "vscjava.vscode-maven"
   ]
 }

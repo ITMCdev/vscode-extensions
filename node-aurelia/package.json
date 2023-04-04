@@ -2,7 +2,7 @@
   "name": "node-aurelia-extension-pack",
   "displayName": "ITMCDev Aurelia Framework Extension Pack",
   "description": "A collection of extensions for developing with Aurelia Framework inside ITMC",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
@@ -29,9 +29,11 @@
   ],
   "extensionPack": [
     "aureliaeffect.aurelia",
-    "behzad88.aurelia",
+    "brandonseydel.aurelia-tools",
+    "behzad88.aurelia"
+  ],
+  "extensionDependencies": [
     "itmcdev.html-extension-pack",
-    "itmcdev.node-extension-pack",
     "itmcdev.node-typescript-extension-pack"
   ]
 }

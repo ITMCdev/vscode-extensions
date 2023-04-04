@@ -2,7 +2,7 @@
   "name": "php-laravel-extension-pack",
   "displayName": "ITMCDev Laravel Framework Extension Pack",
   "description": "A collection of extensions for developming with Laravel Framework inside ITMC",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
@@ -25,11 +25,14 @@
     "itmcdev"
   ],
   "extensionPack": [
-    "bajdzis.vscode-twig-pack",
+    "Laratips.laravel-utils",
     "mblode.twig-language-2",
     "onecentlin.laravel-blade",
     "onecentlin.laravel5-snippets",
-    "ryannaddy.laravel-artisan",
+    "ryannaddy.laravel-artisan"
+  ],
+  "extensionDependencies": [
+    "bajdzis.vscode-twig-pack",
     "itmcdev.php-extension-pack"
   ]
 }

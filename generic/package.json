@@ -2,7 +2,7 @@
   "name": "generic-extension-pack",
   "displayName": "ITMCDev Generic Extension Pack",
   "description": "A collection of generic extensions for development inside ITMC",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
@@ -25,24 +25,33 @@
   ],
   "extensionPack": [
     "aaron-bond.better-comments",
-    "CoenraadS.bracket-pair-colorizer",
-    "streetsidesoftware.code-spell-checker",
-    "EditorConfig.EditorConfig",
-    "nhoizey.gremlins",
-    "maracko.json-to-go",
-    "yzhang.markdown-all-in-one",
     "AlanWalk.markdown-toc",
     "dawhite.mustache",
     "eamodio.gitlens",
+    "EditorConfig.EditorConfig",
     "emeraldwalk.runonsave",
+    "GitHub.copilot",
+    "GitHub.vscode-github-actions",
+    "SimonSiefke.prettier-vscode",
+    "defaltd.go-coverage-viewer",
+    "maracko.json-to-go",
+    "mishkinf.goto-next-previous-member",
     "mrmlnc.vscode-json5",
+    "nhoizey.gremlins",
+    "pflannery.vscode-versionlens",
+    "redhat.vscode-xml",
     "redhat.vscode-yaml",
-    "redhat.vscode-xml"
+    "streetsidesoftware.code-spell-checker",
+    "tamasfe.even-better-toml",
+    "trixnz.go-to-method",
+    "yzhang.markdown-all-in-one"
   ],
   "extensionDependencies": [
+    "kiteco.kite",
     "secanis.jenkinsfile-support",
     "TabNine.tabnine-vscode",
-    "zxh404.vscode-proto3",
-    "WakaTime.vscode-wakatime"
+    "VisualStudioExptTeam.vscodeintellicode",
+    "WakaTime.vscode-wakatime",
+    "zxh404.vscode-proto3"
   ]
 }

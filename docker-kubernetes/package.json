@@ -2,7 +2,7 @@
   "name": "docker-kubernetes-extension-pack",
   "displayName": "ITMCDev Kubernetes Extension Pack",
   "description": "A collection of Kubernetes extensions for development inside ITMC",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
@@ -24,6 +24,11 @@
     "itmcdev"
   ],
   "extensionPack": [
-    "ms-kubernetes-tools.vscode-kubernetes-tools"
+    "lunuan.kubernetes-templates",
+    "mindaro.mindaro",
+    "ms-kubernetes-tools.vscode-kubernetes-tools",
+    "ms-kubernetes-tools.vscode-aks-tools",
+    "sandipchitale.vscode-kubernetes-dashboard",
+    "tumido.crd-snippets"
   ]
 }

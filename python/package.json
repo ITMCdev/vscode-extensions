@@ -2,7 +2,7 @@
   "name": "python-extension-pack",
   "displayName": "ITMCDev Python Extension Pack",
   "description": "A collection of extensions for developming with Python inside ITMC",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
@@ -25,20 +25,21 @@
     "itmcdev"
   ],
   "extensionPack": [
-    "njpwerner.autodocstring",
-    "wholroyd.jinja",
+    "batisteo.vscode-django",
+    "donjayamanne.python-environment-manager",
     "magicstack.MagicPython",
+    "mgesbert.python-path",
     "ms-pyright.pyright",
     "ms-python.python",
-    "batisteo.vscode-django",
-    "LittleFoxTeam.vscode-python-test-adapter",
-    "njqdev.vscode-python-typehint"
+    "ms-toolsai.jupyter",
+    "njpwerner.autodocstring",
+    "njqdev.vscode-python-typehint",
+    "shiro.pythonpack",
+    "wholroyd.jinja"
   ],
   "extensionDependencies": [
-    "itmcdev.generic-extension-pack",
-    "kiteco.kite",
-    "SonarSource.sonarlint-vscode",
     "hbenl.vscode-test-explorer",
-    "VisualStudioExptTeam.vscodeintellicode"
+    "itmcdev.generic-extension-pack",
+    "LittleFoxTeam.vscode-python-test-adapter"
   ]
 }

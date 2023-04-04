@@ -20,5 +20,10 @@
   "devDependencies": {
     "axios": "0.21.1",
     "husky": "^6.0.0"
+  },
+  "dependencies": {
+    "@release-it/bumper": "^4.0.2",
+    "@release-it/conventional-changelog": "^5.1.1",
+    "release-it": "^15.10.1"
   }
 }

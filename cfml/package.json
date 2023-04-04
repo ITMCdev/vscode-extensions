@@ -2,7 +2,7 @@
   "name": "cfml-extension-pack",
   "displayName": "ITMCDev ColdFusion Extension Pack",
   "description": "A collection of extensions for developming with ColdFusion inside ITMC",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
@@ -25,6 +25,9 @@
     "itmcdev"
   ],
   "extensionPack": [
+    "dalucema.coldfusionsymbols",
+    "DavidRogers.luceedebug",
+    "DomenicC.cfml-component-paths",
     "ilich8086.ColdFusion",
     "KamasamaK.vscode-cflint"
   ]
