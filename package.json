@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/ITMCdev/vscode-extensions#readme",
   "devDependencies": {
-    "axios": "0.21.1",
+    "axios": "1.6.0",
     "husky": "^6.0.0"
   },
   "dependencies": {
