@@ -1,0 +1,34 @@
+{
+  "name": "api-tools-extension-pack",
+  "displayName": "ITMCDev API Tools Extension Pack",
+  "description": "A collection of extensions for testing and developing APIs inside ITMC",
+  "version": "0.0.0",
+  "publisher": "itmcdev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itmcdev/vscode-extensions"
+  },
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#f66f62",
+    "theme": "dark"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "keywords": [
+    "code",
+    "node",
+    "itmcdev"
+  ],
+  "extensionPack": [
+    "42Crunch.vscode-openapi",
+    "Arjun.swagger-viewer",
+    "humao.rest-client",
+    "mermade.openapi-lint",
+    "mkloubert.vs-rest-api"
+  ]
+}

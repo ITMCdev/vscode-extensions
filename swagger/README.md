@@ -1,6 +1,8 @@
 # Extension Pack for Visual Studio Code
 
-Includes the basic extensions to get started with [Swagger](https://swagger.io) development in Visual Studio Code.
+> DEPRECATED | Extension has been deprecated in favor of [itmcdev.api-tools-extension-pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.api-tools-extension-pack)
+
+~~Includes the basic extensions to get started with [Swagger](https://swagger.io) development in Visual Studio Code.~~
 
 ## Extensions
 
