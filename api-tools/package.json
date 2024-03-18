@@ -2,7 +2,7 @@
   "name": "api-tools-extension-pack",
   "displayName": "ITMCDev API Tools Extension Pack",
   "description": "A collection of extensions for testing and developing APIs inside ITMC",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",

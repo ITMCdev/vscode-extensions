@@ -271,10 +271,9 @@ extensions:
       - gwenio.vscode-ava-test-adapter
       - hbenl.vscode-jasmine-test-adapter
       - hbenl.vscode-mocha-test-adapter
-      - hbenl.vscode-test-explorer
       - kavod-io.vscode-jest-test-adapter
+      - hbenl.vscode-test-explorer
       - orta.vscode-jest
-      - raagh.angular-karma-test-explorer
       - Testy.vscode-testyts-test-adapter
   node-typescript:
     pack:

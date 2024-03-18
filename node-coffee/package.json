@@ -2,7 +2,7 @@
   "name": "node-coffee-extension-pack",
   "displayName": "ITMCDev Babel Extension Pack",
   "description": "A collection of extensions for developing with NodeJS & CoffeeScript",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",

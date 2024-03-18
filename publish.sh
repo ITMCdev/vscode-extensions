@@ -36,11 +36,11 @@ find . -mindepth 2 -iname "package.json" -and -not -ipath "*node_modules*" | sor
   oldVersion=$(get_last_published_version $packageName)
   if [ "$newVersion" != "$oldVersion" ]; then
     cd $(dirname $packageJson);
-    echo "publishing itmcdev.$d..."
+    echo "publishing itmcdev.$packageName..."
     if [[ "$VSCE_TOKEN" != "" ]]; then
-        vsce publish -p $VSCE_TOKEN;
+      ../node_modules/.bin/vsce publish --skip-duplicate -p $VSCE_TOKEN;
     else
-	    vsce publish;
+	    ../node_modules/.bin/vsce publish --skip-duplicate;
     fi
     cd ..;
   else

@@ -2,7 +2,7 @@
   "name": "html-extension-pack",
   "displayName": "ITMCDev HTML/CSS Extension Pack",
   "description": "A collection of extensions for developming with HTML/CSS(Less/Sass) inside ITMC",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
