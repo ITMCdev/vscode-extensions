@@ -25,10 +25,14 @@
     "itmcdev"
   ],
   "extensionPack": [
+    "CFMLEditor.cfmleditor",
     "dalucema.coldfusionsymbols",
-    "DavidRogers.luceedebug",
-    "DomenicC.cfml-component-paths",
-    "ilich8086.ColdFusion",
-    "KamasamaK.vscode-cflint"
+    "johannesross.jofuncce",
+    "KamasamaK.vscode-cflint",
+    "KamasamaK.vscode-cfml"
+  ],
+  "extensionDependencies": [
+    "itmcdev.generic-extension-pack",
+    ""
   ]
 }

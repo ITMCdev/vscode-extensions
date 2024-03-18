@@ -25,7 +25,6 @@
     "itmcdev"
   ],
   "extensionPack": [
-    "batisteo.vscode-django",
     "donjayamanne.python-environment-manager",
     "magicstack.MagicPython",
     "mgesbert.python-path",
@@ -38,8 +37,8 @@
     "wholroyd.jinja"
   ],
   "extensionDependencies": [
-    "hbenl.vscode-test-explorer",
     "itmcdev.generic-extension-pack",
+    "hbenl.vscode-test-explorer",
     "LittleFoxTeam.vscode-python-test-adapter"
   ]
 }

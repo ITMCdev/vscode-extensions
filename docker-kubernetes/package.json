@@ -26,9 +26,13 @@
   "extensionPack": [
     "lunuan.kubernetes-templates",
     "mindaro.mindaro",
-    "ms-kubernetes-tools.vscode-kubernetes-tools",
     "ms-kubernetes-tools.vscode-aks-tools",
+    "ms-kubernetes-tools.vscode-kubernetes-tools",
     "sandipchitale.vscode-kubernetes-dashboard",
     "tumido.crd-snippets"
+  ],
+  "extensionDependencies": [
+    "itmcdev.generic-extension-pack",
+    ""
   ]
 }

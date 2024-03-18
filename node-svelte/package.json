@@ -32,6 +32,7 @@
     "svelte.svelte-vscode"
   ],
   "extensionDependencies": [
+    "itmcdev.generic-extension-pack",
     "itmcdev.html-extension-pack",
     "itmcdev.node-typescript-extension-pack"
   ]

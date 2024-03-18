@@ -25,7 +25,6 @@
     "itmcdev"
   ],
   "extensionPack": [
-    "bung87.rails",
     "castwide.solargraph",
     "hoovercj.ruby-linter",
     "jpogran.puppet-vscode",
@@ -37,7 +36,7 @@
     "wingrunr21.vscode-ruby"
   ],
   "extensionDependencies": [
-    "connorshea.vscode-ruby-test-adapter",
-    "itmcdev.generic-extension-pack"
+    "itmcdev.generic-extension-pack",
+    "connorshea.vscode-ruby-test-adapter"
   ]
 }

@@ -26,10 +26,12 @@
   "extensionPack": [
     "ms-vscode.atom-keybindings",
     "file-icons.file-icons",
-    "k--kato.intellij-idea-keybindings",
     "PKief.material-icon-theme",
     "jebbs.plantuml",
     "Equinusocio.vsc-material-theme"
   ],
-  "extensionDependencies": []
+  "extensionDependencies": [
+    "itmcdev.generic-extension-pack",
+    ""
+  ]
 }

@@ -29,6 +29,7 @@
     "maty.vscode-mocha-sidebar"
   ],
   "extensionDependencies": [
+    "itmcdev.generic-extension-pack",
     "gwenio.vscode-ava-test-adapter",
     "hbenl.vscode-jasmine-test-adapter",
     "hbenl.vscode-mocha-test-adapter",

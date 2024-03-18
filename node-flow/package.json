@@ -25,11 +25,9 @@
     "flow",
     "itmcdev"
   ],
-  "extensionPack": [
-    "flowtype.flow-for-vscode",
-    "gcazaciuc.vscode-flow-ide"
-  ],
+  "extensionPack": [],
   "extensionDependencies": [
-    "itmcdev.node-babel-extension-pack"
+    "itmcdev.generic-extension-pack",
+    ""
   ]
 }

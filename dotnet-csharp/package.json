@@ -24,6 +24,7 @@
     "itmcdev"
   ],
   "extensionPack": [
+    "Box-Of-Hats.ts-to-csharp",
     "conch.csharp-convert-ts",
     "craigthomas.supersharp",
     "derivitec-ltd.vscode-dotnet-adapter",
@@ -31,10 +32,10 @@
     "k--kato.docomment",
     "Leopotam.csharpfixformat",
     "ms-dotnettools.csharp",
-    "pierre3.csharp-to-plantuml",
-    "Box-Of-Hats.ts-to-csharp"
+    "pierre3.csharp-to-plantuml"
   ],
   "extensionDependencies": [
+    "itmcdev.generic-extension-pack",
     "hbenl.vscode-test-explorer"
   ]
 }

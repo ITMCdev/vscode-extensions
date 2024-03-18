@@ -24,13 +24,17 @@
     "itmcdev"
   ],
   "extensionPack": [
-    "ironmansoftware.powershellprotools",
+    "ms-vscode.PowerShell",
     "ironmansoftware.powershell-universal",
+    "ironmansoftware.powershellprotools",
     "jetmartin.bats",
     "mads-hartmann.bash-ide-vscode",
-    "ms-vscode.PowerShell",
     "rogalmic.bash-debug",
-    "rogalmic.zsh-debug",
-    "shakram02.bash-beautify"
+    "shakram02.bash-beautify",
+    "rogalmic.zsh-debug"
+  ],
+  "extensionDependencies": [
+    "itmcdev.generic-extension-pack",
+    ""
   ]
 }

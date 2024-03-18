@@ -26,14 +26,18 @@
     "itmcdev"
   ],
   "extensionPack": [
+    "alberto-varela.unsafe-typescript",
     "aljazsim.tsco",
+    "GregorBiswanger.json2ts",
     "mike-co.import-sorter",
-    "pmneo.tsimporter",
     "ms-vscode.typescript-javascript-grammar",
-    "semagarcia.vscode-ts-decorators",
-    "ms-vscode.vscode-typescript-next"
+    "ms-vscode.vscode-typescript-next",
+    "pmneo.tsimporter",
+    "rbbit.typescript-hero",
+    "semagarcia.vscode-ts-decorators"
   ],
   "extensionDependencies": [
+    "itmcdev.generic-extension-pack",
     "itmcdev.node-babel-extension-pack"
   ]
 }

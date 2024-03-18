@@ -36,6 +36,7 @@
     "tunnckocore.modern-javascript-snippets"
   ],
   "extensionDependencies": [
+    "itmcdev.generic-extension-pack",
     "itmcdev.node-extension-pack"
   ]
 }

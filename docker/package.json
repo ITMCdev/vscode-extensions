@@ -26,5 +26,9 @@
   "extensionPack": [
     "formulahendry.docker-explorer",
     "ms-azuretools.vscode-docker"
+  ],
+  "extensionDependencies": [
+    "itmcdev.generic-extension-pack",
+    ""
   ]
 }

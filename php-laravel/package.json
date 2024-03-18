@@ -32,6 +32,7 @@
     "ryannaddy.laravel-artisan"
   ],
   "extensionDependencies": [
+    "itmcdev.generic-extension-pack",
     "bajdzis.vscode-twig-pack",
     "itmcdev.php-extension-pack"
   ]

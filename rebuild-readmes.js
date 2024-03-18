@@ -8,10 +8,12 @@ const getExtensionsList = async (list) => {
   var data = JSON.stringify({
     filters: [
       {
-        criteria: list.map((ext) => ({
-          filterType: 7,
-          value: ext,
-        })),
+        criteria: list
+          .filter((ext) => ext)
+          .map((ext) => ({
+            filterType: 7,
+            value: ext,
+          })),
       },
     ],
   });
@@ -41,7 +43,8 @@ const getExtensionsList = async (list) => {
     })
     // .then((result) => console.log(result))
     .catch(function (error) {
-      console.log(error);
+      console.log(config);
+      console.log(error.response.data);
     });
 
   return result;
@@ -55,6 +58,9 @@ const main = async () => {
 
   const dirs = await fs.promises.readdir(__dirname);
   for (dir of dirs) {
+    if ([".git", ".husky", ".vscode", "node_modules"].includes(dir)) {
+      continue;
+    }
     let stats = await fs.promises.stat(path.join(__dirname, dir));
     if (stats.isDirectory()) {
       const packageFile = path.join(__dirname, dir, "package.json");

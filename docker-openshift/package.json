@@ -25,5 +25,9 @@
   ],
   "extensionPack": [
     "redhat.vscode-openshift-connector"
+  ],
+  "extensionDependencies": [
+    "itmcdev.generic-extension-pack",
+    ""
   ]
 }

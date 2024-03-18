@@ -24,20 +24,22 @@
     "itmcdev"
   ],
   "extensionPack": [
+    "llvm-vs-code-extensions.vscode-clangd",
+    "ms-vscode.cpptools",
     "amiralizadeh9480.cpp-helper",
     "davidbroetje.algorithm-mnemonics-vscode",
-    "hars.CppSnippets",
+    "franneck94.c-cpp-runner",
     "jeff-hykin.better-cpp-syntax",
-    "llvm-vs-code-extensions.vscode-clangd",
+    "hars.CppSnippets",
     "matepek.vscode-catch2-test-adapter",
-    "ms-vscode.cpptools",
     "vadimcn.vscode-lldb",
-    "webfreak.debug"
+    "tostc.vscl",
+    "webfreak.debug",
+    "ms-vscode.cmake-tools",
+    "twxs.cmake"
   ],
   "extensionDependencies": [
     "itmcdev.generic-extension-pack",
-    "twxs.cmake",
-    "ms-vscode.cmake-tools",
-    "vadimcn.vscode-lldb"
+    ""
   ]
 }

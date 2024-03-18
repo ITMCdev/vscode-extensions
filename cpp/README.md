@@ -10,6 +10,7 @@ Includes the basic extensions to get started with [C](<https://en.wikipedia.org/
 * [Microsoft](https://marketplace.visualstudio.com/publishers/ms-vscode) [CMake Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools) :: Extended CMake support in Visual Studio Code
 * [Jeff Hykin](https://marketplace.visualstudio.com/publishers/jeff-hykin) [Better C++ Syntax](https://marketplace.visualstudio.com/items?itemName=jeff-hykin.better-cpp-syntax) :: The bleeding edge of the C++ syntax
 * [Vadim Chugunov](https://marketplace.visualstudio.com/publishers/vadimcn) [CodeLLDB](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb) :: A native debugger powered by LLDB.  Debug C++, Rust and other compiled languages.
+* [franneck94](https://marketplace.visualstudio.com/publishers/franneck94) [C/C++ Runner](https://marketplace.visualstudio.com/items?itemName=franneck94.c-cpp-runner) :: 🚀 Compile, run and debug single or multiple C/C++ files with ease. 🚀
 * [Harsh](https://marketplace.visualstudio.com/publishers/hars) [C/C++ Snippets](https://marketplace.visualstudio.com/items?itemName=hars.CppSnippets) :: Code snippets for C/C++
 * [LLVM](https://marketplace.visualstudio.com/publishers/llvm-vs-code-extensions) [clangd](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.vscode-clangd) :: C/C++ completion, navigation, and insights
 * [WebFreak](https://marketplace.visualstudio.com/publishers/webfreak) [Native Debug](https://marketplace.visualstudio.com/items?itemName=webfreak.debug) :: GDB, LLDB & Mago-MI Debugger support for VSCode
@@ -17,6 +18,7 @@ Includes the basic extensions to get started with [C](<https://en.wikipedia.org/
 * [amir](https://marketplace.visualstudio.com/publishers/amiralizadeh9480) [C++ Helper](https://marketplace.visualstudio.com/items?itemName=amiralizadeh9480.cpp-helper) :: Create implementation for c++ function prototypes.
 * [David Brötje](https://marketplace.visualstudio.com/publishers/davidbroetje) [C++ Algorithm Mnemonics](https://marketplace.visualstudio.com/items?itemName=davidbroetje.algorithm-mnemonics-vscode) :: C++ Algorithm Mnemonics as VSCode snippets.
 * [itmcdev](https://marketplace.visualstudio.com/publishers/itmcdev) [ITMCDev Generic Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.generic-extension-pack) :: A collection of generic extensions for development inside ITMC
+* [tostc](https://marketplace.visualstudio.com/publishers/tostc) [C++ include refactor](https://marketplace.visualstudio.com/items?itemName=tostc.vscl) :: Refactors all includes if you move or rename a file or directory.
 <!-- -Extensions -->
 
 ## Configuration

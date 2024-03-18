@@ -29,6 +29,7 @@
     "TheNouillet.symfony-vscode"
   ],
   "extensionDependencies": [
+    "itmcdev.generic-extension-pack",
     "bajdzis.vscode-twig-pack",
     "itmcdev.php-extension-pack"
   ]

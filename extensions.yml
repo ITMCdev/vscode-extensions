@@ -1,0 +1,407 @@
+---
+extensions:
+  api-tools:
+    - 42Crunch.vscode-openapi
+    - Arjun.swagger-viewer
+    - humao.rest-client
+    - mermade.openapi-lint
+    - mkloubert.vs-rest-api
+  cfml:
+    - CFMLEditor.cfmleditor
+    - dalucema.coldfusionsymbols
+    - johannesross.jofuncce
+    - KamasamaK.vscode-cflint
+    - KamasamaK.vscode-cfml
+  cli:
+    - ms-vscode.PowerShell
+    - ironmansoftware.powershell-universal
+    - ironmansoftware.powershellprotools
+    - jetmartin.bats
+    - ms-vscode.PowerShell
+
+    - mads-hartmann.bash-ide-vscode
+    - rogalmic.bash-debug
+    - shakram02.bash-beautify
+
+    - rogalmic.zsh-debug
+  cpp:
+    - llvm-vs-code-extensions.vscode-clangd
+    - ms-vscode.cpptools
+
+    - amiralizadeh9480.cpp-helper
+    - davidbroetje.algorithm-mnemonics-vscode
+    - franneck94.c-cpp-runner
+    - jeff-hykin.better-cpp-syntax
+    - hars.CppSnippets
+    - matepek.vscode-catch2-test-adapter
+    - vadimcn.vscode-lldb
+    - tostc.vscl
+    - webfreak.debug
+
+    - ms-vscode.cmake-tools
+    - twxs.cmake
+  db:
+    deprecated: true
+  docker:
+    - formulahendry.docker-explorer
+    - ms-azuretools.vscode-docker
+  docker-kubernetes:
+    - lunuan.kubernetes-templates
+    - mindaro.mindaro
+    - ms-kubernetes-tools.vscode-aks-tools
+    - ms-kubernetes-tools.vscode-kubernetes-tools
+    - sandipchitale.vscode-kubernetes-dashboard
+    - tumido.crd-snippets
+  docker-openshift:
+    - redhat.vscode-openshift-connector
+  dotnet-csharp:
+    pack:
+      - Box-Of-Hats.ts-to-csharp
+      - conch.csharp-convert-ts
+      - craigthomas.supersharp
+      - derivitec-ltd.vscode-dotnet-adapter
+      - jorgeserrano.vscode-csharp-snippets
+      - k--kato.docomment
+      - Leopotam.csharpfixformat
+      - ms-dotnettools.csharp
+      - pierre3.csharp-to-plantuml
+    dependencies:
+      - hbenl.vscode-test-explorer
+  generic:
+    pack:
+      - aaron-bond.better-comments
+      - AlanWalk.markdown-toc
+      - dawhite.mustache
+      - eamodio.gitlens
+      - EditorConfig.EditorConfig
+      - emeraldwalk.runonsave
+      - GitHub.copilot
+      - GitHub.vscode-github-actions
+      - jmkrivocapich.drawfolderstructure
+      - maracko.json-to-go
+      - mishkinf.goto-next-previous-member
+      - mrmlnc.vscode-json5
+      - nhoizey.gremlins
+      - pflannery.vscode-versionlens
+      - redhat.vscode-xml
+      - redhat.vscode-yaml
+      - SimonSiefke.prettier-vscode
+      - streetsidesoftware.code-spell-checker
+      - tamasfe.even-better-toml
+      - trixnz.go-to-method
+      - yzhang.markdown-all-in-one
+    dependencies:
+      - kiteco.kite
+      - secanis.jenkinsfile-support
+      - TabNine.tabnine-vscode
+      - VisualStudioExptTeam.vscodeintellicode
+      - WakaTime.vscode-wakatime
+      - zxh404.vscode-proto3
+  go:
+    pack:
+      - 766b.go-outliner
+      - dannymcgee.vscode-go-grammar
+      - defaltd.go-coverage-viewer
+      - dunstontc.vscode-go-syntax
+      - golang.Go
+      - Ja7ad.go-power
+      - jinliming2.vscode-go-template
+      - lixvbnet.goworkspace
+      - MaxMedia.go-prof
+      - msyrus.go-doc
+      - nawath.go-lazy-mock
+      - neverik.go-critic
+      - premparihar.gotestexplorer
+      - quillaja.goasm
+      - usernamehw.errorlens
+      - windmilleng.vscode-go-autotest
+      - zsh.go-snippets
+    dependencies:
+      - itmcdev.html-extension-pack
+  html:
+    pack:
+      - AESSoft.aessoft-class-autocomplete
+      - akamud.vscode-caniuse
+      - formulahendry.auto-close-tag
+      - formulahendry.auto-rename-tag
+      - glen-84.sass-lint
+      - michelemelluso.code-beautifier
+      - mrmlnc.vscode-csscomb
+      - mrmlnc.vscode-less
+      - mrmlnc.vscode-scss
+      - neptunedesign.vs-html-to-css
+      - robinbentley.sass-indented
+      - sidthesloth.html5-boilerplate
+    dependencies:
+      - ritwickdey.LiveServer
+      - SonarSource.sonarlint-vscode
+  java:
+    - mwpb.java-prettier-formatter
+    - redhat.java
+    - vscjava.vscode-gradle
+    - vscjava.vscode-java-debug
+    - vscjava.vscode-java-dependency
+    - vscjava.vscode-java-pack
+    - vscjava.vscode-java-test
+    - vscjava.vscode-maven
+  # java-groovy:
+  #   pack:
+  #     - groovy.groovy
+  #     - redhat.java
+  #     - vscjava.vscode-gradle
+  #     - vscjava.vscode-java-debug
+  #     - vscjava.vscode-java-dependency
+  #     - vscjava.vscode-java-pack
+  #     - vscjava.vscode-java-test
+  #     - vscjava.vscode-maven
+  #   dependencies:
+  #     - itmcdev.java-extension-pack
+  # java-kotlin:
+  #   pack:
+  #     - mathiasfrohlich.kotlin
+  #     - vscjava.vscode-kotlin
+  #   dependencies:
+  #     - itmcdev.java-extension-pack
+  # java-scala:
+  #   pack:
+  #     - scala-lang.scala
+  #     - scalameta.metals
+  #   dependencies:
+  #     - itmcdev.java-extension-pack
+  node:
+    pack:
+      - bengreenier.vscode-node-readme
+      - chris-noring.node-snippets
+      - christian-kohler.npm-intellisense
+      - christian-kohler.path-intellisense
+      - jasonnutter.search-node-modules
+      - kohler.npm-intellisense
+      - leizongmin.node-module-intellisense
+      - ms-vscode.node-debug2
+      - tgreen7.vs-code-node-require
+    dependencies:
+      - dbaeumer.vscode-eslint
+      - esbenp.prettier-vscode
+      - itmcdev.html-extension-pack
+      - SonarSource.sonarlint-vscode
+  node-angular:
+    pack:
+      - Angular.ng-template
+      - hardikpthv.NgRxSnippets
+      - johnpapa.Angular2
+      - Mikael.Angular-BeastCode
+    dependencies:
+      - itmcdev.html-extension-pack
+      - itmcdev.node-typescript-extension-pack
+  node-aurelia:
+    pack:
+      - aureliaeffect.aurelia
+      - brandonseydel.aurelia-tools
+      - behzad88.aurelia
+    dependencies:
+      - itmcdev.html-extension-pack
+      - itmcdev.node-typescript-extension-pack
+  node-babel:
+    pack:
+      - cmstead.jsrefactor
+      - henry-li.vscode-import-formatter
+      - hjb2012.vscode-es6-string-html
+      - jeremyrajan.vscode-lebab
+      - jeremyrajan.webpack
+      - kiteco.kite
+      - mgmcdermott.vscode-language-babel
+      - tunnckocore.modern-javascript-snippets
+    dependencies:
+      - itmcdev.node-extension-pack
+  node-coffee:
+    pack:
+      - diniremix.vscode-coffeescript-snippets
+      - hjb2012.vscode-es6-string-html
+      - jeremyrajan.webpack
+      - kiteco.kite
+      - lkytal.coffeelinter
+      - phil294.coffeesense
+    dependencies:
+      - itmcdev.node-extension-pack
+  node-flow:
+    deprecated: true
+  node-polymer:
+    pack:
+      - bierner.lit-html
+      - jonwolfe.language-polymer
+      - justinribeiro.Polymer2Snippets
+      - polymer.polymer-ide
+    dependencies:
+      - itmcdev.html-extension-pack
+      - itmcdev.node-typescript-extension-pack
+  node-react:
+    pack:
+      - gottfired.css2react
+      - million.million-lint
+      - ricardo-emerson.create-react-tsx-component
+      - xabikos.ReactSnippets
+
+      - planbcoding.vscode-react-refactor
+      - walter-ribeiro.full-react-snippets
+    dependencies:
+      - itmcdev.node-react-extension-pack
+      - itmcdev.node-typescript-extension-pack
+  node-react-native:
+    pack:
+      - msjsdiag.vscode-react-native
+      - rocketseat.RocketseatReactNative
+      - vsmobile.vscode-react-native
+    dependencies:
+      - itmcdev.html-extension-pack
+      - itmcdev.node-typescript-extension-pack
+  node-svelte:
+    pack:
+      - ardenivanov.svelte-intellisense
+      - fivethree.vscode-svelte-snippets
+      - pivaszbs.svelte-autoimport
+      - svelte.svelte-vscode
+    dependencies:
+      - itmcdev.html-extension-pack
+      - itmcdev.node-typescript-extension-pack
+  node-test:
+    pack:
+      - firsttris.vscode-jest-runner
+      - maty.vscode-mocha-sidebar
+    dependencies:
+      - gwenio.vscode-ava-test-adapter
+      - hbenl.vscode-jasmine-test-adapter
+      - hbenl.vscode-mocha-test-adapter
+      - hbenl.vscode-test-explorer
+      - kavod-io.vscode-jest-test-adapter
+      - orta.vscode-jest
+      - raagh.angular-karma-test-explorer
+      - Testy.vscode-testyts-test-adapter
+  node-typescript:
+    pack:
+      - alberto-varela.unsafe-typescript
+      - aljazsim.tsco
+      - GregorBiswanger.json2ts
+      - mike-co.import-sorter
+      - ms-vscode.typescript-javascript-grammar
+      - ms-vscode.vscode-typescript-next
+      - pmneo.tsimporter
+      - rbbit.typescript-hero
+      - semagarcia.vscode-ts-decorators
+    dependencies:
+      - itmcdev.node-babel-extension-pack
+  node-typescript-nestjs:
+    pack:
+      - cedricverlinden.nestjs-templates
+      - imgildev.vscode-nestjs-generator
+      - imgildev.vscode-nestjs-mikroorm-snippets
+      - imgildev.vscode-nestjs-mongoose-snippets
+      - imgildev.vscode-nestjs-prisma-snippets
+      - imgildev.vscode-nestjs-sequelize-snippets
+      - imgildev.vscode-nestjs-snippets-extension
+      - imgildev.vscode-nestjs-swagger-snippets
+      - imgildev.vscode-nestjs-typeorm-snippets
+    dependencies:
+      - itmcdev.node-typescript-extension-pack
+  node-vue:
+    pack:
+      - dariofuzinato.vue-peek
+      - ducksoupdev.vue2
+      - hollowtree.vue-snippets
+      - octref.vetur
+      - liuji-jim.vue
+    dependencies:
+      - itmcdev.html-extension-pack
+      - itmcdev.node-typescript-extension-pack
+  php:
+    pack:
+      - bmewburn.vscode-intelephense-client
+      - brapifra.phpserver
+      - DEVSENSE.profiler-php-vscode
+      - ikappas.composer
+      - MehediDracula.php-namespace-resolver
+      - neilbrayfield.php-docblocker
+      - onecentlin.phpunit-snippets
+      - recca0120.vscode-phpunit
+      - tintrinh.php-refactor
+      - xdebug.php-debug
+    dependencies:
+      - itmcdev.generic-extension-pack
+      - itmcdev.html-extension-pack
+      - Sophisticode.php-formatter
+  php-laravel:
+    pack:
+      - Laratips.laravel-utils
+      - mblode.twig-language-2
+      - onecentlin.laravel-blade
+      - onecentlin.laravel5-snippets
+      - ryannaddy.laravel-artisan
+    dependencies:
+      - bajdzis.vscode-twig-pack
+      - itmcdev.php-extension-pack
+  php-symfony:
+    pack:
+      - n4zim.vscode-symfony
+      - TheNouillet.symfony-vscode
+    dependencies:
+      - bajdzis.vscode-twig-pack
+      - itmcdev.php-extension-pack
+  python:
+    pack:
+      - donjayamanne.python-environment-manager
+      - magicstack.MagicPython
+      - mgesbert.python-path
+      - ms-pyright.pyright
+      - ms-python.python
+      - ms-toolsai.jupyter
+      - njpwerner.autodocstring
+      - njqdev.vscode-python-typehint
+      - shiro.pythonpack
+      - wholroyd.jinja
+    dependencies:
+      - hbenl.vscode-test-explorer
+      - LittleFoxTeam.vscode-python-test-adapter
+  # python-django:
+  #   pack:
+  #     - batisteo.vscode-django
+  #     - wholroyd.jinja
+  #   dependencies:
+  #     - itmcdev.python-extension-pack
+  ruby:
+    pack:
+      - castwide.solargraph
+      - hoovercj.ruby-linter
+      - jpogran.puppet-vscode
+      - KoichiSasada.vscode-rdbg
+      - marcostazi.vs-code-vagrantfile
+      - miguel-savignano.ruby-symbols
+      - rebornix.ruby
+      - Shopify.ruby-lsp
+      - wingrunr21.vscode-ruby
+    dependencies:
+      - connorshea.vscode-ruby-test-adapter
+  # ruby-rails:
+  #   pack:
+  #     - bung87.rails
+  #   dependencies:
+  #     - itmcdev.ruby-extension-pack
+  rust:
+    pack:
+      - rust-lang.rust
+      - dustypomerleau.rust-syntax
+      - JScearcy.rust-doc-viewer
+      - ConradLudgate.rust-playground
+      - serayuzgur.crates
+      - TechTheAwesome.rust-yew
+    dependencies:
+      - swellaby.vscode-rust-test-adapter
+      - vadimcn.vscode-lldb
+  swagger:
+    - Arjun.swagger-viewer
+    - 42Crunch.vscode-openapi
+    - mermade.openapi-lint
+  workspace:
+    - ms-vscode.atom-keybindings
+    - file-icons.file-icons
+    - PKief.material-icon-theme
+    - jebbs.plantuml
+    - Equinusocio.vsc-material-theme

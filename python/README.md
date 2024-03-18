@@ -5,9 +5,8 @@ Includes the basic extensions to get started with [Python](https://www.python.or
 ## Extensions
 
 <!-- +Extensions -->
-* [Microsoft](https://marketplace.visualstudio.com/publishers/ms-python) [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) :: IntelliSense (Pylance), Linting, Debugging (multi-threaded, remote), Jupyter Notebooks, code formatting, refactoring, unit tests, and more.
+* [Microsoft](https://marketplace.visualstudio.com/publishers/ms-python) [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) :: Python language support with extension access points for IntelliSense (Pylance), Debugging (Python Debugger), linting, formatting, refactoring, unit tests, and more.
 * [Microsoft](https://marketplace.visualstudio.com/publishers/ms-toolsai) [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) :: Jupyter notebook support, interactive programming and computing that supports Intellisense, debugging and more.
-* [Baptiste Darthenay](https://marketplace.visualstudio.com/publishers/batisteo) [Django](https://marketplace.visualstudio.com/items?itemName=batisteo.vscode-django) :: Beautiful syntax and scoped snippets for perfectionists with deadlines
 * [wholroyd](https://marketplace.visualstudio.com/publishers/wholroyd) [Jinja](https://marketplace.visualstudio.com/items?itemName=wholroyd.jinja) :: Jinja template language support for Visual Studio Code
 * [Nils Werner](https://marketplace.visualstudio.com/publishers/njpwerner) [autoDocstring - Python Docstring Generator](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) :: Generates python docstrings automatically
 * [Don Jayamanne](https://marketplace.visualstudio.com/publishers/donjayamanne) [Python Environment Manager](https://marketplace.visualstudio.com/items?itemName=donjayamanne.python-environment-manager) :: View and manage Python environments & packages.
@@ -17,8 +16,8 @@ Includes the basic extensions to get started with [Python](https://www.python.or
 * [Mathias Gesbert](https://marketplace.visualstudio.com/publishers/mgesbert) [Python Path](https://marketplace.visualstudio.com/items?itemName=mgesbert.python-path) :: Python imports utils.
 * [njqdev](https://marketplace.visualstudio.com/publishers/njqdev) [Python Type Hint](https://marketplace.visualstudio.com/items?itemName=njqdev.vscode-python-typehint) :: Type hint completion for Python.
 * [ms-pyright](https://marketplace.visualstudio.com/publishers/ms-pyright) [Pyright](https://marketplace.visualstudio.com/items?itemName=ms-pyright.pyright) :: VS Code static type checking for Python
-* [itmcdev](https://marketplace.visualstudio.com/publishers/itmcdev) [ITMCDev Generic Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.generic-extension-pack) :: A collection of generic extensions for development inside ITMC
 * [shiro](https://marketplace.visualstudio.com/publishers/shiro) [Python](https://marketplace.visualstudio.com/items?itemName=shiro.pythonpack) :: Extensions for Python
+* [itmcdev](https://marketplace.visualstudio.com/publishers/itmcdev) [ITMCDev Generic Extension Pack](https://marketplace.visualstudio.com/items?itemName=itmcdev.generic-extension-pack) :: A collection of generic extensions for development inside ITMC
 <!-- -Extensions -->
 
 ## Contact

@@ -26,14 +26,16 @@
     "itmcdev"
   ],
   "extensionPack": [
-    "msjsdiag.vscode-react-native",
+    "gottfired.css2react",
+    "million.million-lint",
+    "ricardo-emerson.create-react-tsx-component",
+    "xabikos.ReactSnippets",
     "planbcoding.vscode-react-refactor",
-    "rocketseat.RocketseatReactNative",
-    "vsmobile.vscode-react-native",
     "walter-ribeiro.full-react-snippets"
   ],
   "extensionDependencies": [
-    "itmcdev.html-extension-pack",
+    "itmcdev.generic-extension-pack",
+    "itmcdev.node-react-extension-pack",
     "itmcdev.node-typescript-extension-pack"
   ]
 }
