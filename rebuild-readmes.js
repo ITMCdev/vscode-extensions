@@ -2,6 +2,7 @@ const axios = require("axios");
 // const fetch = require("node-fetch");
 const fs = require("fs");
 const path = require("path");
+const yaml = require("yaml");
 
 const getExtensionsList = async (list) => {
   var data = JSON.stringify({
@@ -20,8 +21,7 @@ const getExtensionsList = async (list) => {
 
   var config = {
     method: "post",
-    url:
-      "https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery",
+    url: "https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery",
     headers: {
       accept: "application/json;api-version=6.1-preview.1;excludeUrls=true",
       "Content-Type": "application/json",
@@ -48,6 +48,11 @@ const getExtensionsList = async (list) => {
 };
 
 const main = async () => {
+  const yamlBuffer = await fs.promises.readFile(
+    path.join(__dirname, "extensions.yml")
+  );
+  const { extensions } = yaml.parse(yamlBuffer.toString("utf-8"));
+
   const dirs = await fs.promises.readdir(__dirname);
   for (dir of dirs) {
     let stats = await fs.promises.stat(path.join(__dirname, dir));
@@ -60,7 +65,26 @@ const main = async () => {
         let package = await fs.promises.readFile(packageFile);
         package = JSON.parse(package.toString("utf-8"));
 
-        let extensions = await getExtensionsList([
+        package.extensionPack = Array.isArray(extensions[dir])
+          ? extensions[dir]
+          : Array.isArray(extensions[dir].pack)
+          ? extensions[dir].pack
+          : [];
+        package.extensionPack = [...new Set(package.extensionPack)];
+
+        package.extensionDependencies = [
+          "itmcdev.generic-extension-pack",
+          ...(!Array.isArray(extensions[dir])
+            ? Array.isArray(extensions[dir].dependencies)
+              ? extensions[dir].dependencies
+              : [""]
+            : [""]),
+        ];
+        package.extensionDependencies = [
+          ...new Set(package.extensionDependencies),
+        ];
+
+        let extensionList = await getExtensionsList([
           ...(package.extensionPack || []),
           ...(package.extensionDependencies || []),
         ]);
@@ -70,14 +94,19 @@ const main = async () => {
 
         readme = readme.replace(
           /\<!-- \+Extensions -->.+\<!-- -Extensions -->/gms,
-          `<!-- +Extensions -->\n${extensions}\n<!-- -Extensions -->`
+          `<!-- +Extensions -->\n${extensionList}\n<!-- -Extensions -->`
         );
 
         await fs.promises.writeFile(readmeFile, readme);
+        await fs.promises.writeFile(
+          packageFile,
+          JSON.stringify(package, null, 2)
+        );
 
         console.log(`${readmeFile} written.`);
       } catch (e) {
         console.error(`Could not access ${packageFile}: ${e.message} ...`);
+        // console.log(e);
       }
     }
   }
