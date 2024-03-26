@@ -14,28 +14,115 @@ jobs:
   #######################################################################
   #                          BUMP VERSION                               #
   #######################################################################
-  release:
-    if: |
-      (
-        github.event_name != 'pull_request'
-        || (github.event.pull_request && startsWith(github.event.pull_request.title, 'chore: release') != false)
-      )
-    name: "Release Tag"
-    outputs:
-      version: ${{ steps.new_releases.outputs.version }}
+  # release:
+  #   if: |
+  #     (
+  #       github.event_name != 'pull_request'
+  #       || (github.event.pull_request && startsWith(github.event.pull_request.title, 'chore: release') != false)
+  #     )
+  #   name: "Release Tag"
+  #   outputs:
+  #     version: ${{ steps.new_releases.outputs.version }}
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout Repository
+  #       uses: actions/checkout@v4
+  #     - name: Perform Release
+  #       uses: GoogleCloudPlatform/release-please-action@v2
+  #       with:
+  #         token: ${{ secrets.GH_TOKEN }}
+  #         default-branch: ${{ github.ref_name }}
+  #         release-type: node
+  #         monorepo-tags: true
+  #         config-file: release-please-config.json
+  #         manifest-file: .release-please-manifest.json
+  change-finder:
     runs-on: ubuntu-latest
+    outputs:
+      nodePaths: ${{ steps.interrogate.outputs.nodePaths }}
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-      - name: Perform Release
-        uses: GoogleCloudPlatform/release-please-action@v2
+      - uses: actions/checkout@v4
+      - id: interrogate
+        uses: actions/github-script@v6
         with:
-          token: ${{ secrets.GH_TOKEN }}
-          default-branch: ${{ github.ref_name }}
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          retries: 5
+          script: |
+            const {execSync} = require('child_process');
+            const [owner, repo] = process.env.GITHUB_REPOSITORY.split('/');
+            const latestRelease = await github.rest.repos.getLatestRelease({
+              owner,
+              repo
+            });
+            console.log(`latest release: ${JSON.stringify(latestRelease.data)}`);
+            execSync('git pull --tags');
+            execSync(`git reset --hard ${latestRelease.data.tag_name}`);
+            const status = execSync(`git diff --name-only origin/master`, { encoding: 'utf-8'});
+            console.log(status);
+            const changes = status.split('\n');
+            let nodePaths = new Set();
+            for (const change of changes) {
+              if (change.startsWith('packages/')) {
+                  const library = change.split('/')[1];
+                  nodePaths.add(library);
+              };
+            }
+            nodePaths = Array.from(nodePaths);
+            console.log(`::set-output name=nodePaths::${JSON.stringify(nodePaths)}`);
+  release-please-release:
+    runs-on: ubuntu-latest
+    needs: change-finder
+    strategy:
+      fail-fast: false
+      matrix:
+        package: ${{fromJson(needs.changeFinder.outputs.nodePaths)}}
+    steps:
+      - uses: google-github-actions/release-please-action@v3
+        id: tag-release
+        with:
+          path: packages/${{ matrix.package }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           release-type: node
           monorepo-tags: true
-          config-file: release-please-config.json
-          manifest-file: .release-please-manifest.json
+          package-name: ${{ matrix.package }}
+          command: github-release
+      - uses: actions/checkout@v4
+        if: ${{ steps.tag-release.outputs.releases_created }}
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - uses: actions/setup-node@v3
+        if: ${{ steps.tag-release.outputs.releases_created }}
+        with:
+          node-version: 16
+          registry-url: "https://external-dot-oss-automation.appspot.com/"
+          cache: "pnpm"
+      - name: publish
+        if: ${{ steps.tag-release.outputs.releases_created }}
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+        run: |
+          pnpm install
+          pnpm publish --filter ${{ matrix.package }} --no-git-checks --access public
+  release-pr:
+    runs-on: ubuntu-latest
+    needs:
+      - change-finder
+      - release-please-release
+    strategy:
+      fail-fast: false
+      matrix:
+        package: ${{fromJson(needs.changeFinder.outputs.nodePaths)}}
+    steps:
+      - uses: google-github-actions/release-please-action@v3
+        id: release-please
+        with:
+          path: packages/${{ matrix.package }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          release-type: node
+          package-name: ${{ matrix.package }}
+          monorepo-tags: true
+          command: release-pr
 
   #######################################################################
   #                       PUBLISH EXTENSIONS                            #
@@ -43,6 +130,8 @@ jobs:
   publish:
     if: github.event_name != 'pull_request' && needs.release.outputs.version
     name: "Publish Template"
-    needs: [release]
+    needs:
+      - release-please-release
+      - release-pr
     uses: itmcdev/vscode-extensions/.github/workflows/publish.yml@main
     secrets: inherit

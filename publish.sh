@@ -29,7 +29,7 @@ get_package_version() {
   echo $(cat $1 | jq -r '.version')
 }
 
-find . -mindepth 2 -iname "package.json" -and -not -ipath "*node_modules*" | sort | while read packageJson; do
+find . -mindepth 3 -iname "package.json" -and -not -ipath "*node_modules*" | sort | while read packageJson; do
   packageName=$(get_package_name $packageJson)
   newVersion=$(get_package_version $packageJson)
   oldVersion=$(get_last_published_version $packageName)
