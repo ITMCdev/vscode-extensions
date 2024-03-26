@@ -14,91 +14,84 @@ jobs:
   #######################################################################
   #                          BUMP VERSION                               #
   #######################################################################
-  # changeFinder:
-  #   runs-on: ubuntu-latest
-  #   outputs:
-  #     nodePaths: ${{ steps.interrogate.outputs.nodePaths }}
-  #   steps:
-  #     - uses: actions/checkout@v4
-  #     - id: interrogate
-  #       uses: actions/github-script@v6
-  #       with:
-  #         github-token: ${{secrets.GH_TOKEN}}
-  #         retries: 5
-  #         script: |
-  #           const {execSync} = require('child_process');
-  #           const [owner, repo] = process.env.GITHUB_REPOSITORY.split('/');
-  #           let nodePaths = new Set();
-  #           try {
-  #             const latestRelease = await github.rest.repos.getLatestRelease({
-  #               owner,
-  #               repo
-  #             });
-  #             console.log(`latest release: ${JSON.stringify(latestRelease.data)}`);
-  #             execSync('git pull --tags');
-  #             execSync(`git reset --hard ${latestRelease.data.tag_name}`);
-  #             const status = execSync(`git diff --name-only origin/master`, { encoding: 'utf-8'});
-  #             console.log(status);
-  #             const changes = status.split('\n');
+  change-finder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Interrogate
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{secrets.GH_TOKEN}}
+          retries: 5
+          script: |
+            const {execSync} = require('child_process');
+            const {writeFileSync} = require('fs');
+            const {join: joinPath} = require('path');
+            const [owner, repo] = process.env.GITHUB_REPOSITORY.split('/');
+            let nodePaths = new Set();
+            try {
+              const latestRelease = await github.rest.repos.getLatestRelease({
+                owner,
+                repo
+              });
+              console.log(`latest release: ${JSON.stringify(latestRelease.data)}`);
+              execSync('git pull --tags');
+              execSync(`git reset --hard ${latestRelease.data.tag_name}`);
+              const status = execSync(`git diff --name-only origin/master`, { encoding: 'utf-8'});
+              console.log(status);
+              const changes = status.split('\n');
 
-  #             for (const change of changes) {
-  #               if (change.startsWith('packages/')) {
-  #                   const library = change.split('/')[1];
-  #                   nodePaths.add(library);
-  #               };
-  #             }
-  #           } catch (e) {
-  #             console.log('Could not determine last release.');
-  #             const packages = execSync(`find ./packages -type d -mindepth 1`, { encoding: 'utf-8'})
-  #             console.log(packages);
-  #             const changes = packages.split('\n');
+              for (const change of changes) {
+                if (change.startsWith('packages/')) {
+                    const library = change.split('/')[1];
+                    nodePaths.add(library);
+                };
+              }
+            } catch (e) {
+              console.log('Could not determine last release.');
+              const packages = execSync(`find ./packages -type d -mindepth 1`, { encoding: 'utf-8'})
+              console.log(packages);
+              const changes = packages.split('\n');
 
-  #             for (const change of changes) {
-  #               if (change.startsWith('./packages/')) {
-  #                   const library = change.split('/')[2];
-  #                   nodePaths.add(library);
-  #               };
-  #             }
-  #           }
-  #           nodePaths = Array.from(nodePaths);
-  #           console.log(nodePaths);
-  #           console.log(`::set-output name=nodePaths::${JSON.stringify(nodePaths.slice(0,2))}`);
-  # release-please-release:
-  #   runs-on: ubuntu-latest
-  #   needs: [changeFinder]
-  #   strategy:
-  #     fail-fast: false
-  #     matrix:
-  #       package: ${{fromJson(needs.changeFinder.outputs.nodePaths)}}
-  #   steps:
-  #     - uses: google-github-actions/release-please-action@v4
-  #       id: tag-release
-  #       with:
-  #         path: packages/${{ matrix.package }}
-  #         token: ${{ secrets.GH_TOKEN }}
-  #         release-type: node
-  #         monorepo-tags: true
-  #         package-name: "@itmcdev/${{ matrix.package }}-extension-pack"
-  #         command: github-release
-  # release-pr:
-  #   runs-on: ubuntu-latest
-  #   needs:
-  #     - changeFinder
-  #     - release-please-release
-  #   strategy:
-  #     fail-fast: false
-  #     matrix:
-  #       package: ${{fromJson(needs.changeFinder.outputs.nodePaths)}}
-  #   steps:
-  #     - uses: google-github-actions/release-please-action@v4
-  #       id: release-please
-  #       with:
-  #         path: packages/${{ matrix.package }}
-  #         token: ${{ secrets.GH_TOKEN }}
-  #         release-type: node
-  #         package-name: ${{ matrix.package }}
-  #         monorepo-tags: true
-  #         command: release-pr
+              for (const change of changes) {
+                if (change.startsWith('./packages/')) {
+                    const library = change.split('/')[2];
+                    nodePaths.add(library);
+                };
+              }
+            }
+            nodePaths = Array.from(nodePaths);
+            console.log(nodePaths);
+
+            const releasePleaseConfig = {
+              ["release-type"]: "node",
+              packages: {
+                ".": {
+                  // overrides release-type for node
+                  ["release-type"]: "node",
+                  ["package-name"]: "@itmcdev/vscode-extensions",
+                  ["changelog-path"]: "CHANGELOG.md",
+                },
+              },
+            };
+            nodePaths.forEach(item => {
+              releasePleaseConfig.packages = {
+                ...releasePleaseConfig.packages,
+                [item]: {
+                  ["release-type"]: "node",
+                  ["package-name"]: `itmcdev.${package.name}-extension-pack`,
+                  ["changelog-path"]: joinPath(item, "CHANGELOG.md"),
+                },
+              };
+            })
+            console.log(releasePleaseConfig)
+            writeFilesync('release-please-config.json', JSON.stringify(releasePleaseConfig, null, 2));
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-please-config
+          path: release-please-config.json
   manifest-pr:
     if: |
       (
@@ -107,6 +100,10 @@ jobs:
       )
     runs-on: ubuntu-latest
     steps:
+      - name: Archive production artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: release-please-config
       - name: Checkout Repository
         uses: actions/checkout@v4
       - name: Use Node.js 18.x
@@ -121,33 +118,8 @@ jobs:
             --token=${{ secrets.GH_TOKEN }} \
             --repo-url=${{ github.repository }} \
             --target-branch=main \
-            --config-file=release-please-config.json
+            --config-file=release-please-config.json \
             --manifest-file=.release-please-manifest.json
-      # - name: Create Github Release
-      #   id: new_releases
-      #   run: |
-      #     set +e
-
-      #     output=$(npm run release -- github-release \
-      #       --token=${{ secrets.GH_TOKEN }} \
-      #       --repo-url=${{ github.repository }} \
-      #       --target-branch=${{ inputs.GhReleaseBranch }} \
-      #       --release-type=node \
-      #       --include-v-in-tags=false)
-
-      #     echo $output
-
-      #     # version=$(cat package.json | jq -r '.version')
-      #     version=$(echo $output | grep -oP "version: '\K[^']+")
-      #     # version=$(echo $output | sed -nE "s/.*version: '([^']+)'.*/\1/p")
-
-      #     echo version=$version
-      #     echo "version=$version" >> $GITHUB_OUTPUT
-      # - name: Debug
-      #   run: |
-      #     echo github.event_name=${{ github.event_name }}
-      #     echo github.event.pull_request.merged=${{ github.event.pull_request.merged }}
-      #     echo needs.release.outputs.version=${{ needs.release.outputs.version }}
 
   # #######################################################################
   # #                       PUBLISH EXTENSIONS                            #
