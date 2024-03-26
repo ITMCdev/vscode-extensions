@@ -69,14 +69,14 @@ jobs:
                     nodePaths.add(library);
                 };
               }
-              nodePaths = Array.from(nodePaths);
             } catch (e) {
               console.log(e);
             }
+            nodePaths = Array.from(nodePaths);
             console.log(`::set-output name=nodePaths::${JSON.stringify(nodePaths)}`);
   release-please-release:
     runs-on: ubuntu-latest
-    needs: change-finder
+    needs: [change-finder]
     strategy:
       fail-fast: false
       matrix:
