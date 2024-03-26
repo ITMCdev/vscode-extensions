@@ -107,13 +107,48 @@ jobs:
       )
     runs-on: ubuntu-latest
     steps:
-      - uses: google-github-actions/release-please-action@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v4
         with:
-          token: ${{ secrets.GH_TOKEN }}
-          release-type: node
-          command: manifest-pr
-          config-file: release-please-config.json
-          manifest-file: .release-please-manifest.json
+          node-version: 18.x
+      - name: Install Dependencies
+        run: npm i
+      - name: Create/Update Release PR
+        run: |
+          npm run release -- manifest-pr \
+            --token=${{ secrets.GH_TOKEN }} \
+            --repo-url=${{ github.repository }} \
+            --target-branch=${{ inputs.GhReleaseBranch }} \
+            --release-type=node
+            --config-file=replease-please-config.json
+            --manifest-file=.release-please-manifest.json
+      # - name: Create Github Release
+      #   id: new_releases
+      #   run: |
+      #     set +e
+
+      #     output=$(npm run release -- github-release \
+      #       --token=${{ secrets.GH_TOKEN }} \
+      #       --repo-url=${{ github.repository }} \
+      #       --target-branch=${{ inputs.GhReleaseBranch }} \
+      #       --release-type=node \
+      #       --include-v-in-tags=false)
+
+      #     echo $output
+
+      #     # version=$(cat package.json | jq -r '.version')
+      #     version=$(echo $output | grep -oP "version: '\K[^']+")
+      #     # version=$(echo $output | sed -nE "s/.*version: '([^']+)'.*/\1/p")
+
+      #     echo version=$version
+      #     echo "version=$version" >> $GITHUB_OUTPUT
+      # - name: Debug
+      #   run: |
+      #     echo github.event_name=${{ github.event_name }}
+      #     echo github.event.pull_request.merged=${{ github.event.pull_request.merged }}
+      #     echo needs.release.outputs.version=${{ needs.release.outputs.version }}
 
   # #######################################################################
   # #                       PUBLISH EXTENSIONS                            #
