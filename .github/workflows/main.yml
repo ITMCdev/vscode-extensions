@@ -45,7 +45,7 @@ jobs:
       - id: interrogate
         uses: actions/github-script@v6
         with:
-          github-token: ${{secrets.GITHUB_TOKEN}}
+          github-token: ${{secrets.GH_TOKEN}}
           retries: 5
           script: |
             const {execSync} = require('child_process');
@@ -81,7 +81,7 @@ jobs:
         id: tag-release
         with:
           path: packages/${{ matrix.package }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
           release-type: node
           monorepo-tags: true
           package-name: ${{ matrix.package }}
@@ -118,7 +118,7 @@ jobs:
         id: release-please
         with:
           path: packages/${{ matrix.package }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
           release-type: node
           package-name: ${{ matrix.package }}
           monorepo-tags: true
