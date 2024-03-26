@@ -31,8 +31,9 @@ jobs:
         uses: GoogleCloudPlatform/release-please-action@v2
         with:
           token: ${{ secrets.GH_TOKEN }}
-          command: manifest
           default-branch: main
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json
 
   #######################################################################
   #                       PUBLISH EXTENSIONS                            #
