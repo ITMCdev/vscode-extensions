@@ -78,7 +78,7 @@ jobs:
             console.log(`::set-output name=nodePaths::${JSON.stringify(nodePaths)}`);
   release-please-release:
     runs-on: ubuntu-latest
-    needs: [change-finder]
+    needs: [changeFinder]
     strategy:
       fail-fast: false
       matrix:
