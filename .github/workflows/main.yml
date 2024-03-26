@@ -50,24 +50,29 @@ jobs:
           script: |
             const {execSync} = require('child_process');
             const [owner, repo] = process.env.GITHUB_REPOSITORY.split('/');
-            const latestRelease = await github.rest.repos.getLatestRelease({
-              owner,
-              repo
-            });
-            console.log(`latest release: ${JSON.stringify(latestRelease.data)}`);
-            execSync('git pull --tags');
-            execSync(`git reset --hard ${latestRelease.data.tag_name}`);
-            const status = execSync(`git diff --name-only origin/master`, { encoding: 'utf-8'});
-            console.log(status);
-            const changes = status.split('\n');
             let nodePaths = new Set();
-            for (const change of changes) {
-              if (change.startsWith('packages/')) {
-                  const library = change.split('/')[1];
-                  nodePaths.add(library);
-              };
+            try {
+              const latestRelease = await github.rest.repos.getLatestRelease({
+                owner,
+                repo
+              });
+              console.log(`latest release: ${JSON.stringify(latestRelease.data)}`);
+              execSync('git pull --tags');
+              execSync(`git reset --hard ${latestRelease.data.tag_name}`);
+              const status = execSync(`git diff --name-only origin/master`, { encoding: 'utf-8'});
+              console.log(status);
+              const changes = status.split('\n');
+
+              for (const change of changes) {
+                if (change.startsWith('packages/')) {
+                    const library = change.split('/')[1];
+                    nodePaths.add(library);
+                };
+              }
+              nodePaths = Array.from(nodePaths);
+            } catch (e) {
+              console.log(e);
             }
-            nodePaths = Array.from(nodePaths);
             console.log(`::set-output name=nodePaths::${JSON.stringify(nodePaths)}`);
   release-please-release:
     runs-on: ubuntu-latest
