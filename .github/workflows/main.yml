@@ -32,6 +32,7 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN }}
           default-branch: ${{ github.ref_name }}
+          release-type: node
           config-file: release-please-config.json
           manifest-file: .release-please-manifest.json
 
