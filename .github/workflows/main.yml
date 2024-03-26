@@ -21,7 +21,6 @@ jobs:
         || (github.event.pull_request && startsWith(github.event.pull_request.title, 'chore: release') != false)
       )
     name: "Release Tag"
-    needs: [validate]
     outputs:
       version: ${{ steps.new_releases.outputs.version }}
     runs-on: ubuntu-latest
