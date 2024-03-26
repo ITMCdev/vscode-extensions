@@ -2,7 +2,7 @@
   "name": "dotnet-csharp-extension-pack",
   "displayName": "ITMCDev .NET C# Extension Pack",
   "description": "A collection of generic extensions for .NET C# development inside ITMC",
-  "version": "0.0.6",
+  "version": "1.0.0",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",

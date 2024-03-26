@@ -2,7 +2,7 @@
   "name": "db-extension-pack",
   "displayName": "[Deprecated] ITMCDev DB Extension Pack",
   "description": "A collection of extensions for developming with DB languages inside ITMC",
-  "version": "0.0.7",
+  "version": "1.0.0",
   "publisher": "itmcdev",
   "private": true,
   "repository": {

@@ -2,7 +2,7 @@
   "name": "node-typescript-extension-pack",
   "displayName": "ITMCDev TypeScript Extension Pack",
   "description": "A collection of extensions for developming with NodeJS & TypeScript inside ITMC",
-  "version": "0.0.6",
+  "version": "1.0.0",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
