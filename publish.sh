@@ -37,9 +37,9 @@ find ./packages -iname "package.json" | sort | while read packageJson; do
     cd $(dirname $packageJson);
     echo "publishing itmcdev.$packageName..."
     if [[ "$VSCE_TOKEN" != "" ]]; then
-      ../node_modules/.bin/vsce publish --skip-duplicate -p $VSCE_TOKEN;
+      ../../node_modules/.bin/vsce publish --skip-duplicate -p $VSCE_TOKEN;
     else
-	  ../node_modules/.bin/vsce publish --skip-duplicate;
+	  ../../node_modules/.bin/vsce publish --skip-duplicate;
     fi
     cd ..;
   else
