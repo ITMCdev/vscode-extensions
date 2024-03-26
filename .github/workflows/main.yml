@@ -49,10 +49,11 @@ jobs:
               }
             } catch (e) {
               console.log('Could not determine last release.');
-              const packages = execSync(`find ./packages -type d -mindepth 1`, { encoding: 'utf-8'})
+              const packages = execSync(`ls`, { encoding: 'utf-8'})
+              //const packages = execSync(`find ./packages -type d -mindepth 1`, { encoding: 'utf-8'})
               console.log(packages);
 
-              const changes = status.split('\n');
+              const changes = packages.split('\n');
 
               for (const change of changes) {
                 if (change.startsWith('./packages/')) {
