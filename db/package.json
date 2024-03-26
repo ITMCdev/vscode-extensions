@@ -1,9 +1,10 @@
 {
   "name": "db-extension-pack",
-  "displayName": "ITMCDev DB Extension Pack",
+  "displayName": "[Deprecated] ITMCDev DB Extension Pack",
   "description": "A collection of extensions for developming with DB languages inside ITMC",
   "version": "0.0.7",
   "publisher": "itmcdev",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/itmcdev/vscode-extensions"

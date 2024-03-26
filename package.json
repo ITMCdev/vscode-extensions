@@ -4,8 +4,7 @@
   "description": "VsCode Extension packs as used by ITMC Teams",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "build": "node build.js"
   },
   "repository": {
     "type": "git",
@@ -18,14 +17,14 @@
   },
   "homepage": "https://github.com/ITMCdev/vscode-extensions#readme",
   "devDependencies": {
-    "axios": "0.21.1",
+    "@release-it/bumper": "^6.0.1",
+    "@release-it/conventional-changelog": "^8.0.1",
+    "axios": "^0.21.4",
     "husky": "^6.0.0",
+    "npm-run-all2": "^6.1.2",
+    "release-it": "^17.1.1",
+    "release-please": "^16.10.1",
+    "vsce": "^1.97.0",
     "yaml": "^2.4.1"
-  },
-  "dependencies": {
-    "@release-it/bumper": "^4.0.2",
-    "@release-it/conventional-changelog": "^5.1.1",
-    "release-it": "^15.10.1",
-    "vsce": "^2.15.0"
   }
 }

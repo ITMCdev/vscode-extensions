@@ -1,4 +1,12 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-node rebuild-readmes.js
+#
+# duilding all dependencies
+#
+npm run build
+
+#
+# resetting
+#
+git add -u

@@ -1,0 +1,25 @@
+name: Publish Template
+
+on:
+  workflow_call:
+  workflow_dispatch:
+
+jobs:
+  publish:
+    name: "Publish Template"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18.x
+      - name: Install Dependencies
+        run: |
+          npm i -g vsce
+      - name: Create GitHub Release and Upload Zip
+        env:
+          VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}
+        run: |
+          bash ./publish.sh

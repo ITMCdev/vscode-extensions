@@ -1,0 +1,46 @@
+name: Node.js CI
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - main
+      - master
+
+jobs:
+  #######################################################################
+  #                          BUMP VERSION                               #
+  #######################################################################
+  release:
+    if: |
+      (
+        github.event_name != 'pull_request'
+        || (github.event.pull_request && startsWith(github.event.pull_request.title, 'chore: release') != false)
+      )
+    name: "Release Tag"
+    needs: [validate]
+    outputs:
+      version: ${{ steps.new_releases.outputs.version }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Perform Release
+        uses: GoogleCloudPlatform/release-please-action@v2
+        with:
+          command: manifest
+          default-branch: main
+          manifest-path: ".release-please.json"
+
+  #######################################################################
+  #                       PUBLISH EXTENSIONS                            #
+  #######################################################################
+  publish:
+    if: github.event_name != 'pull_request' && needs.release.outputs.version
+    name: "Publish Template"
+    needs: [release]
+    uses: itmcdev/vscode-extensions/.github/workflows/publish.yml@main
+    secrets: inherit
