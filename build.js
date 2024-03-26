@@ -138,10 +138,10 @@ const main = async () => {
         updateReadme(readmeFile, package);
         releasePleaseConfig.packages = {
           ...releasePleaseConfig.packages,
-          [dir]: {
+          [`packages/${dir}`]: {
             ["release-type"]: "node",
             ["package-name"]: `itmcdev.${package.name}`,
-            ["changelog-path"]: joinPath(dir, "CHANGELOG.md"),
+            ["changelog-path"]: "CHANGELOG.md",
           },
         };
       }

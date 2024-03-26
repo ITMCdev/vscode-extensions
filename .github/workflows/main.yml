@@ -78,10 +78,10 @@ jobs:
             nodePaths.forEach(item => {
               releasePleaseConfig.packages = {
                 ...releasePleaseConfig.packages,
-                [item]: {
+                [`packages/${item}`]: {
                   ["release-type"]: "node",
                   ["package-name"]: `itmcdev.${item}-extension-pack`,
-                  ["changelog-path"]: joinPath(item, "CHANGELOG.md"),
+                  ["changelog-path"]: "CHANGELOG.md",
                 },
               };
             })
@@ -112,7 +112,10 @@ jobs:
         with:
           node-version: 18.x
       - name: Install Dependencies
-        run: npm i
+        run: |
+          npm i
+          apt-get install jq -y
+          cat release-please-config.json | jq -r .
       - name: Create/Update Release PR
         run: |
           npm run release -- manifest-pr \
