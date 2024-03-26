@@ -127,20 +127,20 @@ const main = async () => {
     },
   };
 
-  for (dir of Object.keys(extensions)) {
-    const extensionFolder = joinPath(__dirname, "packages", dir);
+  for (const item of Object.keys(extensions)) {
+    const extensionFolder = joinPath(__dirname, "packages", item);
     try {
       const extensionStats = await stat(extensionFolder);
       if (extensionStats && extensionStats.isDirectory()) {
         const packageFile = joinPath(extensionFolder, "package.json");
         const readmeFile = joinPath(extensionFolder, "README.md");
-        const package = await updatePackageJson(packageFile, extensions[dir]);
+        const package = await updatePackageJson(packageFile, extensions[item]);
         updateReadme(readmeFile, package);
         releasePleaseConfig.packages = {
           ...releasePleaseConfig.packages,
-          [`packages/${dir}`]: {
+          [`packages/${item}`]: {
             ["release-type"]: "node",
-            ["package-name"]: `itmcdev.${package.name}`,
+            ["package-name"]: `@itmcdev/${item}-extension-pack`,
             ["changelog-path"]: "CHANGELOG.md",
           },
         };

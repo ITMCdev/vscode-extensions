@@ -80,7 +80,7 @@ jobs:
                 ...releasePleaseConfig.packages,
                 [`packages/${item}`]: {
                   ["release-type"]: "node",
-                  ["package-name"]: `itmcdev.${item}-extension-pack`,
+                  ["package-name"]: `@itmcdev/${item}-extension-pack`,
                   ["changelog-path"]: "CHANGELOG.md",
                 },
               };
