@@ -120,8 +120,7 @@ jobs:
           npm run release -- manifest-pr \
             --token=${{ secrets.GH_TOKEN }} \
             --repo-url=${{ github.repository }} \
-            --target-branch=${{ inputs.GhReleaseBranch }} \
-            --release-type=node
+            --target-branch=main \
             --config-file=replease-please-config.json
             --manifest-file=.release-please-manifest.json
       # - name: Create Github Release
