@@ -2,7 +2,7 @@
   "name": "node-test-extension-pack",
   "displayName": "ITMCDev NodeJS Testing Extension Pack",
   "description": "A collection of extensions for testing with NodeJS inside ITMC",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",

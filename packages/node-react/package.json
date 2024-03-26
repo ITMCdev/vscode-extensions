@@ -2,7 +2,7 @@
   "name": "node-react-extension-pack",
   "displayName": "ITMCDev React Extension Pack",
   "description": "A collection of extensions for developming with React inside ITMC",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
