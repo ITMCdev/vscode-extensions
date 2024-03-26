@@ -1,4 +1,4 @@
-name: Publish Template
+name: Publish Extensions
 
 on:
   workflow_call:
@@ -6,7 +6,7 @@ on:
 
 jobs:
   publish:
-    name: "Publish Template"
+    name: "Publish Extension"
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -17,7 +17,8 @@ jobs:
           node-version: 18.x
       - name: Install Dependencies
         run: |
-          npm i -g vsce
+          sudo apt-get install libsecret-1-dev
+          npm i
       - name: Create GitHub Release and Upload Zip
         env:
           VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}

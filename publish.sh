@@ -29,7 +29,7 @@ get_package_version() {
   echo $(cat $1 | jq -r '.version')
 }
 
-find . -mindepth 3 -iname "package.json" -and -not -ipath "*node_modules*" | sort | while read packageJson; do
+find ./packages -iname "package.json" | sort | while read packageJson; do
   packageName=$(get_package_name $packageJson)
   newVersion=$(get_package_version $packageJson)
   oldVersion=$(get_last_published_version $packageName)
@@ -39,7 +39,7 @@ find . -mindepth 3 -iname "package.json" -and -not -ipath "*node_modules*" | sor
     if [[ "$VSCE_TOKEN" != "" ]]; then
       ../node_modules/.bin/vsce publish --skip-duplicate -p $VSCE_TOKEN;
     else
-	    ../node_modules/.bin/vsce publish --skip-duplicate;
+	  ../node_modules/.bin/vsce publish --skip-duplicate;
     fi
     cd ..;
   else
