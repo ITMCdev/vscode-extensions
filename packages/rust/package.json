@@ -2,7 +2,7 @@
   "name": "rust-extension-pack",
   "displayName": "ITMCDev Rust Extension Pack",
   "description": "A collection of extensions for developming with Rust inside ITMC",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",

@@ -2,7 +2,7 @@
   "name": "docker-kubernetes-extension-pack",
   "displayName": "ITMCDev Kubernetes Extension Pack",
   "description": "A collection of Kubernetes extensions for development inside ITMC",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
