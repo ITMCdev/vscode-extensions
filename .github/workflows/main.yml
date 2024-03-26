@@ -121,7 +121,7 @@ jobs:
             --token=${{ secrets.GH_TOKEN }} \
             --repo-url=${{ github.repository }} \
             --target-branch=main \
-            --config-file=replease-please-config.json
+            --config-file=release-please-config.json
             --manifest-file=.release-please-manifest.json
       # - name: Create Github Release
       #   id: new_releases
