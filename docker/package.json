@@ -2,7 +2,7 @@
   "name": "docker-extension-pack",
   "displayName": "ITMCDev Docker Extension Pack",
   "description": "A collection of generic extensions for development inside ITMC",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
@@ -28,7 +28,6 @@
     "ms-azuretools.vscode-docker"
   ],
   "extensionDependencies": [
-    "itmcdev.generic-extension-pack",
-    ""
+    "itmcdev.generic-extension-pack"
   ]
 }

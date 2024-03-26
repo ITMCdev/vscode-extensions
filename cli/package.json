@@ -2,7 +2,7 @@
   "name": "cli-extension-pack",
   "displayName": "ITMCDev CLI Scripting Extension Pack",
   "description": "A collection of CLI scripting extensions for development inside ITMC",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
@@ -34,7 +34,6 @@
     "rogalmic.zsh-debug"
   ],
   "extensionDependencies": [
-    "itmcdev.generic-extension-pack",
-    ""
+    "itmcdev.generic-extension-pack"
   ]
 }

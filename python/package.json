@@ -2,7 +2,7 @@
   "name": "python-extension-pack",
   "displayName": "ITMCDev Python Extension Pack",
   "description": "A collection of extensions for developming with Python inside ITMC",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",

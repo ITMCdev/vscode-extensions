@@ -2,7 +2,7 @@
   "name": "api-tools-extension-pack",
   "displayName": "ITMCDev API Tools Extension Pack",
   "description": "A collection of extensions for testing and developing APIs inside ITMC",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
@@ -32,7 +32,6 @@
     "mkloubert.vs-rest-api"
   ],
   "extensionDependencies": [
-    "itmcdev.generic-extension-pack",
-    ""
+    "itmcdev.generic-extension-pack"
   ]
 }

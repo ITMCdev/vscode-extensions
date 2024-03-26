@@ -2,7 +2,7 @@
   "name": "cfml-extension-pack",
   "displayName": "ITMCDev ColdFusion Extension Pack",
   "description": "A collection of extensions for developming with ColdFusion inside ITMC",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
@@ -32,7 +32,6 @@
     "KamasamaK.vscode-cfml"
   ],
   "extensionDependencies": [
-    "itmcdev.generic-extension-pack",
-    ""
+    "itmcdev.generic-extension-pack"
   ]
 }

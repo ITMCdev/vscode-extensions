@@ -37,7 +37,7 @@ const getExtensionsList = async (list) => {
       return response.data.results[0].extensions
         .map(
           (ext) =>
-            `* [${ext.publisher.displayName}](${publisherUrl}${ext.publisher.publisherName}) [${ext.displayName}](${extUrl}${ext.publisher.publisherName}.${ext.extensionName}) :: ${ext.shortDescription}`
+            `* [${ext.publisher.displayName}](${publisherUrl}${ext.publisher.publisherName}) [${ext.displayName}](${extUrl}${ext.publisher.publisherName}.${ext.extensionName}) :: ${ext.shortDescription}`,
         )
         .join("\n");
     })
@@ -51,9 +51,7 @@ const getExtensionsList = async (list) => {
 };
 
 const main = async () => {
-  const yamlBuffer = await fs.promises.readFile(
-    path.join(__dirname, "extensions.yml")
-  );
+  const yamlBuffer = await fs.promises.readFile(path.join(__dirname, "extensions.yml"));
   const { extensions } = yaml.parse(yamlBuffer.toString("utf-8"));
 
   const dirs = await fs.promises.readdir(__dirname);
@@ -74,21 +72,21 @@ const main = async () => {
         package.extensionPack = Array.isArray(extensions[dir])
           ? extensions[dir]
           : Array.isArray(extensions[dir].pack)
-          ? extensions[dir].pack
-          : [];
+            ? extensions[dir].pack
+            : [];
         package.extensionPack = [...new Set(package.extensionPack)];
 
         package.extensionDependencies = [
-          "itmcdev.generic-extension-pack",
+          ...(["generic-extension-pack", "workspace-extension-pack"].includes(package.name)
+            ? []
+            : ["itmcdev.generic-extension-pack"]),
           ...(!Array.isArray(extensions[dir])
             ? Array.isArray(extensions[dir].dependencies)
               ? extensions[dir].dependencies
-              : [""]
-            : [""]),
+              : []
+            : []),
         ];
-        package.extensionDependencies = [
-          ...new Set(package.extensionDependencies),
-        ];
+        package.extensionDependencies = [...new Set(package.extensionDependencies)];
 
         let extensionList = await getExtensionsList([
           ...(package.extensionPack || []),
@@ -100,14 +98,11 @@ const main = async () => {
 
         readme = readme.replace(
           /\<!-- \+Extensions -->.+\<!-- -Extensions -->/gms,
-          `<!-- +Extensions -->\n${extensionList}\n<!-- -Extensions -->`
+          `<!-- +Extensions -->\n${extensionList}\n<!-- -Extensions -->`,
         );
 
         await fs.promises.writeFile(readmeFile, readme);
-        await fs.promises.writeFile(
-          packageFile,
-          JSON.stringify(package, null, 2)
-        );
+        await fs.promises.writeFile(packageFile, JSON.stringify(package, null, 2));
 
         console.log(`${readmeFile} written.`);
       } catch (e) {

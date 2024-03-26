@@ -2,7 +2,7 @@
   "name": "workspace-extension-pack",
   "displayName": "ITMCDev Workspace Visual/Feeiling Extension Pack",
   "description": "A collection of extensions for development inside ITMC",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
@@ -30,8 +30,5 @@
     "jebbs.plantuml",
     "Equinusocio.vsc-material-theme"
   ],
-  "extensionDependencies": [
-    "itmcdev.generic-extension-pack",
-    ""
-  ]
+  "extensionDependencies": []
 }

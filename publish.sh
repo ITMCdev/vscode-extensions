@@ -1,7 +1,6 @@
 #! /bin/bash
 set -xe
 
-
 get_last_published_version() {
   curl -s --location --request POST 'https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery' \
 --header 'accept: application/json;api-version=6.1-preview.1;excludeUrls=true' \

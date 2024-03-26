@@ -2,7 +2,7 @@
   "name": "docker-openshift-extension-pack",
   "displayName": "ITMCDev OpenShift Extension Pack",
   "description": "A collection of generic extensions for development inside ITMC",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
@@ -27,7 +27,6 @@
     "redhat.vscode-openshift-connector"
   ],
   "extensionDependencies": [
-    "itmcdev.generic-extension-pack",
-    ""
+    "itmcdev.generic-extension-pack"
   ]
 }

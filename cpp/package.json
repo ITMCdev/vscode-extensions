@@ -2,7 +2,7 @@
   "name": "cpp-extension-pack",
   "displayName": "ITMCDev C/C++ Extension Pack",
   "description": "A collection of C/C++ extensions for development inside ITMC",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
@@ -39,7 +39,6 @@
     "twxs.cmake"
   ],
   "extensionDependencies": [
-    "itmcdev.generic-extension-pack",
-    ""
+    "itmcdev.generic-extension-pack"
   ]
 }

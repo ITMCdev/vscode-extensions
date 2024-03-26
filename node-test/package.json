@@ -2,7 +2,7 @@
   "name": "node-test-extension-pack",
   "displayName": "ITMCDev NodeJS Testing Extension Pack",
   "description": "A collection of extensions for testing with NodeJS inside ITMC",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
@@ -33,10 +33,9 @@
     "gwenio.vscode-ava-test-adapter",
     "hbenl.vscode-jasmine-test-adapter",
     "hbenl.vscode-mocha-test-adapter",
-    "hbenl.vscode-test-explorer",
     "kavod-io.vscode-jest-test-adapter",
+    "hbenl.vscode-test-explorer",
     "orta.vscode-jest",
-    "raagh.angular-karma-test-explorer",
     "Testy.vscode-testyts-test-adapter"
   ]
 }
