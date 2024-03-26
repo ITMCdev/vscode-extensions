@@ -121,15 +121,24 @@ jobs:
             --target-branch=main \
             --config-file=release-please-config.json \
             --manifest-file=.release-please-manifest.json
+      - name: Create Github Release
+        run: |
+          npm run release -- github-release \
+            --token=${{ secrets.GH_TOKEN }} \
+            --repo-url=${{ github.repository }} \
+            --target-branch=main \
+            --release-type=node \
+            --include-v-in-tags=false
+      - name: Debug
+        run: |
+          cat .release-please-manifest.json | jq -r .
 
-  # #######################################################################
-  # #                       PUBLISH EXTENSIONS                            #
-  # #######################################################################
-  # publish:
-  #   if: github.event_name != 'pull_request' && needs.release.outputs.version
-  #   name: "Publish Template"
-  #   needs:
-  #     - release-please-release
-  #     - release-pr
-  #   uses: itmcdev/vscode-extensions/.github/workflows/publish.yml@main
-  #   secrets: inherit
+  #######################################################################
+  #                       PUBLISH EXTENSIONS                            #
+  #######################################################################
+  publish:
+    if: github.event_name != 'pull_request' && needs.release.outputs.version
+    name: "Publish Template"
+    needs: [manifest-pr]
+    uses: itmcdev/vscode-extensions/.github/workflows/publish.yml@main
+    secrets: inherit
