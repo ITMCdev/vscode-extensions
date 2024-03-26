@@ -116,6 +116,7 @@ const main = async () => {
   const { extensions } = yaml.parse(yamlBuffer.toString("utf-8"));
 
   const releasePleaseConfig = {
+    ["release-type"]: "node",
     packages: {},
   };
 
@@ -128,14 +129,15 @@ const main = async () => {
         const readmeFile = joinPath(extensionFolder, "README.md");
         const package = await updatePackageJson(packageFile, extensions[dir]);
         updateReadme(readmeFile, package);
+        releasePleaseConfig.packages = {
+          ...releasePleaseConfig.packages,
+          [dir]: {
+            ["release-type"]: "node",
+            ["package-name"]: `itmcdev.${package.name}`,
+            ["changelog-path"]: joinPath(dir, "CHANGELOG.md"),
+          },
+        };
       }
-      releasePleaseConfig.packages = {
-        ...releasePleaseConfig.packages,
-        [dir]: {
-          releaseType: "node",
-          bumpMinorPreMajor: true,
-        },
-      };
     } catch (e) {
       console.error(`Extension folder does not exist yet: ${extensionFolder}`);
     }
