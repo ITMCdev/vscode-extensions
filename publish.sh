@@ -41,7 +41,7 @@ find ./packages -iname "package.json" | sort | while read packageJson; do
     else
 	  ../../node_modules/.bin/vsce publish --skip-duplicate;
     fi
-    cd ..;
+    cd ../..;
   else
     echo "Skipping publish on $packageName. No new version created..."
   fi
