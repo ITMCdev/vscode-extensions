@@ -117,7 +117,14 @@ const main = async () => {
 
   const releasePleaseConfig = {
     ["release-type"]: "node",
-    packages: {},
+    packages: {
+      ".": {
+        // overrides release-type for node
+        ["release-type"]: "node",
+        ["package-name"]: "@itmcdev/vscode-extensions",
+        ["changelog-path"]: "CHANGELOG.md",
+      },
+    },
   };
 
   for (dir of Object.keys(extensions)) {
