@@ -114,7 +114,7 @@ jobs:
       - name: Install Dependencies
         run: |
           npm i
-          apt-get install jq -y
+          sudo apt-get install jq -y
           cat release-please-config.json | jq -r .
       - name: Create/Update Release PR
         run: |
