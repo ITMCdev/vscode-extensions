@@ -2,7 +2,7 @@
   "name": "cli-extension-pack",
   "displayName": "ITMCDev CLI Scripting Extension Pack",
   "description": "A collection of CLI scripting extensions for development inside ITMC",
-  "version": "1.0.4",
+  "version": "1.0.0",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
