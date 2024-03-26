@@ -73,6 +73,7 @@ jobs:
               console.log(e);
             }
             nodePaths = Array.from(nodePaths);
+            console.log(nodePaths);
             console.log(`::set-output name=nodePaths::${JSON.stringify(nodePaths)}`);
   release-please-release:
     if: ${{ needs.changeFinder.outputs.nodePaths != '[]' }}
