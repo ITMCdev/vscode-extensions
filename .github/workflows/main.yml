@@ -71,6 +71,7 @@ jobs:
               }
             } catch (e) {
               console.log(e);
+              nodePaths.add('generic');
             }
             nodePaths = Array.from(nodePaths);
             console.log(nodePaths);
@@ -95,22 +96,22 @@ jobs:
           command: github-release
       - uses: actions/checkout@v4
         if: ${{ steps.tag-release.outputs.releases_created }}
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 8
-      - uses: actions/setup-node@v3
-        if: ${{ steps.tag-release.outputs.releases_created }}
-        with:
-          node-version: 16
-          registry-url: "https://external-dot-oss-automation.appspot.com/"
-          cache: "pnpm"
-      - name: publish
-        if: ${{ steps.tag-release.outputs.releases_created }}
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-        run: |
-          pnpm install
-          pnpm publish --filter ${{ matrix.package }} --no-git-checks --access public
+      # - uses: pnpm/action-setup@v2
+      #   with:
+      #     version: 8
+      # - uses: actions/setup-node@v3
+      #   if: ${{ steps.tag-release.outputs.releases_created }}
+      #   with:
+      #     node-version: 16
+      #     registry-url: "https://external-dot-oss-automation.appspot.com/"
+      #     cache: "pnpm"
+      # - name: publish
+      #   if: ${{ steps.tag-release.outputs.releases_created }}
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+      #   run: |
+      #     pnpm install
+      #     pnpm publish --filter ${{ matrix.package }} --no-git-checks --access public
   release-pr:
     runs-on: ubuntu-latest
     needs:
