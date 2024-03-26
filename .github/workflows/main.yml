@@ -51,12 +51,11 @@ jobs:
               console.log('Could not determine last release.');
               const packages = execSync(`find ./packages -type d -mindepth 1`, { encoding: 'utf-8'})
               console.log(packages);
-
               const changes = packages.split('\n');
 
               for (const change of changes) {
                 if (change.startsWith('./packages/')) {
-                    const library = change.split('/')[1];
+                    const library = change.split('/')[2];
                     nodePaths.add(library);
                 };
               }
