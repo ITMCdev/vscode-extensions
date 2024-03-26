@@ -5,6 +5,171 @@
       "release-type": "node",
       "package-name": "@itmcdev/vscode-extensions",
       "changelog-path": "CHANGELOG.md"
+    },
+    "api-tools": {
+      "release-type": "node",
+      "package-name": "itmcdev.api-tools-extension-pack",
+      "changelog-path": "api-tools/CHANGELOG.md"
+    },
+    "cfml": {
+      "release-type": "node",
+      "package-name": "itmcdev.cfml-extension-pack",
+      "changelog-path": "cfml/CHANGELOG.md"
+    },
+    "cli": {
+      "release-type": "node",
+      "package-name": "itmcdev.cli-extension-pack",
+      "changelog-path": "cli/CHANGELOG.md"
+    },
+    "cpp": {
+      "release-type": "node",
+      "package-name": "itmcdev.cpp-extension-pack",
+      "changelog-path": "cpp/CHANGELOG.md"
+    },
+    "db": {
+      "release-type": "node",
+      "package-name": "itmcdev.db-extension-pack",
+      "changelog-path": "db/CHANGELOG.md"
+    },
+    "docker": {
+      "release-type": "node",
+      "package-name": "itmcdev.docker-extension-pack",
+      "changelog-path": "docker/CHANGELOG.md"
+    },
+    "docker-kubernetes": {
+      "release-type": "node",
+      "package-name": "itmcdev.docker-kubernetes-extension-pack",
+      "changelog-path": "docker-kubernetes/CHANGELOG.md"
+    },
+    "docker-openshift": {
+      "release-type": "node",
+      "package-name": "itmcdev.docker-openshift-extension-pack",
+      "changelog-path": "docker-openshift/CHANGELOG.md"
+    },
+    "dotnet-csharp": {
+      "release-type": "node",
+      "package-name": "itmcdev.dotnet-csharp-extension-pack",
+      "changelog-path": "dotnet-csharp/CHANGELOG.md"
+    },
+    "generic": {
+      "release-type": "node",
+      "package-name": "itmcdev.generic-extension-pack",
+      "changelog-path": "generic/CHANGELOG.md"
+    },
+    "go": {
+      "release-type": "node",
+      "package-name": "itmcdev.go-extension-pack",
+      "changelog-path": "go/CHANGELOG.md"
+    },
+    "html": {
+      "release-type": "node",
+      "package-name": "itmcdev.html-extension-pack",
+      "changelog-path": "html/CHANGELOG.md"
+    },
+    "java": {
+      "release-type": "node",
+      "package-name": "itmcdev.java-extension-pack",
+      "changelog-path": "java/CHANGELOG.md"
+    },
+    "node": {
+      "release-type": "node",
+      "package-name": "itmcdev.node-extension-pack",
+      "changelog-path": "node/CHANGELOG.md"
+    },
+    "node-angular": {
+      "release-type": "node",
+      "package-name": "itmcdev.node-angular-extension-pack",
+      "changelog-path": "node-angular/CHANGELOG.md"
+    },
+    "node-aurelia": {
+      "release-type": "node",
+      "package-name": "itmcdev.node-aurelia-extension-pack",
+      "changelog-path": "node-aurelia/CHANGELOG.md"
+    },
+    "node-babel": {
+      "release-type": "node",
+      "package-name": "itmcdev.node-babel-extension-pack",
+      "changelog-path": "node-babel/CHANGELOG.md"
+    },
+    "node-coffee": {
+      "release-type": "node",
+      "package-name": "itmcdev.node-coffee-extension-pack",
+      "changelog-path": "node-coffee/CHANGELOG.md"
+    },
+    "node-flow": {
+      "release-type": "node",
+      "package-name": "itmcdev.node-flow-extension-pack",
+      "changelog-path": "node-flow/CHANGELOG.md"
+    },
+    "node-polymer": {
+      "release-type": "node",
+      "package-name": "itmcdev.node-polymer-extension-pack",
+      "changelog-path": "node-polymer/CHANGELOG.md"
+    },
+    "node-react": {
+      "release-type": "node",
+      "package-name": "itmcdev.node-react-extension-pack",
+      "changelog-path": "node-react/CHANGELOG.md"
+    },
+    "node-svelte": {
+      "release-type": "node",
+      "package-name": "itmcdev.node-vue-extension-pack",
+      "changelog-path": "node-svelte/CHANGELOG.md"
+    },
+    "node-test": {
+      "release-type": "node",
+      "package-name": "itmcdev.node-test-extension-pack",
+      "changelog-path": "node-test/CHANGELOG.md"
+    },
+    "node-typescript": {
+      "release-type": "node",
+      "package-name": "itmcdev.node-typescript-extension-pack",
+      "changelog-path": "node-typescript/CHANGELOG.md"
+    },
+    "node-vue": {
+      "release-type": "node",
+      "package-name": "itmcdev.node-vue-extension-pack",
+      "changelog-path": "node-vue/CHANGELOG.md"
+    },
+    "php": {
+      "release-type": "node",
+      "package-name": "itmcdev.php-extension-pack",
+      "changelog-path": "php/CHANGELOG.md"
+    },
+    "php-laravel": {
+      "release-type": "node",
+      "package-name": "itmcdev.php-laravel-extension-pack",
+      "changelog-path": "php-laravel/CHANGELOG.md"
+    },
+    "php-symfony": {
+      "release-type": "node",
+      "package-name": "itmcdev.php-symfony-extension-pack",
+      "changelog-path": "php-symfony/CHANGELOG.md"
+    },
+    "python": {
+      "release-type": "node",
+      "package-name": "itmcdev.python-extension-pack",
+      "changelog-path": "python/CHANGELOG.md"
+    },
+    "ruby": {
+      "release-type": "node",
+      "package-name": "itmcdev.ruby-extension-pack",
+      "changelog-path": "ruby/CHANGELOG.md"
+    },
+    "rust": {
+      "release-type": "node",
+      "package-name": "itmcdev.rust-extension-pack",
+      "changelog-path": "rust/CHANGELOG.md"
+    },
+    "swagger": {
+      "release-type": "node",
+      "package-name": "itmcdev.swagger-extension-pack",
+      "changelog-path": "swagger/CHANGELOG.md"
+    },
+    "workspace": {
+      "release-type": "node",
+      "package-name": "itmcdev.workspace-extension-pack",
+      "changelog-path": "workspace/CHANGELOG.md"
     }
   }
 }

@@ -115,17 +115,17 @@ const main = async () => {
   const yamlBuffer = await readFile(joinPath(__dirname, "extensions.yml"));
   const { extensions } = yaml.parse(yamlBuffer.toString("utf-8"));
 
-  // const releasePleaseConfig = {
-  //   ["release-type"]: "node",
-  //   packages: {
-  //     ".": {
-  //       // overrides release-type for node
-  //       ["release-type"]: "node",
-  //       ["package-name"]: "@itmcdev/vscode-extensions",
-  //       ["changelog-path"]: "CHANGELOG.md",
-  //     },
-  //   },
-  // };
+  const releasePleaseConfig = {
+    ["release-type"]: "node",
+    packages: {
+      ".": {
+        // overrides release-type for node
+        ["release-type"]: "node",
+        ["package-name"]: "@itmcdev/vscode-extensions",
+        ["changelog-path"]: "CHANGELOG.md",
+      },
+    },
+  };
 
   for (dir of Object.keys(extensions)) {
     const extensionFolder = joinPath(__dirname, "packages", dir);
@@ -136,21 +136,21 @@ const main = async () => {
         const readmeFile = joinPath(extensionFolder, "README.md");
         const package = await updatePackageJson(packageFile, extensions[dir]);
         updateReadme(readmeFile, package);
-        // releasePleaseConfig.packages = {
-        //   ...releasePleaseConfig.packages,
-        //   [dir]: {
-        //     ["release-type"]: "node",
-        //     ["package-name"]: `itmcdev.${package.name}`,
-        //     ["changelog-path"]: joinPath(dir, "CHANGELOG.md"),
-        //   },
-        // };
+        releasePleaseConfig.packages = {
+          ...releasePleaseConfig.packages,
+          [dir]: {
+            ["release-type"]: "node",
+            ["package-name"]: `itmcdev.${package.name}`,
+            ["changelog-path"]: joinPath(dir, "CHANGELOG.md"),
+          },
+        };
       }
     } catch (e) {
       console.error(`Extension folder does not exist yet: ${extensionFolder}`);
     }
   }
 
-  // await writeFile(joinPath(__dirname, "release-please-config.json"), JSON.stringify(releasePleaseConfig, null, 2));
+  await writeFile(joinPath(__dirname, "release-please-config.json"), JSON.stringify(releasePleaseConfig, null, 2));
 };
 
 main();

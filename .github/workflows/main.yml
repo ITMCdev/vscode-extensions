@@ -14,91 +14,108 @@ jobs:
   #######################################################################
   #                          BUMP VERSION                               #
   #######################################################################
-  changeFinder:
-    runs-on: ubuntu-latest
-    outputs:
-      nodePaths: ${{ steps.interrogate.outputs.nodePaths }}
-    steps:
-      - uses: actions/checkout@v4
-      - id: interrogate
-        uses: actions/github-script@v6
-        with:
-          github-token: ${{secrets.GH_TOKEN}}
-          retries: 5
-          script: |
-            const {execSync} = require('child_process');
-            const [owner, repo] = process.env.GITHUB_REPOSITORY.split('/');
-            let nodePaths = new Set();
-            try {
-              const latestRelease = await github.rest.repos.getLatestRelease({
-                owner,
-                repo
-              });
-              console.log(`latest release: ${JSON.stringify(latestRelease.data)}`);
-              execSync('git pull --tags');
-              execSync(`git reset --hard ${latestRelease.data.tag_name}`);
-              const status = execSync(`git diff --name-only origin/master`, { encoding: 'utf-8'});
-              console.log(status);
-              const changes = status.split('\n');
+  # changeFinder:
+  #   runs-on: ubuntu-latest
+  #   outputs:
+  #     nodePaths: ${{ steps.interrogate.outputs.nodePaths }}
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - id: interrogate
+  #       uses: actions/github-script@v6
+  #       with:
+  #         github-token: ${{secrets.GH_TOKEN}}
+  #         retries: 5
+  #         script: |
+  #           const {execSync} = require('child_process');
+  #           const [owner, repo] = process.env.GITHUB_REPOSITORY.split('/');
+  #           let nodePaths = new Set();
+  #           try {
+  #             const latestRelease = await github.rest.repos.getLatestRelease({
+  #               owner,
+  #               repo
+  #             });
+  #             console.log(`latest release: ${JSON.stringify(latestRelease.data)}`);
+  #             execSync('git pull --tags');
+  #             execSync(`git reset --hard ${latestRelease.data.tag_name}`);
+  #             const status = execSync(`git diff --name-only origin/master`, { encoding: 'utf-8'});
+  #             console.log(status);
+  #             const changes = status.split('\n');
 
-              for (const change of changes) {
-                if (change.startsWith('packages/')) {
-                    const library = change.split('/')[1];
-                    nodePaths.add(library);
-                };
-              }
-            } catch (e) {
-              console.log('Could not determine last release.');
-              const packages = execSync(`find ./packages -type d -mindepth 1`, { encoding: 'utf-8'})
-              console.log(packages);
-              const changes = packages.split('\n');
+  #             for (const change of changes) {
+  #               if (change.startsWith('packages/')) {
+  #                   const library = change.split('/')[1];
+  #                   nodePaths.add(library);
+  #               };
+  #             }
+  #           } catch (e) {
+  #             console.log('Could not determine last release.');
+  #             const packages = execSync(`find ./packages -type d -mindepth 1`, { encoding: 'utf-8'})
+  #             console.log(packages);
+  #             const changes = packages.split('\n');
 
-              for (const change of changes) {
-                if (change.startsWith('./packages/')) {
-                    const library = change.split('/')[2];
-                    nodePaths.add(library);
-                };
-              }
-            }
-            nodePaths = Array.from(nodePaths);
-            console.log(nodePaths);
-            console.log(`::set-output name=nodePaths::${JSON.stringify(nodePaths)}`);
-  release-please-release:
+  #             for (const change of changes) {
+  #               if (change.startsWith('./packages/')) {
+  #                   const library = change.split('/')[2];
+  #                   nodePaths.add(library);
+  #               };
+  #             }
+  #           }
+  #           nodePaths = Array.from(nodePaths);
+  #           console.log(nodePaths);
+  #           console.log(`::set-output name=nodePaths::${JSON.stringify(nodePaths.slice(0,2))}`);
+  # release-please-release:
+  #   runs-on: ubuntu-latest
+  #   needs: [changeFinder]
+  #   strategy:
+  #     fail-fast: false
+  #     matrix:
+  #       package: ${{fromJson(needs.changeFinder.outputs.nodePaths)}}
+  #   steps:
+  #     - uses: google-github-actions/release-please-action@v4
+  #       id: tag-release
+  #       with:
+  #         path: packages/${{ matrix.package }}
+  #         token: ${{ secrets.GH_TOKEN }}
+  #         release-type: node
+  #         monorepo-tags: true
+  #         package-name: "@itmcdev/${{ matrix.package }}-extension-pack"
+  #         command: github-release
+  # release-pr:
+  #   runs-on: ubuntu-latest
+  #   needs:
+  #     - changeFinder
+  #     - release-please-release
+  #   strategy:
+  #     fail-fast: false
+  #     matrix:
+  #       package: ${{fromJson(needs.changeFinder.outputs.nodePaths)}}
+  #   steps:
+  #     - uses: google-github-actions/release-please-action@v4
+  #       id: release-please
+  #       with:
+  #         path: packages/${{ matrix.package }}
+  #         token: ${{ secrets.GH_TOKEN }}
+  #         release-type: node
+  #         package-name: ${{ matrix.package }}
+  #         monorepo-tags: true
+  #         command: release-pr
+  manifest-pr:
+    if: |
+      (
+        github.event_name != 'pull_request'
+        || (github.event.pull_request && startsWith(github.event.pull_request.title, 'chore: release') != false)
+      )
     runs-on: ubuntu-latest
-    needs: [changeFinder]
-    strategy:
-      fail-fast: false
-      matrix:
-        package: ${{fromJson(needs.changeFinder.outputs.nodePaths)}}
     steps:
-      - uses: google-github-actions/release-please-action@v3
-        id: tag-release
+      - uses: google-github-actions/release-please-action@v4
         with:
-          path: packages/${{ matrix.package }}
-          token: ${{ secrets.GH_TOKEN }}
-          release-type: node
-          monorepo-tags: true
-          package-name: "@itmcdev/${{ matrix.package }}-extension-pack"
-          command: github-release
-  release-pr:
-    runs-on: ubuntu-latest
-    needs:
-      - changeFinder
-      - release-please-release
-    strategy:
-      fail-fast: false
-      matrix:
-        package: ${{fromJson(needs.changeFinder.outputs.nodePaths)}}
-    steps:
-      - uses: google-github-actions/release-please-action@v3
-        id: release-please
-        with:
-          path: packages/${{ matrix.package }}
           token: ${{ secrets.GH_TOKEN }}
           release-type: node
           package-name: ${{ matrix.package }}
           monorepo-tags: true
-          command: release-pr
+          command: manifest-pr
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json
 
   # #######################################################################
   # #                       PUBLISH EXTENSIONS                            #
