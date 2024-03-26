@@ -2,7 +2,7 @@
   "name": "docker-extension-pack",
   "displayName": "ITMCDev Docker Extension Pack",
   "description": "A collection of generic extensions for development inside ITMC",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
