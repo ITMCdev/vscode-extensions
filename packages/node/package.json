@@ -1,0 +1,45 @@
+{
+  "name": "node-extension-pack",
+  "displayName": "ITMCDev Node Extension Pack",
+  "description": "A collection of extensions for developming with NodeJS inside ITMC",
+  "version": "0.1.3",
+  "publisher": "itmcdev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itmcdev/vscode-extensions"
+  },
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#f66f62",
+    "theme": "dark"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "keywords": [
+    "code",
+    "node",
+    "itmcdev"
+  ],
+  "extensionPack": [
+    "bengreenier.vscode-node-readme",
+    "chris-noring.node-snippets",
+    "christian-kohler.npm-intellisense",
+    "christian-kohler.path-intellisense",
+    "jasonnutter.search-node-modules",
+    "kohler.npm-intellisense",
+    "leizongmin.node-module-intellisense",
+    "ms-vscode.node-debug2",
+    "tgreen7.vs-code-node-require"
+  ],
+  "extensionDependencies": [
+    "itmcdev.generic-extension-pack",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "itmcdev.html-extension-pack",
+    "SonarSource.sonarlint-vscode"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "php-symfony-extension-pack",
+  "displayName": "ITMCDev Symfony Framework Extension Pack",
+  "description": "A collection of extensions for developming with Symfony Framework inside ITMC",
+  "version": "0.0.5",
+  "publisher": "itmcdev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itmcdev/vscode-extensions"
+  },
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#f66f62",
+    "theme": "dark"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "keywords": [
+    "code",
+    "node",
+    "itmcdev"
+  ],
+  "extensionPack": [
+    "n4zim.vscode-symfony",
+    "TheNouillet.symfony-vscode"
+  ],
+  "extensionDependencies": [
+    "itmcdev.generic-extension-pack",
+    "bajdzis.vscode-twig-pack",
+    "itmcdev.php-extension-pack"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "name": "go-extension-pack",
+  "displayName": "ITMCDev Go Extension Pack",
+  "description": "A collection of Go extensions for development inside ITMC",
+  "version": "0.0.7",
+  "publisher": "itmcdev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itmcdev/vscode-extensions"
+  },
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#f66f62",
+    "theme": "dark"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "keywords": [
+    "code",
+    "itmcdev"
+  ],
+  "extensionPack": [
+    "766b.go-outliner",
+    "dannymcgee.vscode-go-grammar",
+    "defaltd.go-coverage-viewer",
+    "dunstontc.vscode-go-syntax",
+    "golang.Go",
+    "Ja7ad.go-power",
+    "jinliming2.vscode-go-template",
+    "lixvbnet.goworkspace",
+    "MaxMedia.go-prof",
+    "msyrus.go-doc",
+    "nawath.go-lazy-mock",
+    "neverik.go-critic",
+    "premparihar.gotestexplorer",
+    "quillaja.goasm",
+    "usernamehw.errorlens",
+    "windmilleng.vscode-go-autotest",
+    "zsh.go-snippets"
+  ],
+  "extensionDependencies": [
+    "itmcdev.generic-extension-pack",
+    "itmcdev.html-extension-pack"
+  ]
+}

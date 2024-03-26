@@ -1,0 +1,42 @@
+{
+  "name": "ruby-extension-pack",
+  "displayName": "ITMCDev Ruby Extension Pack",
+  "description": "A collection of extensions for developming with Ruby inside ITMC",
+  "version": "0.0.10",
+  "publisher": "itmcdev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itmcdev/vscode-extensions"
+  },
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#f66f62",
+    "theme": "dark"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "keywords": [
+    "code",
+    "node",
+    "itmcdev"
+  ],
+  "extensionPack": [
+    "castwide.solargraph",
+    "hoovercj.ruby-linter",
+    "jpogran.puppet-vscode",
+    "KoichiSasada.vscode-rdbg",
+    "marcostazi.vs-code-vagrantfile",
+    "miguel-savignano.ruby-symbols",
+    "rebornix.ruby",
+    "Shopify.ruby-lsp",
+    "wingrunr21.vscode-ruby"
+  ],
+  "extensionDependencies": [
+    "itmcdev.generic-extension-pack",
+    "connorshea.vscode-ruby-test-adapter"
+  ]
+}

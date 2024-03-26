@@ -1,0 +1,44 @@
+{
+  "name": "python-extension-pack",
+  "displayName": "ITMCDev Python Extension Pack",
+  "description": "A collection of extensions for developming with Python inside ITMC",
+  "version": "0.1.3",
+  "publisher": "itmcdev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itmcdev/vscode-extensions"
+  },
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#f66f62",
+    "theme": "dark"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "keywords": [
+    "code",
+    "python",
+    "itmcdev"
+  ],
+  "extensionPack": [
+    "donjayamanne.python-environment-manager",
+    "magicstack.MagicPython",
+    "mgesbert.python-path",
+    "ms-pyright.pyright",
+    "ms-python.python",
+    "ms-toolsai.jupyter",
+    "njpwerner.autodocstring",
+    "njqdev.vscode-python-typehint",
+    "shiro.pythonpack",
+    "wholroyd.jinja"
+  ],
+  "extensionDependencies": [
+    "itmcdev.generic-extension-pack",
+    "hbenl.vscode-test-explorer",
+    "LittleFoxTeam.vscode-python-test-adapter"
+  ]
+}

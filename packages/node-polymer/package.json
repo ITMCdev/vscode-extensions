@@ -1,0 +1,39 @@
+{
+  "name": "node-polymer-extension-pack",
+  "displayName": "ITMCDev Polymer Framework Extension Pack",
+  "description": "A collection of extensions for developming with Polymer Framework inside ITMC",
+  "version": "0.0.3",
+  "publisher": "itmcdev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itmcdev/vscode-extensions"
+  },
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#f66f62",
+    "theme": "dark"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "keywords": [
+    "code",
+    "node",
+    "babel",
+    "itmcdev"
+  ],
+  "extensionPack": [
+    "bierner.lit-html",
+    "jonwolfe.language-polymer",
+    "justinribeiro.Polymer2Snippets",
+    "polymer.polymer-ide"
+  ],
+  "extensionDependencies": [
+    "itmcdev.generic-extension-pack",
+    "itmcdev.html-extension-pack",
+    "itmcdev.node-typescript-extension-pack"
+  ]
+}

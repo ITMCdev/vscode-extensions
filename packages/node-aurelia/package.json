@@ -1,0 +1,40 @@
+{
+  "name": "node-aurelia-extension-pack",
+  "displayName": "ITMCDev Aurelia Framework Extension Pack",
+  "description": "A collection of extensions for developing with Aurelia Framework inside ITMC",
+  "version": "0.0.10",
+  "publisher": "itmcdev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itmcdev/vscode-extensions"
+  },
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#f66f62",
+    "theme": "dark"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "keywords": [
+    "aurelia",
+    "code",
+    "node",
+    "babel",
+    "typescript",
+    "itmcdev"
+  ],
+  "extensionPack": [
+    "aureliaeffect.aurelia",
+    "brandonseydel.aurelia-tools",
+    "behzad88.aurelia"
+  ],
+  "extensionDependencies": [
+    "itmcdev.generic-extension-pack",
+    "itmcdev.html-extension-pack",
+    "itmcdev.node-typescript-extension-pack"
+  ]
+}

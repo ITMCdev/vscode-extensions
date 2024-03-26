@@ -1,0 +1,10 @@
+{
+  "release-type": "node",
+  "packages": {
+    ".": {
+      "release-type": "node",
+      "package-name": "@itmcdev/vscode-extensions",
+      "changelog-path": "CHANGELOG.md"
+    }
+  }
+}

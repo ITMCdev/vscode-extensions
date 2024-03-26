@@ -1,0 +1,44 @@
+{
+  "name": "php-extension-pack",
+  "displayName": "ITMCDev PHP Extension Pack",
+  "description": "A collection of extensions for developming with PHP inside ITMC",
+  "version": "0.0.11",
+  "publisher": "itmcdev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itmcdev/vscode-extensions"
+  },
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#f66f62",
+    "theme": "dark"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "keywords": [
+    "code",
+    "node",
+    "itmcdev"
+  ],
+  "extensionPack": [
+    "bmewburn.vscode-intelephense-client",
+    "brapifra.phpserver",
+    "DEVSENSE.profiler-php-vscode",
+    "ikappas.composer",
+    "MehediDracula.php-namespace-resolver",
+    "neilbrayfield.php-docblocker",
+    "onecentlin.phpunit-snippets",
+    "recca0120.vscode-phpunit",
+    "tintrinh.php-refactor",
+    "xdebug.php-debug"
+  ],
+  "extensionDependencies": [
+    "itmcdev.generic-extension-pack",
+    "itmcdev.html-extension-pack",
+    "Sophisticode.php-formatter"
+  ]
+}
