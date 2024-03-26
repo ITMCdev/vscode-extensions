@@ -30,6 +30,7 @@ jobs:
       - name: Perform Release
         uses: GoogleCloudPlatform/release-please-action@v2
         with:
+          token: ${{ secrets.GH_TOKEN }}
           command: manifest
           default-branch: main
           manifest-path: "release-please-config.json"
