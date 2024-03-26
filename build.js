@@ -141,7 +141,7 @@ const main = async () => {
     }
   }
 
-  await writeFile(joinPath(__dirname, "release-please-config"), JSON.stringify(releasePleaseConfig, null, 2));
+  await writeFile(joinPath(__dirname, "release-please-config.json"), JSON.stringify(releasePleaseConfig, null, 2));
 };
 
 main();
