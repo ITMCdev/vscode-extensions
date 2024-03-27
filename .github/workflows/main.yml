@@ -4,11 +4,9 @@ on:
   push:
     branches:
       - main
-      - master
   pull_request:
     branches:
       - main
-      - master
 
 jobs:
   #######################################################################
@@ -39,7 +37,7 @@ jobs:
               console.log(`latest release: ${JSON.stringify(latestRelease.data)}`);
               execSync('git pull --tags');
               execSync(`git reset --hard ${latestRelease.data.tag_name}`);
-              const status = execSync(`git diff --name-only origin/master`, { encoding: 'utf-8'});
+              const status = execSync(`git diff --name-only origin/main`, { encoding: 'utf-8'});
               console.log(status);
               const changes = status.split('\n');
 
@@ -96,8 +94,7 @@ jobs:
   release:
     if: |
       (
-        github.event_name != 'pull_request'
-        || (github.event.pull_request && startsWith(github.event.pull_request.title, 'chore: release') != false)
+        github.event_name != 'pull_request' || startsWith(github.event.pull_request.title, 'chore: release') != false
       )
     name: "Release Tag"
     needs: [detectchanges]
@@ -121,22 +118,25 @@ jobs:
           sudo apt-get install jq -y
           cat release-please-config.json | jq -r .
       - name: Create/Update Release PR
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           npm run release -- manifest-pr \
-            --token=${{ secrets.GH_TOKEN }} \
             --repo-url=${{ github.repository }} \
             --target-branch=main \
             --config-file=release-please-config.json \
             --manifest-file=.release-please-manifest.json
       - name: Create Github Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         id: new_releases
         run: |
           npm run release -- github-release \
-            --token=${{ secrets.GH_TOKEN }} \
             --repo-url=${{ github.repository }} \
             --target-branch=main \
-            --release-type=node \
-            --include-v-in-tags=false
+            --config-file=release-please-config.json \
+            --manifest-file=.release-please-manifest.json
+          #  --include-v-in-tags=false
 
           version=$(cat .release-please-manifest.json| jq -r '.["."]')
 
