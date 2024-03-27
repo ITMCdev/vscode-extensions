@@ -1,5 +1,5 @@
 {
-  ".": "1.0.5",
+  ".": "1.0.6",
   "packages/api-tools": "1.0.4",
   "packages/cfml": "1.0.4",
   "packages/cli": "1.0.7",

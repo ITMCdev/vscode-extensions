@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.6](https://github.com/ITMCdev/vscode-extensions/compare/vscode-extensions-v1.0.5...vscode-extensions-v1.0.6) (2024-03-27)
+
+
+### Bug Fixes
+
+* still trying to fix it - 5 ([33f83ba](https://github.com/ITMCdev/vscode-extensions/commit/33f83ba77b9a96888e58158ccd7ad1e63988fa3d))
+
 ## [1.0.5](https://github.com/ITMCdev/vscode-extensions/compare/vscode-extensions-v1.0.4...vscode-extensions-v1.0.5) (2024-03-27)
 
 
