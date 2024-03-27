@@ -32,7 +32,8 @@
     "jasonnutter.search-node-modules",
     "kohler.npm-intellisense",
     "leizongmin.node-module-intellisense",
-    "ms-vscode.node-debug2",
+    "ms-vscode.js-debug",
+    "ms-vscode.js-debug-companion",
     "tgreen7.vs-code-node-require"
   ],
   "extensionDependencies": [
