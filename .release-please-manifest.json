@@ -1,5 +1,5 @@
 {
-  ".": "1.0.4",
+  ".": "1.0.5",
   "packages/api-tools": "1.0.4",
   "packages/cfml": "1.0.4",
   "packages/cli": "1.0.7",
@@ -18,7 +18,7 @@
   "packages/node-aurelia": "1.0.4",
   "packages/node-babel": "1.0.4",
   "packages/node-coffee": "1.0.4",
-  "packages/node-flow": "1.0.4",
+  "packages/node-flow": "1.0.5",
   "packages/node-polymer": "1.0.4",
   "packages/node-react": "1.0.4",
   "packages/node-svelte": "1.0.4",
