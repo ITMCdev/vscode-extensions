@@ -1,6 +1,6 @@
 {
   "name": "vscode-extensions",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "VsCode Extension packs as used by ITMC Teams",
   "main": "index.js",
   "scripts": {

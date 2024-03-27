@@ -2,7 +2,7 @@
   "name": "node-flow-extension-pack",
   "displayName": "ITMCDev Flow Extension Pack",
   "description": "A collection of extensions for developming with NodeJS & Babel Flow inside ITMC",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
