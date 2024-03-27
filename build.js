@@ -1,8 +1,42 @@
 const axios = require("axios");
-// const fetch = require("node-fetch");
 const { readFile, stat, writeFile } = require("fs").promises;
 const { join: joinPath } = require("path");
 const yaml = require("yaml");
+const { spawn } = require("child_process");
+
+const gitStatus = async () => {
+  return new Promise((resolve, reject) => {
+    const proc = spawn("git", ["status", "-s"], { stdio: ["pipe", "pipe", "pipe"] });
+    let stdout = "";
+    let stderr = "";
+
+    proc.stdout.on("data", (data) => {
+      stdout += data.toString();
+    });
+
+    proc.stderr.on("data", (data) => {
+      stderr += data.toString();
+    });
+
+    proc.on("close", (code) => {
+      if (code === 0) {
+        resolve(stdout);
+      } else {
+        reject(new Error(`git exited with code ${code}. Error: ${stderr}`));
+      }
+    });
+  });
+};
+
+const getChangedPackages = async () =>
+  gitStatus().then((result) =>
+    result
+      .split("\n")
+      .filter((line) => line.startsWith(" M "))
+      .map((line) => line.split(" M ")[1])
+      .filter((file) => file.startsWith("packages/"))
+      .map((file) => "packages/" + file.split("/")[1]),
+  );
 
 const getExtensionDetails = async (list) => {
   var data = JSON.stringify({
@@ -148,6 +182,17 @@ const main = async () => {
     } catch (e) {
       console.error(`Extension folder does not exist yet: ${extensionFolder}`);
     }
+  }
+
+  const changedPackages = await getChangedPackages();
+  if (changedPackages.length > 0) {
+    Object.keys(releasePleaseConfig.packages)
+      .filter((p) => p !== ".")
+      .forEach((p) => {
+        if (!changedPackages.includes(p)) {
+          delete releasePleaseConfig.packages[p];
+        }
+      });
   }
 
   await writeFile(joinPath(__dirname, "release-please-config.json"), JSON.stringify(releasePleaseConfig, null, 2));

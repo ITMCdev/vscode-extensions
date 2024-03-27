@@ -12,100 +12,16 @@ jobs:
   #######################################################################
   #                          BUMP VERSION                               #
   #######################################################################
-  detectchanges:
-    name: "Detect Changes"
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Interrogate
-        uses: actions/github-script@v6
-        with:
-          github-token: ${{secrets.GH_TOKEN}}
-          retries: 5
-          script: |
-            const {execSync} = require('child_process');
-            const {writeFileSync} = require('fs');
-            const {join: joinPath} = require('path');
-            const [owner, repo] = process.env.GITHUB_REPOSITORY.split('/');
-            let nodePaths = new Set();
-            try {
-              const latestRelease = await github.rest.repos.getLatestRelease({
-                owner,
-                repo
-              });
-              console.log(`latest release: ${JSON.stringify(latestRelease.data)}`);
-              execSync('git pull --tags');
-              execSync(`git reset --hard ${latestRelease.data.tag_name}`);
-              const status = execSync(`git diff --name-only origin/main`, { encoding: 'utf-8'});
-              console.log(status);
-              const changes = status.split('\n');
-
-              for (const change of changes) {
-                if (change.startsWith('packages/')) {
-                    const library = change.split('/')[1];
-                    nodePaths.add(library);
-                };
-              }
-            } catch (e) {
-              console.log('Could not determine last release.');
-              const packages = execSync(`find ./packages -type d -mindepth 1`, { encoding: 'utf-8'})
-              console.log(packages);
-              const changes = packages.split('\n');
-
-              for (const change of changes) {
-                if (change.startsWith('./packages/')) {
-                    const library = change.split('/')[2];
-                    nodePaths.add(library);
-                };
-              }
-            }
-            nodePaths = Array.from(nodePaths);
-            console.log(nodePaths);
-
-            const releasePleaseConfig = {
-              ["release-type"]: "node",
-              packages: {
-                ".": {
-                  // overrides release-type for node
-                  ["release-type"]: "node",
-                  ["package-name"]: "@itmcdev/vscode-extensions",
-                  ["changelog-path"]: "CHANGELOG.md",
-                },
-              },
-            };
-            nodePaths.forEach(item => {
-              releasePleaseConfig.packages = {
-                ...releasePleaseConfig.packages,
-                [`packages/${item}`]: {
-                  ["release-type"]: "node",
-                  ["package-name"]: `@itmcdev/${item}-extension-pack`,
-                  ["changelog-path"]: "CHANGELOG.md",
-                },
-              };
-            })
-            console.log(releasePleaseConfig)
-            writeFileSync('release-please-config.json', JSON.stringify(releasePleaseConfig, null, 2));
-      - name: Archive production artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: release-please-config
-          path: release-please-config.json
   release:
     if: |
       (
         github.event_name != 'pull_request' || startsWith(github.event.pull_request.title, 'chore: release') != false
       )
     name: "Release Tag"
-    needs: [detectchanges]
     outputs:
       version: ${{ steps.new_releases.outputs.version }}
     runs-on: ubuntu-latest
     steps:
-      - name: Archive production artifacts
-        uses: actions/download-artifact@v4
-        with:
-          name: release-please-config
       - name: Checkout Repository
         uses: actions/checkout@v4
       - name: Use Node.js 18.x
