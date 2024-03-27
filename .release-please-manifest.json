@@ -1,5 +1,5 @@
 {
-  ".": "1.0.6",
+  ".": "1.0.7",
   "packages/api-tools": "1.0.4",
   "packages/cfml": "1.0.4",
   "packages/cli": "1.0.7",
@@ -13,7 +13,7 @@
   "packages/go": "1.0.4",
   "packages/html": "1.0.4",
   "packages/java": "1.0.4",
-  "packages/node": "1.0.4",
+  "packages/node": "1.0.5",
   "packages/node-angular": "1.0.4",
   "packages/node-aurelia": "1.0.4",
   "packages/node-babel": "1.0.4",

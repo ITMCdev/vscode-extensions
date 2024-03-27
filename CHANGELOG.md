@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.7](https://github.com/ITMCdev/vscode-extensions/compare/vscode-extensions-v1.0.6...vscode-extensions-v1.0.7) (2024-03-27)
+
+
+### Bug Fixes
+
+* deprecating db and flow ([6dad00e](https://github.com/ITMCdev/vscode-extensions/commit/6dad00e8ee18d9c036ea68a1b74d77b1c052523e))
+* replacing ms-vscode.node-debug2 with ms-vscode.js-debug ([3234d9d](https://github.com/ITMCdev/vscode-extensions/commit/3234d9df42c79fc724bc2b8afd88b5b3a2fb0f24))
+
 ## [1.0.6](https://github.com/ITMCdev/vscode-extensions/compare/vscode-extensions-v1.0.5...vscode-extensions-v1.0.6) (2024-03-27)
 
 
