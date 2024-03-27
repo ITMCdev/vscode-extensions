@@ -118,20 +118,18 @@ jobs:
           sudo apt-get install jq -y
           cat release-please-config.json | jq -r .
       - name: Create/Update Release PR
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           npm run release -- manifest-pr \
+            --token=${{ secrets.GH_TOKEN }} \
             --repo-url=${{ github.repository }} \
             --target-branch=main \
             --config-file=release-please-config.json \
             --manifest-file=.release-please-manifest.json
       - name: Create Github Release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         id: new_releases
         run: |
           npm run release -- github-release \
+            --token=${{ secrets.GH_TOKEN }} \
             --repo-url=${{ github.repository }} \
             --target-branch=main \
             --config-file=release-please-config.json \
