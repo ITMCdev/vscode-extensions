@@ -23,4 +23,4 @@ jobs:
         env:
           VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}
         run: |
-          bash ./publish.sh
+          npm run publish
