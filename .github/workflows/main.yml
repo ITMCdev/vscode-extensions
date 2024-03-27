@@ -55,7 +55,7 @@ jobs:
           echo $output
 
           # version=$(cat .release-please-manifest.json | jq -r '.["."]')
-          version=$(echo $output | grep "vscode-extensions" | awk -F ': v' '{print $2}')
+          version=$(echo $output | grep "vscode-extensions" | awk -F ': v' '{print $2}' | awk -F "'" '{print $1}')
 
           echo version=$version
           echo "version=$version" >> $GITHUB_OUTPUT
