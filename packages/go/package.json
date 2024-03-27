@@ -2,7 +2,7 @@
   "name": "go-extension-pack",
   "displayName": "ITMCDev Go Extension Pack",
   "description": "A collection of Go extensions for development inside ITMC",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",

@@ -2,7 +2,7 @@
   "name": "node-vue-extension-pack",
   "displayName": "ITMCDev Svelte Extension Pack",
   "description": "A collection of extensions for developing with VueJs inside ITMC",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
