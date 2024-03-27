@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.8](https://github.com/ITMCdev/vscode-extensions/compare/vscode-extensions-v1.0.7...vscode-extensions-v1.0.8) (2024-03-27)
+
+
+### Bug Fixes
+
+* replacing ms-vscode.node-debug2 with ms-vscode.js-debug ([df8f96a](https://github.com/ITMCdev/vscode-extensions/commit/df8f96a5490e104ab646214a8e63104cf87817b3))
+
 ## [1.0.7](https://github.com/ITMCdev/vscode-extensions/compare/vscode-extensions-v1.0.6...vscode-extensions-v1.0.7) (2024-03-27)
 
 
