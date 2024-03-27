@@ -14,7 +14,8 @@ jobs:
   #######################################################################
   #                          BUMP VERSION                               #
   #######################################################################
-  change-finder:
+  detectchanges:
+    name: "Detect Changes"
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -92,14 +93,17 @@ jobs:
         with:
           name: release-please-config
           path: release-please-config.json
-  manifest-pr:
+  release:
     if: |
       (
         github.event_name != 'pull_request'
         || (github.event.pull_request && startsWith(github.event.pull_request.title, 'chore: release') != false)
       )
+    name: "Release Tag"
+    needs: [detectchanges]
+    outputs:
+      version: ${{ steps.new_releases.outputs.version }}
     runs-on: ubuntu-latest
-    needs: [change-finder]
     steps:
       - name: Archive production artifacts
         uses: actions/download-artifact@v4
@@ -125,6 +129,7 @@ jobs:
             --config-file=release-please-config.json \
             --manifest-file=.release-please-manifest.json
       - name: Create Github Release
+        id: new_releases
         run: |
           npm run release -- github-release \
             --token=${{ secrets.GH_TOKEN }} \
@@ -132,8 +137,14 @@ jobs:
             --target-branch=main \
             --release-type=node \
             --include-v-in-tags=false
+
+          version=$(cat .release-please-manifest.json| jq -r '.["."]')
+
+          echo version=$version
+          echo "version=$version" >> $GITHUB_OUTPUT
       - name: Debug
         run: |
+          cat .release-please-manifest.json| jq -r '.["."]'
           cat .release-please-manifest.json | jq -r .
 
   #######################################################################
@@ -142,6 +153,6 @@ jobs:
   publish:
     if: github.event_name != 'pull_request' && needs.release.outputs.version
     name: "Publish Template"
-    needs: [manifest-pr]
+    needs: [release]
     uses: itmcdev/vscode-extensions/.github/workflows/publish.yml@main
     secrets: inherit
