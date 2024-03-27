@@ -2,7 +2,7 @@
   "name": "node-flow-extension-pack",
   "displayName": "[Deprecated] ITMCDev Flow Extension Pack",
   "description": "A collection of extensions for developming with NodeJS & Babel Flow inside ITMC",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "publisher": "itmcdev",
   "private": true,
   "repository": {
