@@ -2,6 +2,13 @@
 
 All notable changes to the `node-extension-pack` extension pack will be documented in this file.
 
+## [1.0.5](https://github.com/ITMCdev/vscode-extensions/compare/node-extension-pack-v1.0.4...node-extension-pack-v1.0.5) (2024-03-27)
+
+
+### Bug Fixes
+
+* replacing ms-vscode.node-debug2 with ms-vscode.js-debug ([3234d9d](https://github.com/ITMCdev/vscode-extensions/commit/3234d9df42c79fc724bc2b8afd88b5b3a2fb0f24))
+
 ## [1.0.4](https://github.com/ITMCdev/vscode-extensions/compare/node-extension-pack-v1.0.3...node-extension-pack-v1.0.4) (2024-03-27)
 
 
