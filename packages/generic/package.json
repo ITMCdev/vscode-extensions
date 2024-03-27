@@ -2,7 +2,7 @@
   "name": "generic-extension-pack",
   "displayName": "ITMCDev Generic Extension Pack",
   "description": "A collection of generic extensions for development inside ITMC",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",

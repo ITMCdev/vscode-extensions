@@ -2,7 +2,7 @@
   "name": "node-angular-extension-pack",
   "displayName": "ITMCDev Angular Framework Extension Pack",
   "description": "A collection of extensions for developing with Angular Framework inside ITMC",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
