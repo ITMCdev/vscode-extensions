@@ -2,7 +2,7 @@
   "name": "java-extension-pack",
   "displayName": "ITMCDev Java Extension Pack",
   "description": "A collection of extensions for developming with Java inside ITMC",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
