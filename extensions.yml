@@ -284,7 +284,6 @@ extensions:
       - ms-vscode.typescript-javascript-grammar
       - ms-vscode.vscode-typescript-next
       - pmneo.tsimporter
-      - rbbit.typescript-hero
       - semagarcia.vscode-ts-decorators
     dependencies:
       - itmcdev.node-babel-extension-pack

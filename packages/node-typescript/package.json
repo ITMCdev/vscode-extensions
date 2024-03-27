@@ -33,7 +33,6 @@
     "ms-vscode.typescript-javascript-grammar",
     "ms-vscode.vscode-typescript-next",
     "pmneo.tsimporter",
-    "rbbit.typescript-hero",
     "semagarcia.vscode-ts-decorators"
   ],
   "extensionDependencies": [
