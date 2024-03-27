@@ -2,7 +2,7 @@
   "name": "ruby-extension-pack",
   "displayName": "ITMCDev Ruby Extension Pack",
   "description": "A collection of extensions for developming with Ruby inside ITMC",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",

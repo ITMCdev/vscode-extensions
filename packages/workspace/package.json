@@ -2,7 +2,7 @@
   "name": "workspace-extension-pack",
   "displayName": "ITMCDev Workspace Visual/Feeling Extension Pack",
   "description": "A collection of extensions for development inside ITMC",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "publisher": "itmcdev",
   "repository": {
     "type": "git",
