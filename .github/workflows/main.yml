@@ -64,12 +64,12 @@ jobs:
           cat .release-please-manifest.json| jq -r '.["."]'
           cat .release-please-manifest.json | jq -r .
 
-  # #######################################################################
-  # #                       PUBLISH EXTENSIONS                            #
-  # #######################################################################
-  # publish:
-  #   if: github.event_name != 'pull_request' && needs.release.outputs.version
-  #   name: "Publish Template"
-  #   needs: [release]
-  #   uses: itmcdev/vscode-extensions/.github/workflows/publish.yml@main
-  #   secrets: inherit
+  #######################################################################
+  #                       PUBLISH EXTENSIONS                            #
+  #######################################################################
+  publish:
+    if: github.event_name != 'pull_request' && needs.release.outputs.version
+    name: "Publish Template"
+    needs: [release]
+    uses: itmcdev/vscode-extensions/.github/workflows/publish.yml@main
+    secrets: inherit

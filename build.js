@@ -90,6 +90,10 @@ const updatePackageJson = async (packageFile, extensionConfig) => {
 
     const package = await readFile(packageFile).then((buffer) => JSON.parse(buffer.toString("utf-8")));
 
+    if (extensionConfig.deprecated && !package.displayName.includes("Deprecated")) {
+      package.displayName = `[Deprecated] ${package.displayName}`;
+    }
+
     package.extensionPack = Array.isArray(extensionConfig)
       ? extensionConfig
       : Array.isArray(extensionConfig.pack)
@@ -109,7 +113,6 @@ const updatePackageJson = async (packageFile, extensionConfig) => {
     ];
     package.extensionDependencies = [...new Set(package.extensionDependencies)];
 
-    // await writeFile(readmeFile, readme);
     await writeFile(packageFile, JSON.stringify(package, null, 2));
 
     console.log(`${packageFile} written.`);
@@ -119,7 +122,7 @@ const updatePackageJson = async (packageFile, extensionConfig) => {
   }
 };
 
-const updateReadme = async (readmeFile, package) => {
+const updateReadme = async (readmeFile, package, extension) => {
   if (!package) {
     console.error(`Could not access package.json for ${readmeFile}`);
     return;
@@ -169,14 +172,14 @@ const main = async () => {
         const packageFile = joinPath(extensionFolder, "package.json");
         const readmeFile = joinPath(extensionFolder, "README.md");
         const package = await updatePackageJson(packageFile, extensions[item]);
-        updateReadme(readmeFile, package);
+        updateReadme(readmeFile, package, extensions[item]);
         releasePleaseConfig.packages = {
-          ...releasePleaseConfig.packages,
           [`packages/${item}`]: {
             ["release-type"]: "node",
             ["package-name"]: `@itmcdev/${item}-extension-pack`,
             ["changelog-path"]: "CHANGELOG.md",
           },
+          ...releasePleaseConfig.packages,
         };
       }
     } catch (e) {
