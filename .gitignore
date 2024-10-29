@@ -62,3 +62,16 @@ typings/
 
 # lock files
 package-lock.json
+CHANGELOG.md
+Jenkinsfile
+LICENSE
+README.md
+build.js
+extensions.yml
+package.json
+packages
+publish.js
+release-please-config.json
+
+.ai-automation
+request.yml
