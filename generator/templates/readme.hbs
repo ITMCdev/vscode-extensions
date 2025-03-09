@@ -1,0 +1,31 @@
+# {{name}}
+
+{{description}}
+
+## Included Extensions
+
+{{#each extensions}}
+* [{{this.publisher}}.{{this.name}}]({{this.marketplaceUrl}})
+{{/each}}
+
+{{#if dependencies.length}}
+## Extension Dependencies
+
+This extension pack depends on the following extensions:
+
+{{#each dependencies}}
+* [{{this.publisher}}.{{this.name}}]({{this.marketplaceUrl}})
+{{/each}}
+{{/if}}
+
+## Installation
+
+1. Install Visual Studio Code
+2. Launch Visual Studio Code
+3. From the command palette `Ctrl-Shift-P` (Windows, Linux) or `Cmd-Shift-P` (macOS)
+4. Type `ext install itmcdev.{{name}}-extension-pack`
+5. Reload Visual Studio Code
+
+## License
+
+MIT

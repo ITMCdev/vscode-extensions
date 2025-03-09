@@ -1,0 +1,30 @@
+{
+"name": "{{name}}",
+"displayName": "{{displayName}}",
+"description": "{{description}}",
+"version": "{{version}}",
+"publisher": "{{publisher}}",
+"license": "{{license}}",
+"repository": {
+"type": "{{repository.type}}",
+"url": "{{repository.url}}"
+},
+"engines": {
+"vscode": "{{engines.vscode}}"
+},
+"categories": [
+{{#each categories}}
+"{{this}}"{{#unless @last}},{{/unless}}
+{{/each}}
+],
+"extensionPack": [
+{{#each extensionPack}}
+"{{this}}"{{#unless @last}},{{/unless}}
+{{/each}}
+]{{#if extensionDependencies}},
+"extensionDependencies": [
+{{#each extensionDependencies}}
+"{{this}}"{{#unless @last}},{{/unless}}
+{{/each}}
+]{{/if}}
+}

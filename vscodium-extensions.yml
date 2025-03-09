@@ -314,7 +314,7 @@ extensions:
     description: |
       A collection of extensions for Rust development
     extensions:
-      - rust-lang.rust
+      - rust-lang.rust-analyzer
       - dustypomerleau.rust-syntax
       - JScearcy.rust-doc-viewer
       - ConradLudgate.rust-playground
@@ -348,6 +348,8 @@ extensions:
       - jebbs.plantuml
       - Equinusocio.vsc-material-theme
       - vscode-icons-team.vscode-icons
+      - dracula-theme.theme-dracula
+      - vscodevim.vim
     dependencies:
       - itmcdev.generic-extension-pack
     deprecated: false
@@ -371,4 +373,27 @@ extensions:
     dependencies:
       - itmcdev.generic-extension-pack
     deprecated: false
-
+  database:
+    name: (ITMCDev) Database Extension Pack
+    description: |
+      A collection of extensions for database development
+    extensions:
+      - mtxr.sqltools
+      - mtxr.sqltools-driver-pg
+      - mtxr.sqltools-driver-mysql
+      - mtxr.sqltools-driver-sqlite
+      - cweijan.vscode-database-client2
+    dependencies:
+      - itmcdev.generic-extension-pack
+    deprecated: false
+  remote:
+    name: (ITMCDev) Remote Development Extension Pack
+    description: |
+      A collection of extensions for remote development
+    extensions:
+      - ms-vscode-remote.remote-ssh
+      - ms-vscode-remote.remote-ssh-edit
+      - ms-vscode-remote.vscode-remote-extensionpack
+    dependencies:
+      - itmcdev.generic-extension-pack
+    deprecated: false

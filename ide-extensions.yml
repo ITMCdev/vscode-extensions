@@ -1,0 +1,15 @@
+---
+extensions:
+  api-tools:
+    name: (ITMCDev) API Tools Extension Pack
+    description: |
+      A collection of extensions for testing and developing APIs
+    extensions:
+      - 42Crunch.vscode-openapi
+      - Arjun.swagger-viewer
+      - humao.rest-client
+      - mermade.openapi-lint
+      - mkloubert.vs-rest-api
+    dependencies:
+      - itmcdev.generic-extension-pack
+    deprecated: false
